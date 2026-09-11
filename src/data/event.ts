@@ -13,6 +13,7 @@ export const eventData = {
     day: "Thursday",
     month: "October",
     year: "2026",
+    
   },
   venue: {
     name: "Ahmed Bey Zenith",
