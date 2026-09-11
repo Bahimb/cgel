@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { eventData } from "@/data/event";
+import { GCELCurvedRibbons } from "@/components/PosterGraphics";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F1D3A] text-white border-t border-white/10">
-      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
+    <footer className="relative bg-[#0F1D3A] text-white border-t border-white/10 overflow-hidden">
+      <GCELCurvedRibbons variant="divider" className="absolute top-0 inset-x-0 opacity-60" />
+      <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
         <div className="grid grid-cols-2 lg:grid-cols-[1.4fr_0.9fr_0.9fr_1.1fr] gap-8 lg:gap-10">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
@@ -106,8 +108,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row gap-2 md:items-center justify-between text-[11px] tracking-wide text-white/40">
+      <div className="relative border-t border-white/10 overflow-hidden">
+        <GCELCurvedRibbons variant="footer" className="opacity-95" />
+        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row gap-2 md:items-center justify-between text-[11px] tracking-wide text-white/70">
           <p>© {new Date().getFullYear()} GCEL — 3rd Edition Scientific Days.</p>
           <p>Constantine, Algeria · International medical congress</p>
         </div>

@@ -24,13 +24,14 @@ export default function Navbar() {
 
   const solid = scrolled || !isHome;
   const positionClass = isHome ? "fixed top-0 inset-x-0" : "sticky top-0";
-  // Transparent hero mode vs solid
+  // Transparent hero mode vs solid — luxe top hairline
   return (
     <header
       className={`${positionClass} z-50 transition-colors duration-300 ${
-        solid ? "bg-white border-b border-[#E2E8F0]" : "bg-transparent border-b border-white/10"
+        solid ? "bg-white/95 backdrop-blur-[8px] border-b border-[#E8EDF3]" : "bg-transparent border-b border-white/10"
       }`}
     >
+      <div className={`absolute top-0 inset-x-0 h-[2px] ${solid ? "bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-100" : "bg-white/10"}`} />
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-[64px] lg:h-[68px] items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="GCEL Home">
@@ -87,7 +88,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/registration"
-              className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors"
+              className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.10em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors shadow-[0_2px_10px_rgba(240,132,68,0.22)]"
             >
               Register Now
             </Link>
@@ -98,7 +99,7 @@ export default function Navbar() {
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
               className={`lg:hidden inline-flex w-9 h-9 items-center justify-center border transition-colors ${
-                solid ? "border-[#E2E8F0] bg-white text-[#0F1D3A]" : "border-white/20 bg-white/10 text-white backdrop-blur"
+                solid ? "border-[#E8EDF3] bg-white text-[#0F1D3A]" : "border-white/20 bg-white/10 text-white backdrop-blur"
               }`}
             >
               <span className="sr-only">Menu</span>
@@ -113,7 +114,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t bg-white border-[#E2E8F0]">
+        <div className="lg:hidden border-t bg-white border-[#E8EDF3]">
           <nav className="mx-auto max-w-[1280px] px-4 py-6 flex flex-col" aria-label="Mobile">
             {[...eventData.navLinks, { label: "Contact", href: "/contact" }].map((link) => (
               <Link
@@ -134,7 +135,7 @@ export default function Navbar() {
             >
               Register Now
             </Link>
-            <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex items-center justify-between text-[11px] tracking-wide text-[#64748B]">
+            <div className="mt-6 pt-4 border-t border-[#E8EDF3] flex items-center justify-between text-[11px] tracking-wide text-[#64748B]">
               <span>01 OCT 2026 · Ahmed Bey Zenith</span>
               <a href={`mailto:${eventData.contact.email}`} className="text-[#023DA5] font-medium">
                 {eventData.contact.email}

@@ -52,7 +52,7 @@ export const programItems: ProgramItem[] = [
     title: "Keynote — Gastroenterology in the Era of AI",
     description: "Topic to be announced. Placeholder for confirmed keynote.",
     speaker: "Speaker Name",
-    speakerSlug: "speaker-placeholder-01",
+    speakerSlug: "speaker-01",
     session: "AI & Diagnosis",
     topic: "Artificial Intelligence",
     room: "Main Hall",

@@ -14,7 +14,7 @@ export type Expert = {
 
 export const experts: Expert[] = [
   {
-    slug: "speaker-placeholder-01",
+    slug: "speaker-01",
     name: "Speaker Name",
     title: "Gastroenterology Specialist",
     specialty: "Gastroenterology",
@@ -22,12 +22,12 @@ export const experts: Expert[] = [
     location: "Algeria",
     topic: "Topic to be announced",
     session: "Session TBA",
-    bio: "Biography to be announced. This placeholder will be replaced with the speaker's full professional biography once confirmed.",
+    bio: "Biography to be announced — detailed profile to be published as the programme is finalised.",
     image: "",
     featured: true,
   },
   {
-    slug: "speaker-placeholder-02",
+    slug: "speaker-02",
     name: "Speaker Name",
     title: "Hepatology Specialist",
     specialty: "Hepatology",
@@ -35,12 +35,12 @@ export const experts: Expert[] = [
     location: "Algeria",
     topic: "Topic to be announced",
     session: "Session TBA",
-    bio: "Biography to be announced. This placeholder will be replaced once the speaker is confirmed.",
+    bio: "Biography to be announced — detailed profile to be published as the programme is finalised.",
     image: "",
     featured: true,
   },
   {
-    slug: "speaker-placeholder-03",
+    slug: "speaker-03",
     name: "Speaker Name",
     title: "Digestive Endoscopy Specialist",
     specialty: "Digestive Endoscopy",
@@ -53,7 +53,7 @@ export const experts: Expert[] = [
     featured: true,
   },
   {
-    slug: "speaker-placeholder-04",
+    slug: "speaker-04",
     name: "Speaker Name",
     title: "Artificial Intelligence in Medicine",
     specialty: "AI & Digital Health",
@@ -66,7 +66,7 @@ export const experts: Expert[] = [
     featured: true,
   },
   {
-    slug: "speaker-placeholder-05",
+    slug: "speaker-05",
     name: "Speaker Name",
     title: "Gastroenterology Specialist",
     specialty: "Gastroenterology",
@@ -79,7 +79,7 @@ export const experts: Expert[] = [
     featured: true,
   },
   {
-    slug: "speaker-placeholder-06",
+    slug: "speaker-06",
     name: "Speaker Name",
     title: "Researcher — Smart Health",
     specialty: "Smart Health & Innovation",
@@ -92,7 +92,7 @@ export const experts: Expert[] = [
     featured: true,
   },
   {
-    slug: "speaker-placeholder-07",
+    slug: "speaker-07",
     name: "Speaker Name",
     title: "Gastroenterology Specialist",
     specialty: "Gastroenterology",
@@ -103,7 +103,7 @@ export const experts: Expert[] = [
     image: "",
   },
   {
-    slug: "speaker-placeholder-08",
+    slug: "speaker-08",
     name: "Speaker Name",
     title: "Medical Imaging Specialist",
     specialty: "Medical Imaging",
@@ -114,7 +114,7 @@ export const experts: Expert[] = [
     image: "",
   },
   {
-    slug: "speaker-placeholder-09",
+    slug: "speaker-09",
     name: "Speaker Name",
     title: "Clinical Researcher",
     specialty: "Clinical Research",
@@ -125,7 +125,7 @@ export const experts: Expert[] = [
     image: "",
   },
   {
-    slug: "speaker-placeholder-10",
+    slug: "speaker-10",
     name: "Speaker Name",
     title: "Gastroenterology Specialist",
     specialty: "Gastroenterology",
@@ -136,7 +136,7 @@ export const experts: Expert[] = [
     image: "",
   },
   {
-    slug: "speaker-placeholder-11",
+    slug: "speaker-11",
     name: "Speaker Name",
     title: "Digital Medicine Specialist",
     specialty: "Digital Medicine",
@@ -147,7 +147,7 @@ export const experts: Expert[] = [
     image: "",
   },
   {
-    slug: "speaker-placeholder-12",
+    slug: "speaker-12",
     name: "Speaker Name",
     title: "Gastroenterology Specialist",
     specialty: "Gastroenterology",
