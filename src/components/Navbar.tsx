@@ -34,18 +34,9 @@ export default function Navbar() {
       <div className={`absolute top-0 inset-x-0 h-[2px] ${solid ? "bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-100" : "bg-white/10"}`} />
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-[64px] lg:h-[68px] items-center justify-between gap-6">
-          <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="GCEL Home">
-            <div
-              className={`w-8 h-8 flex items-center justify-center transition-colors ${solid ? "bg-[#023DA5]" : "bg-white"}`}
-            >
-              <span className={`font-bold text-[13px] tracking-[0.04em] ${solid ? "text-white" : "text-[#023DA5]"}`}>GC</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className={`text-[13px] font-bold tracking-[0.14em] ${solid ? "text-[#023DA5]" : "text-white"}`}>GCEL</span>
-              <span className={`text-[10px] tracking-[0.16em] uppercase font-medium ${solid ? "text-[#64748B]" : "text-white/70"}`}>
-                3rd EDITION — 2026
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="CGEL Home">
+            
+            <img src="/cgel.svg" alt="CGEL Logo" className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">
@@ -69,28 +60,14 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <Link
-              href="/contact"
-              className={`text-[11px] tracking-[0.14em] uppercase font-semibold pb-1 border-b transition-colors ${
-                solid
-                  ? ((pathname as string) === "/contact"
-                    ? "text-[#023DA5] border-[#023DA5]"
-                    : "text-[#475569] border-transparent hover:text-[#023DA5]")
-                  : ((pathname as string) === "/contact"
-                    ? "text-white border-white"
-                    : "text-white/70 border-transparent hover:text-white")
-              }`}
-            >
-              Contact
-            </Link>
           </nav>
 
           <div className="flex items-center gap-3 shrink-0">
             <Link
-              href="/registration"
+              href="/contact"
               className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.10em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors shadow-[0_2px_10px_rgba(240,132,68,0.22)]"
             >
-              Register Now
+              Nous contacter
             </Link>
 
             <button
@@ -116,7 +93,7 @@ export default function Navbar() {
       {open && (
         <div className="lg:hidden border-t bg-white border-[#E8EDF3]">
           <nav className="mx-auto max-w-[1280px] px-4 py-6 flex flex-col" aria-label="Mobile">
-            {[...eventData.navLinks, { label: "Contact", href: "/contact" }].map((link) => (
+            {eventData.navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -129,14 +106,14 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/registration"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="mt-6 inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[12px] tracking-[0.08em] uppercase font-bold text-white"
             >
-              Register Now
+              Nous contacter
             </Link>
             <div className="mt-6 pt-4 border-t border-[#E8EDF3] flex items-center justify-between text-[11px] tracking-wide text-[#64748B]">
-              <span>01 OCT 2026 · Ahmed Bey Zenith</span>
+              <span>CGEL · Association professionnelle</span>
               <a href={`mailto:${eventData.contact.email}`} className="text-[#023DA5] font-medium">
                 {eventData.contact.email}
               </a>

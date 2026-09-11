@@ -1,33 +1,31 @@
 import Link from "next/link";
 import { eventData } from "@/data/event";
-import { GCELCurvedRibbons } from "@/components/PosterGraphics";
 
 export default function Footer() {
   return (
     <footer className="relative bg-[#0F1D3A] text-white border-t border-white/10 overflow-hidden">
-      <GCELCurvedRibbons variant="divider" className="absolute top-0 inset-x-0 opacity-60" />
       <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
         <div className="grid grid-cols-2 lg:grid-cols-[1.4fr_0.9fr_0.9fr_1.1fr] gap-8 lg:gap-10">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-white flex items-center justify-center">
-                <span className="text-[#023DA5] font-bold text-[12px] tracking-wide">GC</span>
+              <div className="w-10 h-10 bg-white  flex items-center justify-center">
+                <img src="/cgel.svg" alt="CGEL Logo" className="h-10 w-auto" />
+
               </div>
               <div>
-                <p className="text-[12px] font-bold tracking-[0.14em]">GCEL</p>
-                <p className="text-[10px] tracking-[0.14em] uppercase text-white/60">3rd Edition — Scientific Days</p>
+                <p className="text-[12px] font-bold tracking-[0.14em]">CGEL</p>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-white/60">Association professionnelle</p>
               </div>
             </div>
             <p className="mt-4 text-[12px] leading-5 text-white/60 max-w-[320px]">
-              Gastroenterology in the Era of Artificial Intelligence & Smart Health
+              Collège des Hépato-Gastroentérologues et Endoscopistes Libéraux de l&apos;Est — au service de la gastroentérologie libérale.
             </p>
-            <p className="mt-1 text-[11px] tracking-wide text-white/40">From Medical Innovation to Intelligent Care</p>
 
             <div className="mt-6 border border-white/10 px-4 py-3 max-w-[320px]">
-              <p className="text-[10px] tracking-[0.14em] uppercase font-semibold text-white/50">Save the date</p>
-              <p className="mt-1 text-[13px] font-semibold">Thursday, 01 October 2026</p>
-              <p className="text-[12px] text-white/60">Ahmed Bey Zenith, Constantine, Algeria</p>
+              <p className="text-[10px] tracking-[0.14em] uppercase font-semibold text-white/50">Notre mission</p>
+              <p className="mt-1 text-[13px] font-semibold">Faire progresser la spécialité</p>
+              <p className="text-[12px] text-white/60">Formation · échange · représentation</p>
             </div>
           </div>
 
@@ -35,12 +33,11 @@ export default function Footer() {
             <h4 className="text-[11px] tracking-[0.14em] uppercase font-semibold text-white/50">Sections</h4>
             <ul className="mt-4 space-y-2.5 text-[13px]">
               {[
-                ["Home", "/"],
-                ["About", "/about"],
-                ["Experts", "/experts"],
-                ["Program", "/program"],
-                ["Partners", "/partners"],
-                ["Venue", "/venue"],
+                ["Accueil", "/"],
+                ["À propos", "/a-propos"],
+                ["Événements", "/evenements"],
+                ["Projets", "/projets"],
+                ["Contact", "/contact"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-white/70 hover:text-white transition-colors">
@@ -64,15 +61,10 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link href="/registration" className="text-white/70 hover:text-white">
-                  Registration
-                </Link>
-              </li>
               <li className="pt-3 text-[11px] leading-5 text-white/40">
-                Organized by <span className="text-white/80">GCEL</span>
+                <span className="text-white/80">CGEL</span>
                 <br />
-                Scientific Partner <span className="text-white/80">MISC Laboratory</span>
+                Association professionnelle de l&apos;Est
               </li>
             </ul>
           </div>
@@ -98,21 +90,20 @@ export default function Footer() {
             </ul>
 
             <Link
-              href="/registration"
+              href="/contact"
               className="mt-6 inline-flex w-full items-center justify-center bg-[#F08444] px-5 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors"
             >
-              Register Now
+              Nous contacter
             </Link>
-            <p className="mt-2 text-[11px] leading-4 text-white/40 text-center">Secure your place at GCEL 2026.</p>
+            <p className="mt-2 text-[11px] leading-4 text-white/40 text-center">Une question ? Écrivez-nous.</p>
           </div>
         </div>
       </div>
 
       <div className="relative border-t border-white/10 overflow-hidden">
-        <GCELCurvedRibbons variant="footer" className="opacity-95" />
         <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row gap-2 md:items-center justify-between text-[11px] tracking-wide text-white/70">
-          <p>© {new Date().getFullYear()} GCEL — 3rd Edition Scientific Days.</p>
-          <p>Constantine, Algeria · International medical congress</p>
+          <p>© {new Date().getFullYear()} CGEL — Association professionnelle.</p>
+          <p>Hépato-gastroentérologie libérale · Est</p>
         </div>
       </div>
     </footer>

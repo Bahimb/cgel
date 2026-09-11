@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MobileRegisterBar from "@/components/MobileRegisterBar";
 import { eventData } from "@/data/event";
 
 const inter = Inter({
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
     title: eventData.seo.title,
     description: eventData.seo.description,
     type: "website",
-    locale: "en_DZ",
+    locale: "fr_FR",
     url: eventData.seo.canonical,
     siteName: "GCEL",
   },
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+    <html lang="fr" className={`${inter.variable} scroll-smooth`}>
       <body className="min-h-screen flex flex-col bg-white text-[#0F1D3A] antialiased">
         <a
           href="#main"
@@ -48,7 +47,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
-        <MobileRegisterBar />
       </body>
     </html>
   );
