@@ -1,54 +1,12 @@
 import Link from "next/link";
 import { Calendar, FolderOpen, Mail, GraduationCap, Users, Network } from "lucide-react";
 import { SectionWaveDivider } from "@/components/PosterGraphics";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
-      {/* HERO — association identity */}
-      <section className="relative bg-white overflow-hidden">
-
-        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 pt-32 lg:pt-40 pb-14 lg:pb-20 text-center">
-          <div className="inline-flex items-center gap-3">
-            <span className="h-px w-8 bg-[#F08444]" />
-            <div className="w-9 h-9  flex items-center justify-center">
-                <img src="/cgel.svg" alt="CGEL Logo" className="h-10 w-auto" />
-            </div>
-            <span className="h-px w-8 bg-[#F08444]" />
-          </div>
-
-          <h1 className="mt-8 max-w-[920px] mx-auto font-serif leading-[0.95] tracking-[-0.03em] luxe-serif">
-            <span className="block text-[30px] sm:text-[40px] lg:text-[52px] font-[380] text-[#023DA5]">
-              Collège des Hépato-Gastroentérologues
-            </span>
-            <span className="block text-[30px] sm:text-[40px] lg:text-[52px] font-light italic text-[#0F1D3A] mt-1">
-              et Endoscopistes Libéraux de l&apos;Est
-            </span>
-          </h1>
-
-          <p className="mt-6 text-[13px] lg:text-[14px] leading-6 text-[#475569] max-w-[560px] mx-auto font-light">
-            Une association professionnelle au service des hépato-gastroentérologues et endoscopistes libéraux de l&apos;Est
-            — formation, échange scientifique et représentation de la spécialité.
-          </p>
-
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/a-propos"
-              className="inline-flex items-center justify-center bg-[#F08444] px-7 py-3.5 text-[11px] tracking-[0.10em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors shadow-[0_4px_16px_rgba(240,132,68,0.28)]"
-            >
-              Découvrir l&apos;association
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center border border-[#023DA5]/25 bg-white px-7 py-3.5 text-[11px] tracking-[0.10em] uppercase font-semibold text-[#023DA5] hover:bg-[#EEF4FF] transition-colors"
-            >
-              Nous contacter
-            </Link>
-          </div>
-        </div>
-
-       
-      </section>
+      <Hero />
 
       <SectionWaveDivider />
 
@@ -64,18 +22,18 @@ export default function Home() {
               </div>
 
               <h2 className="mt-6 font-serif leading-[0.92] tracking-[-0.03em] text-[#0F1D3A] luxe-serif">
-                <span className="block text-[28px] sm:text-[32px] lg:text-[36px] font-[380]">L&apos;association</span>
+                <span className="block text-[28px] sm:text-[32px] lg:text-[36px] font-[380]">Le collège</span>
                 <span className="block text-[28px] sm:text-[32px] lg:text-[36px] font-[380]">en bref</span>
               </h2>
 
               <div className="mt-8 space-y-4 text-[14px] leading-7 text-[#475569] max-w-[520px]">
                 <p>
-                  <span className="font-semibold text-[#0F1D3A]">GCEL</span> fédère les hépato-gastroentérologues et endoscopistes
+                  <span className="font-semibold text-[#0F1D3A]">CGEL</span> fédère les hépato-gastroentérologues et endoscopistes
                   libéraux de l&apos;Est. Notre mission : soutenir la pratique libérale, favoriser la formation continue et porter la
                   voix de la spécialité auprès des institutions.
                 </p>
                 <p className="text-[#64748B] font-light">
-                  L&apos;association organise des rencontres scientifiques, développe des projets pour la profession et accompagne ses
+                  Le collège organise des rencontres scientifiques, développe des projets pour la profession et accompagne ses
                   membres au quotidien. Ce site est en cours d&apos;enrichissement — chaque section sera complétée prochainement.
                 </p>
               </div>
@@ -189,7 +147,7 @@ export default function Home() {
                 href: "/projets",
                 Icon: FolderOpen,
                 t: "Les projets du collège",
-                d: "Les initiatives portées par l'association pour la profession et la pratique libérale.",
+                d: "Les initiatives portées par le collège pour la profession et la pratique libérale.",
               },
               {
                 href: "/contact",
@@ -219,7 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA — association call */}
+      {/* FINAL CTA — collège call */}
       <section className="relative bg-[#023DA5] text-white overflow-hidden">
         <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
           <div className="max-w-[760px]">

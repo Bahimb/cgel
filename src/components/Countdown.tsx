@@ -27,10 +27,10 @@ export default function Countdown() {
   }, []);
 
   const items: Array<[string, number]> = [
-    ["Days", timeLeft.days],
-    ["Hours", timeLeft.hours],
+    ["Jours", timeLeft.days],
+    ["Heures", timeLeft.hours],
     ["Minutes", timeLeft.minutes],
-    ["Seconds", timeLeft.seconds],
+    ["Secondes", timeLeft.seconds],
   ];
 
   return (
@@ -43,9 +43,9 @@ export default function Countdown() {
           <div className="shrink-0 lg:w-[260px]">
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-white/25" />
-              <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-white/60">Countdown</span>
+              <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-white/60">Compte à rebours</span>
             </div>
-            <p className="mt-2 font-serif text-[20px] lg:text-[22px] leading-none tracking-[-0.015em] font-light">01 October 2026</p>
+            <p className="mt-2 font-serif text-[20px] lg:text-[22px] leading-none tracking-[-0.015em] font-light">01 octobre 2026</p>
             <p className="mt-1 text-[11px] tracking-[0.08em] uppercase font-medium text-white/45">Ahmed Bey Zenith · Constantine</p>
           </div>
 
@@ -63,7 +63,7 @@ export default function Countdown() {
           </div>
 
           <div className="hidden xl:block shrink-0 text-right">
-            <p className="text-[11px] tracking-[0.08em] uppercase font-medium text-white/40 border border-white/15 px-3 py-2 bg-white/[0.04]">One-day scientific congress</p>
+            <p className="text-[11px] tracking-[0.08em] uppercase font-medium text-white/40 border border-white/15 px-3 py-2 bg-white/[0.04]">Congrès scientifique d'une journée</p>
           </div>
         </div>
       </div>

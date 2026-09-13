@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: eventData.seo.canonical,
-    siteName: "GCEL",
+    siteName: "CGEL",
   },
   twitter: {
     card: "summary_large_image",
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-[#023DA5] focus:text-white focus:px-4 focus:py-2"
         >
-          Skip to content
+          Aller au contenu
         </a>
         <Navbar />
         <main id="main" className="flex-1 flex flex-col">

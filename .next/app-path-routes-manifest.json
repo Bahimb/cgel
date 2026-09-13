@@ -3,7 +3,6 @@
   "/_not-found/page": "/_not-found",
   "/a-propos/page": "/a-propos",
   "/about/page": "/about",
-  "/api/registration/route": "/api/registration",
   "/contact/page": "/contact",
   "/evenements/page": "/evenements",
   "/experts/[slug]/page": "/experts/[slug]",
@@ -16,6 +15,5 @@
   "/program/page": "/program",
   "/projets/page": "/projets",
   "/registration/page": "/registration",
-  "/registration/success/page": "/registration/success",
   "/venue/page": "/venue"
 }

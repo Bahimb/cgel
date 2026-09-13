@@ -71,9 +71,7 @@ self.__SERVER_FILES_MANIFEST={
       "unoptimized": false,
       "customCacheHandler": false
     },
-    "devIndicators": {
-      "position": "bottom-left"
-    },
+    "devIndicators": false,
     "onDemandEntries": {
       "maxInactiveAge": 60000,
       "pagesBufferLength": 5
@@ -106,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\HP\\OneDrive\\Desktop\\cgel",
+    "outputFileTracingRoot": "C:\\Users\\bahi\\Desktop\\cgel",
     "enablePrerenderSourceMaps": true,
     "cacheComponents": false,
     "cacheLife": {
@@ -176,7 +174,7 @@ self.__SERVER_FILES_MANIFEST={
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 7,
+      "cpus": 5,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptOperationCache": null,
@@ -321,13 +319,13 @@ self.__SERVER_FILES_MANIFEST={
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
-    "repoRoot": "C:\\Users\\HP\\OneDrive\\Desktop\\cgel",
+    "repoRoot": "C:\\Users\\bahi\\Desktop\\cgel",
     "turbopack": {
-      "root": "C:\\Users\\HP\\OneDrive\\Desktop\\cgel"
+      "root": "C:\\Users\\bahi\\Desktop\\cgel"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\HP\\OneDrive\\Desktop\\cgel",
+  "appDir": "C:\\Users\\bahi\\Desktop\\cgel",
   "relativeAppDir": "",
   "files": [
     ".next\\package.json",

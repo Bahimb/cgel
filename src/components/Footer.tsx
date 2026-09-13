@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-[12px] font-bold tracking-[0.14em]">CGEL</p>
-                <p className="text-[10px] tracking-[0.14em] uppercase text-white/60">Association professionnelle</p>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-white/60">Collège professionnel</p>
               </div>
             </div>
             <p className="mt-4 text-[12px] leading-5 text-white/60 max-w-[320px]">
@@ -64,7 +64,7 @@ export default function Footer() {
               <li className="pt-3 text-[11px] leading-5 text-white/40">
                 <span className="text-white/80">CGEL</span>
                 <br />
-                Association professionnelle de l&apos;Est
+                Collège professionnel de l&apos;Est
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
 
       <div className="relative border-t border-white/10 overflow-hidden">
         <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row gap-2 md:items-center justify-between text-[11px] tracking-wide text-white/70">
-          <p>© {new Date().getFullYear()} CGEL — Association professionnelle.</p>
+          <p>© {new Date().getFullYear()} CGEL — Collège professionnel.</p>
           <p>Hépato-gastroentérologie libérale · Est</p>
         </div>
       </div>

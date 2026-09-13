@@ -1,7 +1,10 @@
-// Centralized CGEL association data — edit here without touching UI components
+// Centralized CGEL collège data — edit here without touching UI components
+// PLACEHOLDER_UNIVERSITE = "Université [NOM À CONFIRMER]" — à remplacer dès confirmation client
+export const PLACEHOLDER_UNIVERSITE = "Université [NOM À CONFIRMER]" as const;
+
 export const eventData = {
   name: "CGEL",
-  edition: "Association professionnelle",
+  edition: "Collège professionnel",
   fullName: "Collège des Hépato-Gastroentérologues et Endoscopistes Libéraux de l'Est",
   theme: "Hépato-gastroentérologie et endoscopie en pratique libérale",
   themeLine1: "Hépato-gastroentérologie et endoscopie",
@@ -9,23 +12,25 @@ export const eventData = {
   tagline: "Au service de la gastroentérologie libérale",
   date: {
     iso: "2026-10-01T09:00:00+01:00",
-    display: "Thursday, October 1, 2026",
-    day: "Thursday",
-    month: "October",
+    display: "Jeudi 1 octobre 2026",
+    day: "Jeudi",
+    month: "octobre",
     year: "2026",
     
   },
   venue: {
     name: "Ahmed Bey Zenith",
     city: "Constantine",
-    country: "Algeria",
-    full: "Ahmed Bey Zenith, Constantine, Algeria",
-    address: "Ahmed Bey Zenith, Constantine, Algeria",
+    country: "Algérie",
+    full: "Ahmed Bey Zenith, Constantine, Algérie",
+    address: "Ahmed Bey Zenith, Constantine, Algérie",
     description:
-      "Ahmed Bey Zenith is one of Algeria's premier conference venues, located in the historic city of Constantine. The venue offers modern facilities for international scientific gatherings in a prestigious setting.",
+      "Le Ahmed Bey Zenith est l'une des principales salles de congrès d'Algérie, située dans la ville historique de Constantine. Le lieu offre des installations modernes pour des rencontres scientifiques internationales dans un cadre prestigieux.",
   },
   organizer: "CGEL",
-  scientificPartner: "MISC Laboratory",
+  // PLACEHOLDER_UNIVERSITE — nom exact à confirmer avec le client (ne pas afficher tel quel en prod)
+  // Ancienne valeur visible remplacée par texte neutre en attendant
+  scientificPartner: "Partenariat universitaire",
   contact: {
     phone: "0540 69 95 13",
     phoneHref: "tel:+213540699513",
@@ -43,7 +48,7 @@ export const eventData = {
   seo: {
     title: "CGEL — Collège des Hépato-Gastroentérologues et Endoscopistes Libéraux de l'Est",
     description:
-      "CGEL : l'association des hépato-gastroentérologues et endoscopistes libéraux de l'Est. Événements, projets et actualités de la gastroentérologie libérale.",
+      "CGEL : le collège des hépato-gastroentérologues et endoscopistes libéraux de l'Est. Événements, projets et actualités de la gastroentérologie libérale.",
     canonical: "https://cgel-gastro.com",
   },
   navLinks: [
@@ -62,18 +67,18 @@ export const eventData = {
 } as const;
 
 export type RegistrationType =
-  | "Doctor"
-  | "Pharmacist"
-  | "Nurse / Healthcare Professional"
-  | "Researcher"
-  | "Student"
-  | "Other";
+  | "Médecin"
+  | "Pharmacien"
+  | "Infirmier / Professionnel de santé"
+  | "Chercheur"
+  | "Étudiant"
+  | "Autre";
 
 export const registrationTypes: RegistrationType[] = [
-  "Doctor",
-  "Pharmacist",
-  "Nurse / Healthcare Professional",
-  "Researcher",
-  "Student",
-  "Other",
+  "Médecin",
+  "Pharmacien",
+  "Infirmier / Professionnel de santé",
+  "Chercheur",
+  "Étudiant",
+  "Autre",
 ];

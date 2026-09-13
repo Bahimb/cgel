@@ -5,43 +5,44 @@ export type FAQItem = {
 
 export const faqs: FAQItem[] = [
   {
-    q: "What is GCEL?",
-    a: "GCEL — 3rd Edition Scientific Days is a scientific gathering organized by GCEL in partnership with MISC Laboratory. The 2026 edition focuses on Gastroenterology in the Era of Artificial Intelligence & Smart Health, exploring how medical innovation and intelligent care are shaping the future of gastroenterology.",
+    q: "Qu'est-ce que le CGEL ?",
+    // Partenariat universitaire — voir PLACEHOLDER_UNIVERSITE dans src/data/event.ts
+    a: "CGEL — 3e Édition des Journées Scientifiques est une rencontre scientifique organisée par le CGEL en partenariat avec un partenariat universitaire. L'édition 2026 porte sur la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée, explorant comment l'innovation médicale et les soins intelligents façonnent l'avenir de la gastroentérologie.",
   },
   {
-    q: "When and where is the event?",
-    a: "GCEL 3rd Edition Scientific Days will take place on Thursday, October 1, 2026 at Ahmed Bey Zenith, Constantine, Algeria. Sessions will run throughout the day — please check the Scientific Program page for the detailed schedule as it is announced.",
+    q: "Quand et où se déroule l'événement ?",
+    a: "Les Journées Scientifiques CGEL — 3e Édition auront lieu le jeudi 1 octobre 2026 au Ahmed Bey Zenith, Constantine, Algérie. Les sessions se dérouleront tout au long de la journée — consultez la page Programme scientifique pour le planning détaillé dès sa publication.",
   },
   {
-    q: "Who can attend?",
-    a: "The event is open to gastroenterologists, hepatologists, general practitioners, pharmacists, nurses and healthcare professionals, researchers, students, and all stakeholders interested in gastroenterology, digital medicine, and smart health. Registration type can be selected during registration.",
+    q: "Qui peut participer ?",
+    a: "L'événement est ouvert aux hépato-gastroentérologues, hépatologues, médecins généralistes, pharmaciens, infirmiers et professionnels de santé, chercheurs, étudiants et à tous les acteurs intéressés par la gastroentérologie, la médecine numérique et la santé connectée. Le type d'inscription est à sélectionner lors de l'inscription.",
   },
   {
-    q: "How can I register?",
-    a: "Click the REGISTER NOW button available throughout the website or visit the Registration page. Fill in your details and submit the form. You will receive a confirmation after your registration request is processed. If you do not receive confirmation within a reasonable time, please contact us at college.hgel@gmail.com or 0540 69 95 13.",
+    q: "Comment puis-je m'inscrire ?",
+    a: "Cliquez sur le bouton S'inscrire disponible partout sur le site ou rendez-vous sur la page Inscription. Vous serez redirigé vers le formulaire Google Form. En cas d'absence de confirmation dans un délai raisonnable, contactez-nous à college.hgel@gmail.com ou au 0540 69 95 13.",
   },
   {
-    q: "Where can I find the scientific program?",
-    a: "The preview of the scientific program is available on the homepage and the full detailed program on the Program page. The program is updated as speakers and sessions are confirmed. If a final PDF is published, it will be linked directly from the Program page.",
+    q: "Où trouver le programme scientifique ?",
+    a: "L'aperçu du programme scientifique est disponible en page d'accueil et le programme complet détaillé sur la page Programme. Le programme est mis à jour à mesure que les intervenants et les sessions sont confirmés. Si un PDF final est publié, il sera lié directement depuis la page Programme.",
   },
   {
-    q: "Who are the speakers?",
-    a: "Speaker profiles are published on the Experts page as they are confirmed. Each expert has a dedicated profile showing specialty, institution, and conference topic. Speaker information will be announced progressively — placeholders indicate seats awaiting confirmation.",
+    q: "Qui sont les intervenants ?",
+    a: "Les profils des intervenants sont publiés sur la page Experts à mesure de leur confirmation. Chaque expert dispose d'une fiche dédiée présentant sa spécialité, son établissement et son thème de conférence. Les informations seront annoncées progressivement — les placeholders indiquent des places en attente de confirmation.",
   },
   {
-    q: "How can I become a partner or sponsor?",
-    a: "Organizations wishing to support or partner with GCEL are invited to contact us at college.hgel@gmail.com or 0540 69 95 13. Partnership opportunities and visibility details will be shared directly by the organizing committee.",
+    q: "Comment devenir partenaire ou sponsor ?",
+    a: "Les organisations souhaitant soutenir ou s'associer au CGEL sont invitées à nous contacter à college.hgel@gmail.com ou au 0540 69 95 13. Les opportunités de partenariat et les modalités de visibilité seront partagées directement par le comité d'organisation.",
   },
   {
-    q: "Will the scientific program be updated?",
-    a: "Yes. The scientific program is published as placeholder content and will be updated regularly as sessions, speakers, and topics are finalized. Check the Program page for the latest version or contact the organizers for the most recent information.",
+    q: "Le programme scientifique sera-t-il mis à jour ?",
+    a: "Oui. Le programme scientifique est publié à titre indicatif et sera mis à jour régulièrement à mesure que les sessions, intervenants et thèmes sont finalisés. Consultez la page Programme pour la dernière version ou contactez les organisateurs pour les informations les plus récentes.",
   },
   {
-    q: "Is there a registration fee?",
-    a: "Registration details including any fees, deadlines, and payment methods — if applicable — will be communicated by the organizers. The registration form currently collects your information as a registration request. Please contact college.hgel@gmail.com for the latest registration information.",
+    q: "Y a-t-il des frais d'inscription ?",
+    a: "Les informations d'inscription — frais éventuels, dates limites et modalités de paiement s'il y a lieu — seront communiquées par les organisateurs. L'inscription se fait désormais via Google Form. Pour les dernières informations, contactez college.hgel@gmail.com.",
   },
   {
-    q: "How can I contact the organizers?",
-    a: "You can reach the GCEL organizing committee by phone at 0540 69 95 13, by email at college.hgel@gmail.com, or via the Contact page on this website.",
+    q: "Comment contacter les organisateurs ?",
+    a: "Vous pouvez joindre le comité d'organisation du CGEL par téléphone au 0540 69 95 13, par e-mail à college.hgel@gmail.com ou via la page Contact du site.",
   },
 ];

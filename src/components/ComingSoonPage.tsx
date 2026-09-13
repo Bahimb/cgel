@@ -41,7 +41,7 @@ export default function ComingSoonPage({
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-[11px]">
             <span className="h-px w-6 bg-[#E8EDF3]" />
-            <span className="text-[#94A3B8] tracking-wide">CGEL · Association professionnelle</span>
+            <span className="text-[#94A3B8] tracking-wide">CGEL · Collège professionnel</span>
             <span className="h-px w-6 bg-[#E8EDF3]" />
           </div>
         </div>

@@ -10,10 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const expert = getExpertBySlug(slug);
-  if (!expert) return { title: "Expert not found — GCEL" };
+  if (!expert) return { title: "Expert non trouvé — CGEL" };
   return {
-    title: `${expert.name} — ${expert.title} | GCEL Experts`,
-    description: `${expert.specialty} · ${expert.institution} · ${expert.location} — GCEL 3rd Edition Scientific Days.`,
+    title: `${expert.name} — ${expert.title} | Experts CGEL`,
+    description: `${expert.specialty} · ${expert.institution} · ${expert.location} — CGEL Days 3e Édition.`,
   };
 }
 
@@ -42,7 +42,7 @@ export default async function ExpertDetailPage({ params }: { params: Promise<{ s
       <div className="bg-white border-b border-[#E2E8F0]">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-4">
           <Link href="/experts" className="text-[11px] tracking-[0.06em] uppercase font-semibold text-[#023DA5] hover:underline">
-            ← Back to experts
+            ← Retour aux experts
           </Link>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default async function ExpertDetailPage({ params }: { params: Promise<{ s
 
               <div className="mt-4 space-y-3">
                 <div className="border border-[#E2E8F0] px-3 py-2.5 bg-[#F8FAFC]">
-                  <p className="text-[10px] tracking-[0.08em] uppercase font-semibold text-[#64748B]">Conference Topic</p>
+                  <p className="text-[10px] tracking-[0.08em] uppercase font-semibold text-[#64748B]">Thème de conférence</p>
                   <p className="mt-1 text-[12px] font-semibold text-[#0F1D3A]">{expert.topic}</p>
                 </div>
                 {expert.session && (
@@ -73,8 +73,8 @@ export default async function ExpertDetailPage({ params }: { params: Promise<{ s
                 )}
               </div>
 
-              <Link href="/registration" className="mt-5 inline-flex w-full items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333]">
-                Register Now
+              <Link href="/registration" className="mt-5 inline-flex w-full items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors">
+                S'inscrire
               </Link>
             </div>
           </div>
@@ -83,32 +83,32 @@ export default async function ExpertDetailPage({ params }: { params: Promise<{ s
             <div className="border border-[#E2E8F0] bg-white p-6 lg:p-7">
               <div className="flex items-center gap-3">
                 <span className="h-px w-6 bg-[#023DA5]" />
-                <span className="text-[11px] tracking-[0.12em] uppercase font-semibold text-[#023DA5]">Biography</span>
+                <span className="text-[11px] tracking-[0.12em] uppercase font-semibold text-[#023DA5]">Biographie</span>
               </div>
               <p className="mt-3 text-[14px] leading-7 text-[#475569]">{expert.bio}</p>
               <p className="mt-6 text-[11px] leading-4 text-[#94A3B8] border-l-2 border-[#E2E8F0] pl-3">
-                Placeholder biography — will be replaced with the speaker&apos;s full professional biography once confirmed. No fake credentials are displayed.
+                Biographie placeholder — sera remplacée par la biographie professionnelle complète de l'intervenant dès confirmation. Aucune fausse accréditation n'est affichée.
               </p>
             </div>
 
             <div className="border border-[#E2E8F0] bg-white p-5">
-              <h3 className="text-[12px] font-bold text-[#0F1D3A]">Session details</h3>
+              <h3 className="text-[12px] font-bold text-[#0F1D3A]">Détails de la session</h3>
               <p className="mt-2 text-[12px] leading-6 text-[#64748B]">
-                Detailed session information including time, room and abstract will appear here once the scientific program is finalized. Check the{" "}
+                Les informations détaillées de la session — horaire, salle et résumé — apparaîtront ici dès que le programme scientifique sera finalisé. Consultez la{" "}
                 <Link href="/program" className="text-[#023DA5] font-medium hover:underline">
-                  Program page
+                  page Programme
                 </Link>{" "}
-                for updates.
+                pour les mises à jour.
               </p>
             </div>
 
             <div className="border border-[#023DA5] bg-[#023DA5] text-white px-5 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <p className="text-[12px] font-semibold">Want to attend this session?</p>
-                <p className="text-[11px] text-white/60">Reserve your place for 01 Oct 2026</p>
+                <p className="text-[12px] font-semibold">Envie d'assister à cette session ?</p>
+                <p className="text-[11px] text-white/60">Réservez votre place pour le 01 oct. 2026</p>
               </div>
-              <Link href="/registration" className="shrink-0 inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333]">
-                Register Now
+              <Link href="/registration" className="shrink-0 inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors">
+                S'inscrire
               </Link>
             </div>
           </div>

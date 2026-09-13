@@ -16,7 +16,7 @@ export function TechnicalNetworkBackground({ className = "" }: { className?: str
   );
 }
 
-export function GCELCurvedRibbons({ variant = "hero", className = "" }: { variant?: "hero" | "divider" | "footer"; className?: string }) {
+export function CGELCurvedRibbons({ variant = "hero", className = "" }: { variant?: "hero" | "divider" | "footer"; className?: string }) {
   // Use provided curved-ribbons asset — exact poster graphic, not generated
   if (variant === "hero") {
     return (

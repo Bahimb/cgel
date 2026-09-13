@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ — GCEL 3rd Edition Scientific Days",
-  description: "Frequently asked questions about GCEL 3rd Edition Scientific Days — registration, program, venue, speakers.",
+  title: "FAQ — CGEL Days 3e Édition",
+  description: "Foire aux questions — CGEL Days 3e Édition : inscriptions, programme, lieu, intervenants.",
 };
 
 export default function FAQPage() {
@@ -16,8 +16,8 @@ export default function FAQPage() {
             <span className="h-px w-8 bg-[#023DA5]" />
             <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">FAQ</span>
           </div>
-          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">Frequently Asked Questions</h1>
-          <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">Answers about GCEL — registration, program, speakers and venue. Content is editable and will be updated as details are confirmed.</p>
+          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">Questions fréquentes</h1>
+          <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">Réponses sur le CGEL — inscriptions, programme, intervenants et lieu. Contenu éditable, mis à jour dès que les détails sont confirmés.</p>
         </div>
       </div>
 
@@ -40,11 +40,11 @@ export default function FAQPage() {
 
         <div className="mt-8 border border-[#E2E8F0] bg-white px-5 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <p className="text-[12px] font-bold text-[#0F1D3A]">Still have a question?</p>
-            <p className="text-[12px] text-[#64748B]">Contact the organizing committee directly.</p>
+            <p className="text-[12px] font-bold text-[#0F1D3A]">Encore une question ?</p>
+            <p className="text-[12px] text-[#64748B]">Contactez directement le comité d'organisation.</p>
           </div>
-          <Link href="/contact" className="shrink-0 inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-semibold text-white hover:bg-[#022a72]">
-            Contact us
+          <Link href="/contact" className="shrink-0 inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-semibold text-white hover:bg-[#022a72] transition-colors focus-visible:ring-2 focus-visible:ring-[#023DA5]">
+            Nous contacter
           </Link>
         </div>
       </div>

@@ -5,12 +5,12 @@ import Link from "next/link";
 import { programItems, programSessions } from "@/data/program";
 
 export default function ProgramPage() {
-  const [activeSession, setActiveSession] = useState<string>("All Sessions");
+  const [activeSession, setActiveSession] = useState<string>("Toutes les sessions");
   const [search, setSearch] = useState("");
 
   const filtered = useMemo(() => {
     return programItems.filter((item) => {
-      const sessionMatch = activeSession === "All Sessions" || item.session === activeSession;
+      const sessionMatch = activeSession === "Toutes les sessions" || item.session === activeSession;
       const searchLower = search.toLowerCase();
       const searchMatch =
         !search ||
@@ -27,15 +27,15 @@ export default function ProgramPage() {
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#023DA5]" />
-            <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">Scientific Program</span>
+            <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">Programme scientifique</span>
           </div>
-          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">Scientific Program</h1>
+          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">Programme scientifique</h1>
           <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">
-            One-day program · Thursday, 01 October 2026 · Ahmed Bey Zenith, Constantine. Placeholder content — will be updated as sessions and speakers are finalized.
+            Programme d'une journée · Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine. Contenu indicatif — sera mis à jour à mesure que les sessions et intervenants sont finalisés.
           </p>
           <div className="mt-4 flex flex-wrap gap-2 text-[11px]">
-            <span className="border border-[#E2E8F0] px-2.5 py-1 font-medium text-[#475569]">Indicative schedule</span>
-            <span className="border border-[#E2E8F0] bg-[#F8FAFC] px-2.5 py-1 text-[#94A3B8]">PDF link can be added here</span>
+            <span className="border border-[#E2E8F0] px-2.5 py-1 font-medium text-[#475569]">Planning indicatif</span>
+            <span className="border border-[#E2E8F0] bg-[#F8FAFC] px-2.5 py-1 text-[#94A3B8]">Lien PDF à ajouter ici</span>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function ProgramPage() {
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Filter by topic, speaker…"
+            placeholder="Filtrer par thème, intervenant…"
             className="w-full lg:w-[260px] border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2 text-[12px] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#023DA5] focus:bg-white"
           />
         </div>
@@ -67,25 +67,25 @@ export default function ProgramPage() {
         {/* Timeline — serious thin dividers */}
         <div className="mt-6 border border-[#E2E8F0] bg-white">
           <div className="hidden lg:grid grid-cols-[96px_1fr_160px_120px_80px] gap-0 border-b border-[#E2E8F0] bg-[#F8FAFC] px-6 py-3">
-            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Time</span>
+            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Heure</span>
             <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Session</span>
-            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Topic</span>
-            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Room</span>
+            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Thème</span>
+            <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Salle</span>
             <span className="text-[10px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Type</span>
           </div>
 
           {filtered.length === 0 ? (
             <div className="px-6 py-16 text-center">
-              <p className="text-[13px] font-semibold text-[#0F1D3A]">No sessions match your filters.</p>
-              <p className="mt-1 text-[12px] text-[#64748B]">Try another session or clear the search.</p>
+              <p className="text-[13px] font-semibold text-[#0F1D3A]">Aucune session ne correspond à vos filtres.</p>
+              <p className="mt-1 text-[12px] text-[#64748B]">Essayez une autre session ou effacez la recherche.</p>
               <button
                 onClick={() => {
-                  setActiveSession("All Sessions");
+                  setActiveSession("Toutes les sessions");
                   setSearch("");
                 }}
-                className="mt-4 inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-4 py-2 text-[11px] tracking-[0.06em] uppercase font-semibold text-white"
+                className="mt-4 inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-4 py-2 text-[11px] tracking-[0.06em] uppercase font-semibold text-white hover:bg-[#022a72] transition-colors"
               >
-                Clear filters
+                Effacer les filtres
               </button>
             </div>
           ) : (
@@ -126,19 +126,19 @@ export default function ProgramPage() {
 
           <div className="border-t border-[#E2E8F0] bg-[#F8FAFC] px-4 lg:px-6 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#64748B]">
-              Showing {filtered.length} of {programItems.length} items · Schedule is indicative.
+              Affichage de {filtered.length} sur {programItems.length} éléments · Planning indicatif.
             </p>
-            <span className="border border-[#E2E8F0] bg-white px-3 py-1.5 text-[11px] text-[#94A3B8]">Download PDF (coming soon)</span>
+            <span className="border border-[#E2E8F0] bg-white px-3 py-1.5 text-[11px] text-[#94A3B8]">Télécharger le PDF (bientôt)</span>
           </div>
         </div>
 
         <div className="mt-8 border border-[#023DA5] bg-[#023DA5] text-white px-6 py-6 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div>
-            <h3 className="font-serif text-[16px]">Discover the scientific program and reserve your place at GCEL.</h3>
-            <p className="mt-1 text-[12px] text-white/60">01 October 2026 · Ahmed Bey Zenith, Constantine, Algeria</p>
+            <h3 className="font-serif text-[16px]">Découvrez le programme scientifique et réservez votre place au CGEL.</h3>
+            <p className="mt-1 text-[12px] text-white/60">01 octobre 2026 · Ahmed Bey Zenith, Constantine, Algérie</p>
           </div>
-          <Link href="/registration" className="shrink-0 inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333]">
-            Register Now
+          <Link href="/registration" className="shrink-0 inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors focus-visible:ring-2 focus-visible:ring-white">
+            S'inscrire
           </Link>
         </div>
       </div>

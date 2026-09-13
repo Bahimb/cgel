@@ -71,12 +71,6 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
-      "page": "/api/registration",
-      "regex": "^/api/registration(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/api/registration(?:/)?$"
-    },
-    {
       "page": "/contact",
       "regex": "^/contact(?:/)?$",
       "routeKeys": {},
@@ -129,12 +123,6 @@
       "regex": "^/registration(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/registration(?:/)?$"
-    },
-    {
-      "page": "/registration/success",
-      "regex": "^/registration/success(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/registration/success(?:/)?$"
     },
     {
       "page": "/venue",

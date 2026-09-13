@@ -3,7 +3,6 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/a-propos/page": "app/a-propos/page.js",
   "/about/page": "app/about/page.js",
-  "/api/registration/route": "app/api/registration/route.js",
   "/contact/page": "app/contact/page.js",
   "/evenements/page": "app/evenements/page.js",
   "/experts/[slug]/page": "app/experts/[slug]/page.js",
@@ -16,6 +15,5 @@
   "/program/page": "app/program/page.js",
   "/projets/page": "app/projets/page.js",
   "/registration/page": "app/registration/page.js",
-  "/registration/success/page": "app/registration/success/page.js",
   "/venue/page": "app/venue/page.js"
 }

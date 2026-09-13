@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { TechnicalNetworkBackground } from "@/components/PosterGraphics";
 
 export const metadata: Metadata = {
-  title: "Venue — Ahmed Bey Zenith, Constantine | GCEL",
-  description: "Venue information for GCEL 3rd Edition Scientific Days — Ahmed Bey Zenith, Constantine, Algeria. October 1, 2026.",
+  title: "Lieu — Ahmed Bey Zenith, Constantine | CGEL",
+  description: "Informations sur le lieu des CGEL Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
 };
 
 export default function VenuePage() {
@@ -15,10 +15,10 @@ export default function VenuePage() {
         <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#023DA5]" />
-            <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">Venue</span>
+            <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">Lieu</span>
           </div>
           <h1 className="mt-4 text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] font-extrabold text-[#0F1D3A]">Ahmed Bey Zenith, Constantine</h1>
-          <p className="mt-3 text-[14px] leading-6 text-[#475569]">Ahmed Bey Zenith, Constantine, Algeria · Thursday, 01 October 2026</p>
+          <p className="mt-3 text-[14px] leading-6 text-[#475569]">Ahmed Bey Zenith, Constantine, Algérie · Jeudi 1 octobre 2026</p>
         </div>
       </div>
 
@@ -39,22 +39,22 @@ export default function VenuePage() {
           </div>
 
           <div className="px-6 lg:px-8 py-8 bg-white">
-            <h2 className="text-[18px] font-bold text-[#0F1D3A]">About the venue</h2>
+            <h2 className="text-[18px] font-bold text-[#0F1D3A]">À propos du lieu</h2>
             <p className="mt-3 text-[13px] leading-6 text-[#475569]">
-              Ahmed Bey Zenith is one of Algeria&apos;s premier conference venues, located in the historic city of Constantine. The venue offers modern facilities for international scientific gatherings in a prestigious setting.
+              Le Ahmed Bey Zenith est l'une des principales salles de congrès d'Algérie, située dans la ville historique de Constantine. Le lieu offre des installations modernes pour des rencontres scientifiques internationales dans un cadre prestigieux.
             </p>
             <p className="mt-3 text-[11px] leading-5 text-[#94A3B8] border-l-2 border-[#E2E8F0] pl-3">
-              Full venue and logistics information to be published as confirmed.
+              Les informations complètes sur le lieu et la logistique seront publiées dès confirmation.
             </p>
 
             <div className="mt-6 border border-[#E2E8F0]">
               <div className="grid grid-cols-[100px_1fr] border-b border-[#E2E8F0]">
-                <span className="px-4 py-3 text-[11px] tracking-[0.06em] uppercase font-semibold text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Address</span>
-                <span className="px-4 py-3 text-[12px] text-[#0F1D3A]">Ahmed Bey Zenith, Constantine, Algeria</span>
+                <span className="px-4 py-3 text-[11px] tracking-[0.06em] uppercase font-semibold text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Adresse</span>
+                <span className="px-4 py-3 text-[12px] text-[#0F1D3A]">Ahmed Bey Zenith, Constantine, Algérie</span>
               </div>
               <div className="grid grid-cols-[100px_1fr]">
                 <span className="px-4 py-3 text-[11px] tracking-[0.06em] uppercase font-semibold text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Date</span>
-                <span className="px-4 py-3 text-[12px] text-[#0F1D3A]">Thursday, 01 October 2026 — Full day</span>
+                <span className="px-4 py-3 text-[12px] text-[#0F1D3A]">Jeudi 1 octobre 2026 — Journée entière</span>
               </div>
             </div>
 
@@ -63,18 +63,18 @@ export default function VenuePage() {
                 href="https://maps.google.com/?q=Ahmed+Bey+Zenith+Constantine+Algeria"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-semibold text-white hover:bg-[#022a72]"
+                className="inline-flex items-center justify-center border border-[#023DA5] bg-[#023DA5] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-semibold text-white hover:bg-[#022a72] transition-colors focus-visible:ring-2 focus-visible:ring-[#023DA5]"
               >
-                Open in Google Maps
+                Ouvrir dans Google Maps
               </a>
-              <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333]">
-                Register Now
+              <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors focus-visible:ring-2 focus-visible:ring-[#023DA5]">
+                S'inscrire
               </Link>
             </div>
           </div>
         </div>
         <div className="mt-8 border border-[#E8EDF3] overflow-hidden max-w-[720px] mx-auto">
-          <img src="/images/gcel-venue-announcement.png" alt="Venue announcement — Ahmed Bey Zenith" className="w-full h-auto" />
+          <img src="/images/gcel-venue-announcement.png" alt="Annonce du lieu — Ahmed Bey Zenith, CGEL Days" className="w-full h-auto" />
         </div>
       </div>
     </div>

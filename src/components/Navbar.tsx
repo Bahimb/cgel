@@ -2,36 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { eventData } from "@/data/event";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const isHome = pathname === "/";
-
-  useEffect(() => {
-    if (!isHome) return;
-    const onScroll = () => {
-      const next = window.scrollY > 24;
-      setScrolled((prev) => (prev !== next ? next : prev));
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome]);
-
-  const solid = scrolled || !isHome;
-  const positionClass = isHome ? "fixed top-0 inset-x-0" : "sticky top-0";
-  // Transparent hero mode vs solid — luxe top hairline
+  // Toujours opaque pour contraste WCAG AA sur fond à vagues — plus de mode transparent
+  const solid = true;
+  const positionClass = "sticky top-0";
   return (
-    <header
-      className={`${positionClass} z-50 transition-colors duration-300 ${
-        solid ? "bg-white/95 backdrop-blur-[8px] border-b border-[#E8EDF3]" : "bg-transparent border-b border-white/10"
-      }`}
-    >
-      <div className={`absolute top-0 inset-x-0 h-[2px] ${solid ? "bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-100" : "bg-white/10"}`} />
+    <header className={`${positionClass} z-50 bg-white border-b border-[#E8EDF3] shadow-[0_1px_8px_rgba(2,29,58,0.06)]`}>
+      <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-100" />
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-[64px] lg:h-[68px] items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="CGEL Home">
@@ -47,13 +29,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`text-[11px] tracking-[0.14em] uppercase font-semibold pb-1 border-b transition-colors ${
-                    solid
-                      ? active
-                        ? "text-[#023DA5] border-[#023DA5]"
-                        : "text-[#475569] border-transparent hover:text-[#023DA5]"
-                      : active
-                        ? "text-white border-white"
-                        : "text-white/70 border-transparent hover:text-white"
+                    active ? "text-[#023DA5] border-[#023DA5]" : "text-[#334155] border-transparent hover:text-[#023DA5] hover:border-[#023DA5]/30"
                   }`}
                 >
                   {link.label}
@@ -75,9 +51,7 @@ export default function Navbar() {
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className={`lg:hidden inline-flex w-9 h-9 items-center justify-center border transition-colors ${
-                solid ? "border-[#E8EDF3] bg-white text-[#0F1D3A]" : "border-white/20 bg-white/10 text-white backdrop-blur"
-              }`}
+              className="lg:hidden inline-flex w-9 h-9 items-center justify-center border border-[#E2E8F0] bg-white text-[#0F1D3A] hover:border-[#023DA5]/20 transition-colors"
             >
               <span className="sr-only">Menu</span>
               <div className="flex flex-col gap-1">
@@ -113,7 +87,7 @@ export default function Navbar() {
               Nous contacter
             </Link>
             <div className="mt-6 pt-4 border-t border-[#E8EDF3] flex items-center justify-between text-[11px] tracking-wide text-[#64748B]">
-              <span>CGEL · Association professionnelle</span>
+              <span>CGEL · Collège professionnel</span>
               <a href={`mailto:${eventData.contact.email}`} className="text-[#023DA5] font-medium">
                 {eventData.contact.email}
               </a>

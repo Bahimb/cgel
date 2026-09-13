@@ -46,7 +46,7 @@ export default function EventsPage() {
           </p>
         </div>
 
-        {/* Featured event — GCEL Scientific Days (reused from original project) */}
+        {/* Featured event — CGEL Days (reused from original project) */}
         <div className="relative border border-[#E8EDF3] bg-white overflow-hidden shadow-sm">
           <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[#F08444] via-[#36C0E7] to-[#023DA5]" />
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-0">
@@ -56,11 +56,11 @@ export default function EventsPage() {
                 <span className="text-[#94A3B8]">Journées scientifiques</span>
               </div>
               <h2 className="mt-4 font-serif text-[26px] lg:text-[32px] leading-[0.95] tracking-[-0.02em] text-[#0F1D3A] luxe-serif">
-                GCEL — 3rd Edition Scientific Days
+                CGEL Days — 3<sup className="text-[16px]">e</sup> Édition
               </h2>
               <p className="mt-3 text-[13px] leading-6 text-[#475569] font-light max-w-[500px]">
                 Gastroenterologie à l&apos;ère de l&apos;intelligence artificielle et de la santé connectée — le rendez-vous
-                scientifique du collège, aux côtés du MISC Laboratory.
+                scientifique du collège, aux côtés d&apos;un partenariat universitaire.
               </p>
 
               <div className="mt-6 space-y-2.5 text-[13px] text-[#0F1D3A]">
@@ -105,6 +105,49 @@ export default function EventsPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Sponsors / Partners — CGEL Days uniquement */}
+        <div className="relative border border-[#E8EDF3] bg-white overflow-hidden shadow-sm">
+          <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-60" />
+          <div className="px-6 lg:px-10 py-8 lg:py-10">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="h-px w-8 bg-[#F08444]" />
+                  <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-[#023DA5]">Ils nous soutiennent</span>
+                </div>
+                <h3 className="mt-3 font-serif text-[22px] lg:text-[26px] leading-[1.1] tracking-[-0.02em] text-[#0F1D3A] luxe-serif">Nos partenaires</h3>
+                <p className="mt-2 text-[12px] leading-5 text-[#475569] font-light max-w-[520px]">
+                  Les 10 laboratoires confirmés qui accompagnent les CGEL Days — logos présentés sur fond blanc, hauteur homogène.
+                </p>
+              </div>
+              <span className="hidden sm:inline-flex text-[11px] tracking-[0.08em] uppercase font-semibold text-[#94A3B8] border border-[#E8EDF3] px-3 py-1.5 bg-[#F8FAFC]">10 partenaires confirmés</span>
+            </div>
+
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-[#E8EDF3] border border-[#E8EDF3]">
+              {[
+                { src: "/logo/logosponsor/astrazeneca.png", alt: "AstraZeneca — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/biopharm.png", alt: "Biopharm — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/dermilyne.png", alt: "Dermilyne — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/krays.png", alt: "Krays — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/mayoly.PNG", alt: "Mayoly — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/nadpharmaclic.png", alt: "Nadphar — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/repartidis.png", alt: "Repartidis — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/salem.PNG", alt: "Salem — partenaire CGEL Days" },
+                { src: "/logo/logosponsor/Untitled design.png", alt: "Partenaire — CGEL Days" },
+                { src: "/logo/logosponsor/yovene.png", alt: "Yovene — partenaire CGEL Days" },
+              ].map(({ src, alt }) => (
+                <div key={src} className="bg-white px-4 py-6 flex items-center justify-center h-[96px] lg:h-[110px] hover:bg-[#FCFDFE] transition-colors">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={src} alt={alt} className="max-h-[56px] lg:max-h-[64px] max-w-full w-auto object-contain" loading="lazy" />
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-[11px] leading-4 text-[#94A3B8] text-center">
+              Grille responsive — 5 colonnes sur desktop, 3 sur tablette, 2 sur mobile. Tous les logos sont en <code className="text-[#64748B]">object-fit: contain</code> avec hauteur fixe.
+            </p>
           </div>
         </div>
       </div>
