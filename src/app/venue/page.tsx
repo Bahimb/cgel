@@ -34,7 +34,6 @@ export default function VenuePage() {
             />
             <div className="absolute bottom-0 inset-x-0 bg-white border-t border-[#E2E8F0] px-4 py-3 flex items-center justify-between">
               <p className="text-[11px] font-semibold text-[#0F1D3A]">Ahmed Bey Zenith · Constantine</p>
-              <span className="text-[10px] tracking-[0.08em] uppercase font-semibold text-[#64748B] border border-[#E2E8F0] px-2 py-1">City of Bridges</span>
             </div>
           </div>
 
@@ -42,9 +41,6 @@ export default function VenuePage() {
             <h2 className="text-[18px] font-bold text-[#0F1D3A]">À propos du lieu</h2>
             <p className="mt-3 text-[13px] leading-6 text-[#475569]">
               Le Ahmed Bey Zenith est l'une des principales salles de congrès d'Algérie, située dans la ville historique de Constantine. Le lieu offre des installations modernes pour des rencontres scientifiques internationales dans un cadre prestigieux.
-            </p>
-            <p className="mt-3 text-[11px] leading-5 text-[#94A3B8] border-l-2 border-[#E2E8F0] pl-3">
-              Les informations complètes sur le lieu et la logistique seront publiées dès confirmation.
             </p>
 
             <div className="mt-6 border border-[#E2E8F0]">

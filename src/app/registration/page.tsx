@@ -17,12 +17,8 @@ export default function RegistrationPage() {
           </div>
           <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">S&apos;inscrire aux CGEL Days 2026</h1>
           <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">
-            3<sup>e</sup> Édition — La gastroentérologie à l&apos;ère de l&apos;intelligence artificielle et de la santé connectée. Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine, Algérie.
+            3<sup>e</sup> Édition — La gastroentérologie à l&apos;ère de l&apos;intelligence artificielle et de la santé connectée. <br/> Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine, Algérie.
           </p>
-          <div className="mt-4 flex flex-wrap gap-2 text-[11px]">
-            <span className="border border-[#E2E8F0] bg-[#F8FAFC] px-2.5 py-1 text-[#475569]">Aucun paiement requis à ce stade</span>
-            <span className="border border-[#E2E8F0] bg-white px-2.5 py-1 text-[#94A3B8]">Les organisateurs confirmeront les détails</span>
-          </div>
         </div>
       </div>
 
@@ -72,9 +68,6 @@ export default function RegistrationPage() {
                 <li>Remplissez le formulaire Google dans le nouvel onglet.</li>
                 <li>Le comité examine les demandes et vous recontacte.</li>
               </ol>
-              <p className="mt-4 text-[11px] leading-4 text-white/40 border-t border-white/10 pt-3">
-                Aucun tarif ou modalité de paiement n&apos;est inventé — les informations officielles seront communiquées directement le cas échéant.
-              </p>
             </div>
           </div>
         </div>

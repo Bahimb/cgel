@@ -45,9 +45,6 @@ export default function AboutPage() {
                 <span className="font-semibold text-[#0F1D3A]">un partenariat universitaire</span> comme partenaire scientifique, l'événement s'adresse aux
                 hépato-gastroentérologues, hépatologues, médecins généralistes, pharmaciens, infirmiers, chercheurs, étudiants et partenaires institutionnels.
               </p>
-              <p className="text-[12px] text-[#94A3B8] border-l-2 border-[#E2E8F0] pl-3">
-                Tout le contenu de cette page est éditable — l'organisateur peut mettre à jour les textes, thèmes et structure sans modifier les composants.
-              </p>
             </div>
 
             <div className="mt-8 border border-[#E2E8F0]">
@@ -56,14 +53,14 @@ export default function AboutPage() {
               </div>
               <ul className="grid sm:grid-cols-2 gap-0 text-[12px] text-[#475569]">
                 {[
-                  "AI-assisted diagnosis",
-                  "Smart health & digital tools",
-                  "Intelligent endoscopy",
-                  "Data-driven medicine",
-                  "Clinical decision support",
-                  "Personalized medicine",
-                  "Medical imaging",
-                  "Future healthcare",
+                  "Diagnostic assisté par l’IA",
+                  "Santé intelligente et outils numériques",
+                  "Endoscopie intelligente",
+                  "Médecine fondée sur les données",
+                  "Support aux décisions cliniques",
+                  "Médecine personnalisée",
+                  "Imagerie médicale",
+                  "Santé future ",
                 ].map((t) => (
                   <li key={t} className="px-5 py-3 border-b sm:border-b border-r-0 sm:odd:border-r border-[#E2E8F0] last:border-b-0">
                     — {t}
@@ -108,7 +105,7 @@ export default function AboutPage() {
                 </div>
                 <div className="grid grid-cols-[110px_1fr] gap-0">
                   <dt className="px-4 py-3 text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Partenaire</dt>
-                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">Partenariat universitaire</dd>
+                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">Université Constantine 2 Abdelhamid Mehri et Faculté NTIC</dd>
                 </div>
               </dl>
               <div className="p-4 border-t border-[#E2E8F0]">
@@ -131,7 +128,11 @@ export default function AboutPage() {
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Organisateur</p>
                 </div>
                 <div className="bg-[#F8FAFC] px-4 py-3 text-center flex flex-col items-center gap-1">
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                  <div className="flex items-center gap-2"> 
+                    <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                    <img src="/logo/ntic.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                  </div>
+                  
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Partenaire scientifique</p>
                 </div>
               </div>

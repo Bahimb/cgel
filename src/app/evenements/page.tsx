@@ -136,7 +136,7 @@ export default function EventsPage() {
                 { src: "/logo/logosponsor/nadpharmaclic.png", alt: "Nadphar — partenaire CGEL Days" },
                 { src: "/logo/logosponsor/repartidis.png", alt: "Repartidis — partenaire CGEL Days" },
                 { src: "/logo/logosponsor/salem.PNG", alt: "Salem — partenaire CGEL Days" },
-                { src: "/logo/logosponsor/Untitled design.png", alt: "Partenaire — CGEL Days" },
+                { src: "/logo/logosponsor/merinal.png", alt: "Partenaire — CGEL Days" },
                 { src: "/logo/logosponsor/yovene.png", alt: "Yovene — partenaire CGEL Days" },
               ].map(({ src, alt }) => (
                 <div key={src} className="bg-white px-4 py-6 flex items-center justify-center h-[96px] lg:h-[110px] hover:bg-[#FCFDFE] transition-colors">
@@ -145,9 +145,6 @@ export default function EventsPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-[11px] leading-4 text-[#94A3B8] text-center">
-              Grille responsive — 5 colonnes sur desktop, 3 sur tablette, 2 sur mobile. Tous les logos sont en <code className="text-[#64748B]">object-fit: contain</code> avec hauteur fixe.
-            </p>
           </div>
         </div>
       </div>

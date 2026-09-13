@@ -20,21 +20,18 @@ export default function RegistrationForm() {
           S&apos;inscrire via Google Form
           <span aria-hidden className="ml-2">↗</span>
         </a>
-        <p className="mt-3 text-[11px] leading-4 text-[#94A3B8]">Ouverture dans un nouvel onglet · Formulaire sécurisé Google</p>
       </div>
 
       <div className="border border-[#E2E8F0] bg-white px-4 py-3 text-[11px] leading-5 text-[#475569]">
         En vous inscrivant, vous confirmez votre demande pour les <span className="font-semibold text-[#0F1D3A]">CGEL Days — 3<sup>e</sup> Édition · 01 oct. 2026</span>. Le comité
-        d&apos;organisation examinera votre demande. Aucun paiement n&apos;est requis à ce stade sauf communication directe.
+        d&apos;organisation examinera votre demande.
       </div>
 
       <p className="text-center text-[11px] text-[#64748B]">
         Questions ? <a href="mailto:college.hgel@gmail.com" className="text-[#023DA5] font-medium hover:underline">college.hgel@gmail.com</a> · 0540 69 95 13
       </p>
 
-      <div className="border border-dashed border-[#E2E8F0] bg-[#FCFDFE] px-4 py-3 text-[11px] leading-4 text-[#94A3B8] text-center">
-        Ancien formulaire interne désactivé — redirection vers Google Form pour centraliser les inscriptions.
-      </div>
+      
     </div>
   );
 }
