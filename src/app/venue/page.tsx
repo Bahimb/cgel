@@ -4,7 +4,7 @@ import { TechnicalNetworkBackground } from "@/components/PosterGraphics";
 
 export const metadata: Metadata = {
   title: "Lieu — Ahmed Bey Zenith, Constantine | CGEL",
-  description: "Informations sur le lieu des CGEL Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
+  description: "Informations sur le lieu des CGEL Scientific Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
 };
 
 export default function VenuePage() {
@@ -70,7 +70,7 @@ export default function VenuePage() {
           </div>
         </div>
         <div className="mt-8 border border-[#E8EDF3] overflow-hidden max-w-[720px] mx-auto">
-          <img src="/images/gcel-venue-announcement.png" alt="Annonce du lieu — Ahmed Bey Zenith, CGEL Days" className="w-full h-auto" />
+          <img src="/images/gcel-venue-announcement.png" alt="Annonce du lieu — Ahmed Bey Zenith, CGEL Scientific Days" className="w-full h-auto" />
         </div>
       </div>
     </div>

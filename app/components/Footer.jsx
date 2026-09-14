@@ -34,7 +34,6 @@ export default function Footer() {
             <h4 data-i18n="footer.infoTitle">Information</h4>
             <ul>
               <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/contact" data-i18n="nav.contact">Contact</Link></li>
               <li style={{ paddingTop: ".75rem", fontSize: "11px", lineHeight: "1.6", color: "rgba(255,255,255,.4)" }}><span style={{ color: "rgba(255,255,255,.8)" }}>CGEL</span><br />Collège professionnel de l&apos;Est</li>
             </ul>
           </div>

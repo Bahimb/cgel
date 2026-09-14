@@ -23,7 +23,7 @@ export default function Header() {
       <div className="container">
         <div className="header-inner">
           <Link href="/" className="brand" aria-label="CGEL Home">
-            <img src="/cgel.svg" alt="CGEL Logo" />
+            <img src="/cgel.svg" alt="CGEL Logo" style={{height:"72px"}} />
           </Link>
           <nav className="nav-primary" aria-label="Primary">
             <Link href="/" className={isActive("/") ? "active" : ""} data-i18n="nav.home">Accueil</Link>
@@ -33,8 +33,8 @@ export default function Header() {
             <Link href="/contact" className={isActive("/contact") ? "active" : ""} data-i18n="nav.contact">Contact</Link>
           </nav>
           <div className="header-actions">
-            <a href="https://facebook.com/cgel" target="_blank" rel="noopener noreferrer" className="facebook-btn" aria-label="CGEL sur Facebook">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14V7.5c0-1.1.3-1.9 1.9-1.9H18V2.1C17.3 2 15.9 2 14.6 2 11.1 2 9 4.1 9 7.2V9.5H6v4h3v6h4v-6Z" /></svg>
+            <a href="https://www.facebook.com/people/CGEL/61565723925313/" target="_blank" rel="noopener noreferrer" className="facebook-btn" aria-label="CGEL sur Facebook" style={{width:"44px",height:"44px"}}>
+              <svg viewBox="0 0 24 24" aria-hidden="true" style={{width:"22px",height:"22px"}}><path d="M14 13.5h2.5l1-4H14V7.5c0-1.1.3-1.9 1.9-1.9H18V2.1C17.3 2 15.9 2 14.6 2 11.1 2 9 4.1 9 7.2V9.5H6v4h3v6h4v-6Z" /></svg>
             </a>
             <div className="lang-switcher" role="group" aria-label="Language">
               <button type="button" data-lang="fr" className="active" aria-label="Français">FR</button>
@@ -66,7 +66,7 @@ export default function Header() {
           <Link href="/projets" className={isActive("/projets") ? "active-mobile" : ""} data-i18n="nav.projects" onClick={() => setOpen(false)}>Projets</Link>
           <Link href="/contact" className={isActive("/contact") ? "active-mobile" : ""} data-i18n="nav.contact" onClick={() => setOpen(false)}>Contact</Link>
           <Link href="/contact" className="mobile-cta" data-i18n="nav.contactBtn" onClick={() => setOpen(false)}>Nous contacter</Link>
-          <a href="https://facebook.com/cgel" target="_blank" rel="noopener noreferrer" className="facebook-btn" aria-label="CGEL sur Facebook">
+          <a href="https://www.facebook.com/people/CGEL/61565723925313/" target="_blank" rel="noopener noreferrer" className="facebook-btn" aria-label="CGEL sur Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14V7.5c0-1.1.3-1.9 1.9-1.9H18V2.1C17.3 2 15.9 2 14.6 2 11.1 2 9 4.1 9 7.2V9.5H6v4h3v6h4v-6Z" /></svg><span>Facebook</span>
           </a>
           <div className="lang-switcher" role="group" aria-label="Language">

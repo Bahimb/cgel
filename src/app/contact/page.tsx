@@ -3,7 +3,7 @@ import { eventData } from "@/data/event";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact — CGEL Days 3e Édition",
+  title: "Contact — CGEL Scientific Days 3e Édition",
   description: "Contact CGEL — Journées Scientifiques 3e Édition. Téléphone, e-mail et informations sur le lieu.",
 };
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
             <div className="px-6 py-4 border-b border-[#E2E8F0] bg-[#F8FAFC]">
               <p className="text-[11px] tracking-[0.12em] uppercase font-semibold text-[#023DA5]">Organisateur</p>
               <p className="mt-1 font-serif text-[18px] text-[#0F1D3A]">CGEL</p>
-              <p className="text-[11px] text-[#64748B]">3<sup>e</sup> Édition — CGEL Days</p>
+              <p className="text-[11px] text-[#64748B]">3<sup>e</sup> Édition — CGEL Scientific Days</p>
             </div>
 
             <div className="p-6 space-y-0 divide-y divide-[#E2E8F0] border-b border-[#E2E8F0]">
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
             <div className="border border-[#023DA5] bg-[#023DA5] text-white px-6 py-6">
               <h3 className="font-serif text-[16px]">Prêt à vous inscrire ?</h3>
-              <p className="mt-1 text-[12px] text-white/60">Réservez votre place aux CGEL Days — 3<sup>e</sup> Édition.</p>
+              <p className="mt-1 text-[12px] text-white/60">Réservez votre place aux CGEL Scientific Days — 3<sup>e</sup> Édition.</p>
               <Link href="/registration" className="mt-4 inline-flex w-full items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.06em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors focus-visible:ring-2 focus-visible:ring-white">
                 S'inscrire
               </Link>

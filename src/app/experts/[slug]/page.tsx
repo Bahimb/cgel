@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!expert) return { title: "Expert non trouvé — CGEL" };
   return {
     title: `${expert.name} — ${expert.title} | Experts CGEL`,
-    description: `${expert.specialty} · ${expert.institution} · ${expert.location} — CGEL Days 3e Édition.`,
+    description: `${expert.specialty} · ${expert.institution} · ${expert.location} — CGEL Scientific Days 3e Édition.`,
   };
 }
 

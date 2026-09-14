@@ -3,9 +3,9 @@ import SectionTitle from "@/components/SectionTitle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "À propos — CGEL Days 3e Édition",
+  title: "À propos — CGEL Scientific Days 3e Édition",
   description:
-    "À propos des CGEL Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
+    "À propos des CGEL Scientific Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
             <span className="h-px w-8 bg-[#023DA5]" />
             <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">À propos</span>
           </div>
-          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">À propos des CGEL Days</h1>
+          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">À propos des CGEL Scientific Days</h1>
           <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">
             3<sup>e</sup> Édition — La gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée.
           </p>
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <SectionTitle
               kicker="Introduction"
               title="Une rencontre scientifique au service de l'évolution de la gastroentérologie"
-              subtitle="Les CGEL Days rassemblent la communauté gastroentérologique pour examiner comment l'innovation médicale — notamment l'intelligence artificielle et la santé connectée — repousse les limites du diagnostic, du soin et de la pratique clinique."
+              subtitle="Les CGEL Scientific Days rassemblent la communauté gastroentérologique pour examiner comment l'innovation médicale — notamment l'intelligence artificielle et la santé connectée — repousse les limites du diagnostic, du soin et de la pratique clinique."
             />
             <div className="mt-6 space-y-4 text-[14px] leading-7 text-[#475569]">
               <p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
               <dl className="divide-y divide-[#E2E8F0] text-[12px]">
                 <div className="grid grid-cols-[110px_1fr] gap-0">
                   <dt className="px-4 py-3 text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Événement</dt>
-                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">CGEL Days — 3<sup>e</sup> Édition</dd>
+                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">CGEL Scientific Days — 3<sup>e</sup> Édition</dd>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] gap-0">
                   <dt className="px-4 py-3 text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Thème</dt>
@@ -117,20 +117,22 @@ export default function AboutPage() {
 
             <div className="overflow-hidden border border-[#E2E8F0]">
               <img
-                src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800&auto=format&fit=crop"
-                alt="Auditoire lors d'un congrès scientifique"
-                className="h-[180px] w-full object-cover"
+                src="/images/events/showcasepic.jpeg"
+                alt="Auditoire lors d'un congrès CGEL — salle plénière"
+                className="h-[200px] w-full object-cover"
                 loading="lazy"
               />
               <div className="grid grid-cols-2 gap-px bg-[#E2E8F0] border-t border-[#E2E8F0]">
-                <div className="bg-white px-4 py-3 text-center">
-                  <p className="text-[12px] font-bold text-[#0F1D3A]">CGEL</p>
+                <div className="bg-white px-4 py-3 text-center flex flex-col items-center gap-1">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/cgel.svg" alt="CGEL Logo" className="h-10 w-auto" />
+                  <p className="text-[11px] font-bold text-[#0F1D3A]">CGEL</p>
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Organisateur</p>
                 </div>
                 <div className="bg-[#F8FAFC] px-4 py-3 text-center flex flex-col items-center gap-1">
                   <div className="flex items-center gap-2"> 
-                    <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
-                    <img src="/logo/ntic.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                    <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
+                    <img src="/logo/ntic.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
                   </div>
                   
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Partenaire scientifique</p>

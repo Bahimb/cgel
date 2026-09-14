@@ -23,7 +23,7 @@ export default function RegistrationForm() {
       </div>
 
       <div className="border border-[#E2E8F0] bg-white px-4 py-3 text-[11px] leading-5 text-[#475569]">
-        En vous inscrivant, vous confirmez votre demande pour les <span className="font-semibold text-[#0F1D3A]">CGEL Days — 3<sup>e</sup> Édition · 01 oct. 2026</span>. Le comité
+        En vous inscrivant, vous confirmez votre demande pour les <span className="font-semibold text-[#0F1D3A]">CGEL Scientific Days — 3<sup>e</sup> Édition · 01 oct. 2026</span>. Le comité
         d&apos;organisation examinera votre demande.
       </div>
 

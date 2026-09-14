@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Nom de l'intervenant — Spécialiste en Gastroentérologie | Experts CGEL",
-  description: "Gastroentérologie · Établissement à annoncer · Algérie — CGEL Days 3e Édition.",
+  description: "Gastroentérologie · Établissement à annoncer · Algérie — CGEL Scientific Days 3e Édition.",
   openGraph: {
     title: "Nom de l'intervenant — Spécialiste en Gastroentérologie | Experts CGEL",
-    description: "Gastroentérologie · Établissement à annoncer · Algérie — CGEL Days 3e Édition.",
+    description: "Gastroentérologie · Établissement à annoncer · Algérie — CGEL Scientific Days 3e Édition.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

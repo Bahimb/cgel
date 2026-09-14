@@ -2,8 +2,8 @@ import RegistrationForm from "@/components/RegistrationForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inscription — CGEL Days 3e Édition",
-  description: "Inscrivez-vous aux CGEL Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine, Algérie. Inscription via Google Form.",
+  title: "Inscription — CGEL Scientific Days 3e Édition",
+  description: "Inscrivez-vous aux CGEL Scientific Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine, Algérie. Inscription via Google Form.",
 };
 
 export default function RegistrationPage() {
@@ -15,7 +15,7 @@ export default function RegistrationPage() {
             <span className="h-px w-8 bg-[#023DA5]" />
             <span className="text-[11px] tracking-[0.16em] uppercase font-semibold text-[#023DA5]">Inscription</span>
           </div>
-          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">S&apos;inscrire aux CGEL Days 2026</h1>
+          <h1 className="mt-4 font-serif text-[30px] lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#0F1D3A]">S&apos;inscrire aux CGEL Scientific Days 2026</h1>
           <p className="mt-3 text-[14px] leading-6 text-[#475569] max-w-[640px]">
             3<sup>e</sup> Édition — La gastroentérologie à l&apos;ère de l&apos;intelligence artificielle et de la santé connectée. <br/> Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine, Algérie.
           </p>
@@ -40,7 +40,7 @@ export default function RegistrationPage() {
               <dl className="divide-y divide-[#E2E8F0] text-[12px]">
                 <div className="grid grid-cols-[90px_1fr]">
                   <dt className="px-4 py-3 text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Événement</dt>
-                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">CGEL Days — 3<sup>e</sup> Édition</dd>
+                  <dd className="px-4 py-3 font-semibold text-[#0F1D3A]">CGEL Scientific Days — 3<sup>e</sup> Édition</dd>
                 </div>
                 <div className="grid grid-cols-[90px_1fr]">
                   <dt className="px-4 py-3 text-[#64748B] bg-[#F8FAFC] border-r border-[#E2E8F0]">Thème</dt>

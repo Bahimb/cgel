@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Contact — CGEL Days 3e Édition",
+  title: "Contact — CGEL Scientific Days 3e Édition",
   description: "Contact CGEL — Journées Scientifiques 3e Édition. Téléphone, e-mail et informations sur le lieu.",
   openGraph: {
-    title: "Contact — CGEL Days 3e Édition",
+    title: "Contact — CGEL Scientific Days 3e Édition",
     description: "Contact CGEL — Journées Scientifiques 3e Édition. Téléphone, e-mail et informations sur le lieu.",
     type: "website",
     locale: "fr_FR",
@@ -27,7 +27,7 @@ export default function Page() {
           <div className="head">
             <p className="kicker">Organisateur</p>
             <p className="title">CGEL</p>
-            <p style={{fontSize:"11px",color:"#64748B",margin:".1rem 0 0"}}>3<sup>e</sup> Édition — CGEL Days</p>
+            <p style={{fontSize:"11px",color:"#64748B",margin:".1rem 0 0"}}>3<sup>e</sup> Édition — CGEL Scientific Days</p>
           </div>
           <div className="contact-rows">
             <a href="tel:+213540699513" className="contact-row">
@@ -66,7 +66,7 @@ export default function Page() {
           </div>
           <div style={{border:"1px solid #023DA5",background:"#023DA5",color:"#fff",padding:"1.5rem"}}>
             <h3 style={{margin:"0",fontFamily:"inherit",fontSize:"16px"}}>Prêt à vous inscrire ?</h3>
-            <p style={{marginTop:".25rem",fontSize:"12px",color:"rgba(255,255,255,.6)"}}>Réservez votre place aux CGEL Days — 3<sup>e</sup> Édition.</p>
+            <p style={{marginTop:".25rem",fontSize:"12px",color:"rgba(255,255,255,.6)"}}>Réservez votre place aux CGEL Scientific Days — 3<sup>e</sup> Édition.</p>
             <a href="/registration" className="btn btn-orange" style={{marginTop:"1rem",width:"100%"}}>S'inscrire</a>
           </div>
         </div>

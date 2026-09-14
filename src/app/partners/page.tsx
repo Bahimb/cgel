@@ -3,8 +3,8 @@ import { partners } from "@/data/partners";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Partenaires — CGEL Days 3e Édition",
-  description: "Sponsors & Partenaires des CGEL Days 3e Édition — tous les partenaires présentés équitablement.",
+  title: "Partenaires — CGEL Scientific Days 3e Édition",
+  description: "Sponsors & Partenaires des CGEL Scientific Days 3e Édition — tous les partenaires présentés équitablement.",
 };
 
 export default function PartnersPage() {

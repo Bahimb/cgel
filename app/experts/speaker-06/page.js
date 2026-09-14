@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Nom de l'intervenant — Chercheur — Santé connectée | Experts CGEL",
-  description: "Santé connectée & Innovation · Partenariat universitaire · Constantine, Algérie — CGEL Days 3e Édition.",
+  description: "Santé connectée & Innovation · Partenariat universitaire · Constantine, Algérie — CGEL Scientific Days 3e Édition.",
   openGraph: {
     title: "Nom de l'intervenant — Chercheur — Santé connectée | Experts CGEL",
-    description: "Santé connectée & Innovation · Partenariat universitaire · Constantine, Algérie — CGEL Days 3e Édition.",
+    description: "Santé connectée & Innovation · Partenariat universitaire · Constantine, Algérie — CGEL Scientific Days 3e Édition.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

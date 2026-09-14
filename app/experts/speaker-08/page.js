@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Nom de l'intervenant — Spécialiste en Imagerie médicale | Experts CGEL",
-  description: "Imagerie médicale · Établissement à annoncer · International — CGEL Days 3e Édition.",
+  description: "Imagerie médicale · Établissement à annoncer · International — CGEL Scientific Days 3e Édition.",
   openGraph: {
     title: "Nom de l'intervenant — Spécialiste en Imagerie médicale | Experts CGEL",
-    description: "Imagerie médicale · Établissement à annoncer · International — CGEL Days 3e Édition.",
+    description: "Imagerie médicale · Établissement à annoncer · International — CGEL Scientific Days 3e Édition.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

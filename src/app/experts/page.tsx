@@ -4,8 +4,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Experts — CGEL Days 3e Édition",
-  description: "Rencontrez les experts des CGEL Days 3e Édition — gastroentérologie, hépatologie, IA et santé connectée.",
+  title: "Experts — CGEL Scientific Days 3e Édition",
+  description: "Rencontrez les experts des CGEL Scientific Days 3e Édition — gastroentérologie, hépatologie, IA et santé connectée.",
 };
 
 export default function ExpertsPage() {

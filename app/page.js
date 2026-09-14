@@ -30,7 +30,7 @@ export default function Page() {
     </div>
 
     {/* Carousel */}
-    <div className="carousel-wrap" id="heroCarousel" aria-roledescription="carousel" aria-label="CGEL Days — carrousel">
+    <div className="carousel-wrap" id="heroCarousel" aria-roledescription="carousel" aria-label="CGEL Scientific Days — carrousel">
       <div className="carousel-marquee-glow" aria-hidden="true"></div>
       <div className="carousel-frame">
         <button type="button" id="carouselPrev" className="carousel-btn prev" aria-label="Slide précédent">
@@ -51,7 +51,7 @@ export default function Page() {
                     <span className="badge-edition dark" data-i18n="carousel.edition">· 3<sup>e</sup> édition</span>
                   </div>
                   <h2 className="carousel-title carousel-title--dark">
-                    <span className="line1 small" data-i18n="carousel.expertise.title1">CGEL Days — 3e édition</span>
+                    <span className="line1 small" data-i18n="carousel.expertise.title1">CGEL Scientific Days — 3e édition</span>
                     <span className="line2" data-i18n="carousel.expertise.title2">Journées scientifiques du collège</span>
                   </h2>
                   <p className="carousel-desc carousel-desc--dark" data-i18n="carousel.expertise.desc">L'excellence en hépato-gastroentérologie libérale</p>
@@ -66,7 +66,7 @@ export default function Page() {
                   </div>
                   <div className="carousel-orgs dark" style={{marginTop:"1rem"}}>
                     <div className="org">
-                      <span style={{width:"52px",height:"52px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.20)",border:"1px solid var(--line2)"}}><img src="/cgel.svg" alt="Organisateur" style={{height:"42px",width:"auto",objectFit:"contain"}} /></span>
+                      <span style={{width:"60px",height:"60px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.20)",border:"1px solid var(--line2)"}}><img src="/cgel.svg" alt="Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} /></span>
                       <p style={{fontSize:"11px",fontWeight:"700",color:"#0F1D3A",margin:"0"}}>CGEL</p>
                       <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.organizer">Organisateur</p>
                     </div>
@@ -89,43 +89,46 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Slide 2 — programme — previously slide 4 */}
+            {/* Slide Programme — redesigned for no clipping and clear hierarchy */}
             <div className="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 sur 2" aria-hidden="true">
               <div className="glow" aria-hidden="true"></div>
-              <div className="slide-program" style={{position:"relative",zIndex:"1"}}>
-                <div className="poster">
-                  <div className="frame"><img src="/images/gcel-poster.png" alt="Affiche officielle CGEL Days — 3e édition (visuel provisoire)" /></div>
+              <div className="slide-program" style={{position:"relative",zIndex:"1",gap:"0.5rem"}}>
+                <div className="poster" style={{padding:"1.25rem", flexBasis:"40%"}}>
+                  <div className="frame" style={{maxWidth:"320px", padding:"10px"}}><img src="/images/gcel-poster.png" alt="Affiche officielle CGEL Scientific Days — 3e édition" /></div>
                 </div>
-                <div className="text">
-                  <div className="carousel-badge-row">
+                <div className="text" style={{gap:"0.9rem", padding:"1.25rem 1.25rem 1.25rem 1rem", justifyContent:"center"}}>
+                  <div className="carousel-badge-row" style={{paddingTop:"4px", gap:"0.5rem"}}>
                     <span className="badge-orange" data-i18n="carousel.program.badge">Programme</span>
                     <span className="badge-edition" data-i18n="carousel.edition">· 3<sup>e</sup> édition</span>
                   </div>
-                  <h2 className="carousel-title">
-                    <span className="line1 small" data-i18n="carousel.expertise.title1">CGEL Days — 3e édition</span>
-                    <span className="line2" data-i18n="carousel.expertise.title2">Journées scientifiques du collège</span>
-                  </h2>
-                  <p className="carousel-desc" data-i18n="carousel.program.desc">De l'innovation médicale au soin intelligent</p>
-                  <div className="carousel-meta">
+                  <div>
+                    <h2 className="carousel-title" style={{marginTop:"0"}}>
+                      <span className="line1 small" data-i18n="carousel.expertise.title1">CGEL Scientific Days — 3e édition</span>
+                      <span className="line2" data-i18n="carousel.expertise.title2">Journées scientifiques du collège</span>
+                    </h2>
+                    <p className="carousel-desc" data-i18n="carousel.program.desc" style={{marginTop:"0.75rem"}}>De l'innovation médicale au soin intelligent</p>
+                  </div>
+                  <div className="carousel-meta" style={{marginTop:"0", gap:"0.5rem"}}>
                     <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> Jeudi 1 octobre 2026</span>
                     <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Ahmed Bey Zenith, Constantine</span>
                   </div>
                   <span className="carousel-chiffre" data-i18n="carousel.program.chiffre">Conférences · Ateliers · Échanges</span>
-                  <div className="carousel-ctas">
+                  <div className="carousel-ctas" style={{marginTop:"0"}}>
                     <a href="/registration" className="btn btn-orange" data-i18n="carousel.cta.register">S'inscrire</a>
                     <a href="/a-propos" className="btn btn-white-trans" data-i18n="carousel.cta.discover">Découvrir le collège</a>
                   </div>
-                  <div className="carousel-orgs" style={{marginTop:"1rem"}}>
+                  <div className="carousel-orgs" style={{marginTop:"0.75rem", paddingTop:"1rem", borderTop:"1px solid rgba(255,255,255,.15)", gap:"1.5rem"}}>
                     <div className="org">
-                      <span style={{width:"48px",height:"48px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.35)"}}><img src="/cgel.svg" alt="Organisateur" style={{height:"40px",width:"auto",objectFit:"contain"}} /></span>
-                      <p data-i18n="carousel.org.organizer">Organisateur</p>
+                      <span style={{width:"60px",height:"60px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.35)"}}><img src="/cgel.svg" alt="CGEL — Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} /></span>
+                      <p data-i18n="carousel.org.organizer" style={{fontWeight:"700", color:"#fff", fontSize:"11px"}}>CGEL</p>
+                      <p data-i18n="carousel.org.organizer" style={{fontSize:"10px", color:"rgba(255,255,255,.7)"}}>Organisateur</p>
                     </div>
                     <div className="org">
-                      <div className="partner-logos">
-                        <img src="/logo/uc2.png" alt="Universite Constantine 2 Abdelhamid Mehri" loading="lazy" />
-                        <img src="/logo/ntic.png" alt="Faculte des Nouvelles Technologies de l'Information et de la Communication" loading="lazy" />
+                      <div className="partner-logos" style={{gap:"0.75rem"}}>
+                        <img src="/logo/uc2.png" alt="Universite Constantine 2" loading="lazy" style={{height:"32px"}} />
+                        <img src="/logo/ntic.png" alt="Faculte NTIC" loading="lazy" style={{height:"28px"}} />
                       </div>
-                      <p data-i18n="carousel.org.partner">Partenaire scientifique</p>
+                      <p data-i18n="carousel.org.partner" style={{fontSize:"10px", color:"rgba(255,255,255,.7)", marginTop:"0.25rem"}}>Partenaire scientifique</p>
                     </div>
                   </div>
                 </div>
@@ -253,76 +256,42 @@ export default function Page() {
 
 <div className="wave-divider" aria-hidden="true"><svg viewBox="0 0 1440 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 14 C 320 4, 640 24, 960 14 S 1280 4, 1440 14" fill="none" stroke="#E8EDF3" strokeWidth="1" opacity="0.8"/><circle cx="720" cy="14" r="1.4" fill="#36C0E7" opacity="0.9"/><circle cx="710" cy="14" r="0.8" fill="#F08444" opacity="0.9"/><circle cx="730" cy="14" r="0.8" fill="#023DA5" opacity="0.9"/></svg></div>
 
-{/* EXPLORE */}
-<section className="section-explore">
-  <div className="container" style={{paddingTop:"2rem",paddingBottom:"2rem"}}>
-    <div className="explore-header">
-      <div>
-        <div className="apropos-kicker"><span className="line"></span><span data-i18n="explore.kicker">Explorez</span></div>
-        <h2 style={{marginTop:"1rem",fontFamily:"inherit",fontSize:"28px",lineHeight:".95",letterSpacing:"-.02em",color:"#0F1D3A"}} data-i18n="explore.title">Les sections du site</h2>
-        <p style={{marginTop:".5rem",fontSize:"13px",lineHeight:"1.6",color:"#475569",fontWeight:"300"}} data-i18n="explore.desc">Nos événements, projets et actualités — bientôt disponibles, en cours de préparation.</p>
-      </div>
-    </div>
-    <div className="explore-grid">
-      <a href="/evenements" className="explore-card">
-        <div className="accent"></div>
-        <div className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></div>
-        <div className="h-line"></div>
-        <h3 data-i18n="explore.card1Title">Journées scientifiques</h3>
-        <p data-i18n="explore.card1Desc">Congrès, journées d'étude et rencontres de la spécialité — calendrier et informations pratiques.</p>
-        <span className="cta" data-i18n="explore.cta">Découvrir →</span>
-      </a>
-      <a href="/projets" className="explore-card">
-        <div className="accent"></div>
-        <div className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></div>
-        <div className="h-line"></div>
-        <h3 data-i18n="explore.card2Title">Les projets du collège</h3>
-        <p data-i18n="explore.card2Desc">Les initiatives portées par le collège pour la profession et la pratique libérale.</p>
-        <span className="cta" data-i18n="explore.cta">Découvrir →</span>
-      </a>
-      <a href="/contact" className="explore-card">
-        <div className="accent"></div>
-        <div className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
-        <div className="h-line"></div>
-        <h3 data-i18n="explore.card3Title">Nous écrire</h3>
-        <p data-i18n="explore.card3Desc">Une question, une adhésion, un partenariat ? Contactez le collège directement.</p>
-        <span className="cta" data-i18n="explore.cta">Découvrir →</span>
-      </a>
-    </div>
-  </div>
-</section>
 
-
-{/* Past Events — compact scroll strip */}
+{/* Past Events — 3 real events, taller posters */}
 <section className="past-events" id="pastEvents">
   <div className="container">
-    <div className="past-events-header"><span className="line" aria-hidden="true"></span><span data-i18n="pastEvents.kicker">Événements passés</span></div>
-    <h2 data-i18n="pastEvents.title">Retour en images — nos événements passés</h2>
-    <p className="sub" data-i18n="pastEvents.desc">Aperçu compact — glissez horizontalement. Remplacez les images dans <code>images/events/</code>.</p>
-    <div className="past-events-strip" role="region" aria-label="Past events strip" tabIndex="0">
-      <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter.jpeg" alt="Affiche CGEL Days Édition 1" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card1Title">CGEL Days — Édition 1</h3><p data-i18n="pastEvents.card1Desc">Constantine · Oct 2024</p></div>
+    <div className="past-events-header"><span className="line" aria-hidden="true"></span><span>Événements passés</span></div>
+    <h2>Retour en images — nos événements passés</h2>
+    <p className="sub">Trois moments forts du CGEL — affiches lisibles en grand format.</p>
+    <div className="past-events-grid" style={{marginTop:"1.5rem", gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))", gap:"1.5rem"}}>
+      <div className="event-card" style={{border:"1px solid var(--line2)"}}>
+        <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter1.jpeg" alt="Affiche 2ème Journée de Formation Médicale Continue CGEL" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
+        <div className="cap" style={{padding:"1rem"}}>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>2ème Journée de Formation Médicale Continue CGEL</h3>
+          <p style={{marginTop:".35rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 25–26 septembre 2025</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Hôtel El Hocine, Constantine</p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Deux jours de formation et d’échanges scientifiques autour de la gastroentérologie libérale, à l’Hôtel El Hocine.</p>
+        </div>
       </div>
       <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter1.jpeg" alt="Affiche Journée scientifique 2023" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card2Title">Journée scientifique 2023</h3><p data-i18n="pastEvents.card2Desc">Transmission &amp; cas cliniques</p></div>
+        <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter.jpeg" alt="Affiche Proctologie clinique pour le médecin généraliste — 1ère soirée FMC" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
+        <div className="cap" style={{padding:"1rem"}}>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Proctologie clinique pour le médecin généraliste</h3>
+          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>1ère soirée FMC</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 25 décembre 2025, 17h00</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Restaurant Délice, Nouvelle Ville–Ali Mendjeli</p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Soirée pratique dédiée à la proctologie en médecine générale, en partenariat avec Repartidis.</p>
+        </div>
       </div>
       <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter2.jpeg" alt="Affiche Atelier endoscopie" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card3Title">Atelier endoscopie</h3><p data-i18n="pastEvents.card3Desc">Formation pratique · 2023</p></div>
-      </div>
-      <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter.jpeg" alt="Affiche Conférence IA & Santé" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card4Title">Conférence IA &amp; Santé</h3><p data-i18n="pastEvents.card4Desc">Innovation médicale · 2024</p></div>
-      </div>
-      <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter1.jpeg" alt="Affiche Rencontre partenaires" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card5Title">Rencontre partenaires</h3><p data-i18n="pastEvents.card5Desc">Échanges laboratoires</p></div>
-      </div>
-      <div className="event-card">
-        <div className="img"><img src="/images/events/eventposter2.jpeg" alt="Affiche Clôture et perspectives" loading="lazy" /></div>
-        <div className="cap"><h3 data-i18n="pastEvents.card6Title">Clôture &amp; perspectives</h3><p data-i18n="pastEvents.card6Desc">Constantine · moments forts</p></div>
+        <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter2.jpeg" alt="Affiche Trouble fonctionnel de l’intestin — 3ème soirée FMC" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
+        <div className="cap" style={{padding:"1rem"}}>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Trouble fonctionnel de l’intestin : une approche pratique</h3>
+          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>3ème soirée FMC</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 07 mai 2026, 17h00</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Restaurant Apex, Ali Mendjeli – Constantine</p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Approche pratique des troubles fonctionnels intestinaux pour le médecin généraliste, en collaboration avec le Laboratoire Mayoly.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -333,11 +302,11 @@ export default function Page() {
   <div className="container">
     <div className="gallery-header"><span className="line" aria-hidden="true"></span><span>Galerie photos</span></div>
     <h2>Galerie — nos moments forts</h2>
-    <p className="sub">Cliquez pour agrandir (lightbox). Images tirées de <code>/images/events/</code> — remplacez les fichiers et légendes par vos contenus définitifs. Structure prête pour 8+ photos.</p>
+    <p className="sub">Nos moments forts en images — cliquez pour agrandir.</p>
     <div className="gallery-grid">
-      <figure className="gallery-item" data-src="/images/events/showcasepic.jpeg" data-caption="CGEL Days · Vue d'ensemble — salle plénière et échanges">
+      <figure className="gallery-item" data-src="/images/events/showcasepic.jpeg" data-caption="CGEL Scientific Days · Vue d'ensemble — salle plénière et échanges">
         <img src="/images/events/showcasepic.jpeg" alt="Galerie 1 — Vue d'ensemble salle plénière" loading="lazy" />
-        <figcaption className="cap"><p>CGEL Days — Plénière</p><span>Vue d'ensemble</span></figcaption>
+        <figcaption className="cap"><p>CGEL Scientific Days — Plénière</p><span>Vue d'ensemble</span></figcaption>
       </figure>
       <figure className="gallery-item" data-src="/images/events/showcasepic1.jpeg" data-caption="Journée scientifique · Session questions-réponses avec les experts">
         <img src="/images/events/showcasepic1.jpeg" alt="Galerie 2 — Session questions-réponses" loading="lazy" />
@@ -359,9 +328,9 @@ export default function Page() {
         <img src="/images/events/showcasepic5.jpeg" alt="Galerie 6 — Clôture et photo de groupe" loading="lazy" />
         <figcaption className="cap"><p>Clôture &amp; perspectives</p><span>Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/eventposter.jpeg" data-caption="Affiche officielle — CGEL Days 3e édition · Visuel officiel">
-        <img src="/images/events/eventposter.jpeg" alt="Galerie 7 — Affiche officielle CGEL Days" loading="lazy" />
-        <figcaption className="cap"><p>Affiche officielle</p><span>CGEL Days 3e édition</span></figcaption>
+      <figure className="gallery-item" data-src="/images/events/eventposter.jpeg" data-caption="Affiche officielle — CGEL Scientific Days 3e édition · Visuel officiel">
+        <img src="/images/events/eventposter.jpeg" alt="Galerie 7 — Affiche officielle CGEL Scientific Days" loading="lazy" />
+        <figcaption className="cap"><p>Affiche officielle</p><span>CGEL Scientific Days 3e édition</span></figcaption>
       </figure>
       <figure className="gallery-item" data-src="/images/events/eventposter1.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels">
         <img src="/images/events/eventposter1.jpeg" alt="Galerie 8 — Soirée collégiale" loading="lazy" />

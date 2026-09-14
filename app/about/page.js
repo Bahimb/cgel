@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "À propos — CGEL Days 3e Édition",
-  description: "À propos des CGEL Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
+  title: "À propos — CGEL Scientific Days 3e Édition",
+  description: "À propos des CGEL Scientific Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
   openGraph: {
-    title: "À propos — CGEL Days 3e Édition",
-    description: "À propos des CGEL Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
+    title: "À propos — CGEL Scientific Days 3e Édition",
+    description: "À propos des CGEL Scientific Days — 3e Édition : la gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée. Organisé par le CGEL avec un partenariat universitaire.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",
@@ -16,7 +16,7 @@ export default function Page() {
       <div className="page-hero">
     <div className="page-hero-inner">
       <div className="page-kicker"><span className="line"></span><span>À propos</span></div>
-      <h1>À propos des CGEL Days</h1>
+      <h1>À propos des CGEL Scientific Days</h1>
       <p className="lead">3<sup>e</sup> Édition — La gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée.</p>
       <p className="meta">01 octobre 2026 · Ahmed Bey Zenith, Constantine, Algérie</p>
     </div>
@@ -28,7 +28,7 @@ export default function Page() {
           <div style={{maxWidth:"640px"}}>
             <div style={{display:"flex",alignItems:"center",gap:".75rem"}}><span style={{height:"1px",width:"24px",background:"#023DA5"}}></span><p style={{margin:"0",fontSize:"11px",letterSpacing:".16em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}}>Introduction</p></div>
             <h2 style={{marginTop:".75rem",fontFamily:"inherit",fontSize:"26px",lineHeight:"1.15",letterSpacing:"-.02em",color:"#0F1D3A"}}>Une rencontre scientifique au service de l'évolution de la gastroentérologie</h2>
-            <p style={{marginTop:".75rem",fontSize:"14px",lineHeight:"1.6",color:"#475569"}}>Les CGEL Days rassemblent la communauté gastroentérologique pour examiner comment l'innovation médicale — notamment l'intelligence artificielle et la santé connectée — repousse les limites du diagnostic, du soin et de la pratique clinique.</p>
+            <p style={{marginTop:".75rem",fontSize:"14px",lineHeight:"1.6",color:"#475569"}}>Les CGEL Scientific Days rassemblent la communauté gastroentérologique pour examiner comment l'innovation médicale — notamment l'intelligence artificielle et la santé connectée — repousse les limites du diagnostic, du soin et de la pratique clinique.</p>
           </div>
           <div style={{marginTop:"1.5rem",display:"flex",flexDirection:"column",gap:"1rem",fontSize:"14px",lineHeight:"1.8",color:"#475569"}}>
             <p>La <strong style={{color:"#0F1D3A"}}>3<sup>e</sup> Édition</strong> porte sur <strong style={{color:"#0F1D3A"}}>« La gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée »</strong> — avec le slogan <em style={{color:"#0F1D3A"}}>« De l'innovation médicale au soin intelligent »</em>. Le programme explore comment les données, les outils intelligents et la médecine numérique complètent l'expertise clinique sans remplacer la dimension humaine du soin.</p>
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="sidebar-card">
             <div className="head"><h3>En bref</h3></div>
             <dl>
-              <div className="row"><dt>Événement</dt><dd>CGEL Days — 3<sup>e</sup> Édition</dd></div>
+              <div className="row"><dt>Événement</dt><dd>CGEL Scientific Days — 3<sup>e</sup> Édition</dd></div>
               <div className="row"><dt>Thème</dt><dd>Gastroentérologie à l'ère de l'IA &amp; Santé connectée</dd></div>
               <div className="row"><dt>Date</dt><dd>01 oct. 2026</dd></div>
               <div className="row"><dt>Lieu</dt><dd>Ahmed Bey Zenith, Constantine</dd></div>

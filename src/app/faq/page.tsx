@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ — CGEL Days 3e Édition",
-  description: "Foire aux questions — CGEL Days 3e Édition : inscriptions, programme, lieu, intervenants.",
+  title: "FAQ — CGEL Scientific Days 3e Édition",
+  description: "Foire aux questions — CGEL Scientific Days 3e Édition : inscriptions, programme, lieu, intervenants.",
 };
 
 export default function FAQPage() {

@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "FAQ — CGEL Days 3e Édition",
-  description: "Foire aux questions — CGEL Days 3e Édition : inscriptions, programme, lieu, intervenants.",
+  title: "FAQ — CGEL Scientific Days 3e Édition",
+  description: "Foire aux questions — CGEL Scientific Days 3e Édition : inscriptions, programme, lieu, intervenants.",
   openGraph: {
-    title: "FAQ — CGEL Days 3e Édition",
-    description: "Foire aux questions — CGEL Days 3e Édition : inscriptions, programme, lieu, intervenants.",
+    title: "FAQ — CGEL Scientific Days 3e Édition",
+    description: "Foire aux questions — CGEL Scientific Days 3e Édition : inscriptions, programme, lieu, intervenants.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

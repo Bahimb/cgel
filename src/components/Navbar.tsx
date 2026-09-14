@@ -15,10 +15,10 @@ export default function Navbar() {
     <header className={`${positionClass} z-50 bg-white border-b border-[#E8EDF3] shadow-[0_1px_8px_rgba(2,29,58,0.06)]`}>
       <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[#023DA5] via-[#36C0E7] to-[#F08444] opacity-100" />
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
-        <div className="flex h-[64px] lg:h-[68px] items-center justify-between gap-6">
+        <div className="flex h-[72px] lg:h-[82px] items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="CGEL Home">
             
-            <img src="/cgel.svg" alt="CGEL Logo" className="h-10 w-auto" />
+            <img src="/cgel.svg" alt="CGEL Logo" className="h-14 lg:h-16 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">
@@ -39,6 +39,15 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-3 shrink-0">
+            <a
+              href="https://www.facebook.com/people/CGEL/61565723925313/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="CGEL sur Facebook"
+              className="inline-flex items-center justify-center w-[44px] h-[44px] border border-[#E2E8F0] bg-white text-[#023DA5] hover:bg-[#EEF4FF] hover:border-[#023DA5]/25 transition-colors shrink-0"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[22px] h-[22px] fill-current"><path d="M14 13.5h2.5l1-4H14V7.5c0-1.1.3-1.9 1.9-1.9H18V2.1C17.3 2 15.9 2 14.6 2 11.1 2 9 4.1 9 7.2V9.5H6v4h3v6h4v-6Z" /></svg>
+            </a>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center bg-[#F08444] px-5 py-2.5 text-[11px] tracking-[0.10em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors shadow-[0_2px_10px_rgba(240,132,68,0.22)]"
@@ -86,6 +95,17 @@ export default function Navbar() {
             >
               Nous contacter
             </Link>
+            <a
+              href="https://www.facebook.com/people/CGEL/61565723925313/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-4 inline-flex items-center justify-center gap-2 w-full border border-[#E2E8F0] bg-white px-6 py-3 text-[12px] tracking-[0.06em] uppercase font-semibold text-[#023DA5] hover:bg-[#EEF4FF]"
+              aria-label="CGEL sur Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[18px] h-[18px] fill-current"><path d="M14 13.5h2.5l1-4H14V7.5c0-1.1.3-1.9 1.9-1.9H18V2.1C17.3 2 15.9 2 14.6 2 11.1 2 9 4.1 9 7.2V9.5H6v4h3v6h4v-6Z" /></svg>
+              Facebook
+            </a>
             <div className="mt-6 pt-4 border-t border-[#E8EDF3] flex items-center justify-between text-[11px] tracking-wide text-[#64748B]">
               <span>CGEL · Collège professionnel</span>
               <a href={`mailto:${eventData.contact.email}`} className="text-[#023DA5] font-medium">

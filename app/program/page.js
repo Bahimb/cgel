@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Programme scientifique — CGEL Days 3e Édition",
-  description: "Programme scientifique CGEL Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine.",
+  title: "Programme scientifique — CGEL Scientific Days 3e Édition",
+  description: "Programme scientifique CGEL Scientific Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine.",
   openGraph: {
-    title: "Programme scientifique — CGEL Days 3e Édition",
-    description: "Programme scientifique CGEL Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine.",
+    title: "Programme scientifique — CGEL Scientific Days 3e Édition",
+    description: "Programme scientifique CGEL Scientific Days 3e Édition — 1 octobre 2026 à l'Ahmed Bey Zenith, Constantine.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

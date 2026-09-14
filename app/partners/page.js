@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Partenaires — CGEL Days 3e Édition",
-  description: "Sponsors & Partenaires des CGEL Days 3e Édition — tous les partenaires présentés équitablement.",
+  title: "Partenaires — CGEL Scientific Days 3e Édition",
+  description: "Sponsors & Partenaires des CGEL Scientific Days 3e Édition — tous les partenaires présentés équitablement.",
   openGraph: {
-    title: "Partenaires — CGEL Days 3e Édition",
-    description: "Sponsors & Partenaires des CGEL Days 3e Édition — tous les partenaires présentés équitablement.",
+    title: "Partenaires — CGEL Scientific Days 3e Édition",
+    description: "Sponsors & Partenaires des CGEL Scientific Days 3e Édition — tous les partenaires présentés équitablement.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

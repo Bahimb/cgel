@@ -22,7 +22,7 @@ const slides: Slide[] = [
   {
     id: "edition",
     kicker: "À la une",
-    title: "CGEL Days — 3e édition",
+    title: "CGEL Scientific Days — 3e édition",
     subtitle: "Journées scientifiques du collège",
     accroche: "Gastroentérologie à l'ère de l'IA & santé connectée",
     date: "Jeudi 1 octobre 2026",
@@ -33,7 +33,7 @@ const slides: Slide[] = [
   {
     id: "expertise",
     kicker: "Au cœur de la spécialité",
-    title: "CGEL Days — 3e édition",
+    title: "CGEL Scientific Days — 3e édition",
     subtitle: "Journées scientifiques du collège",
     accroche: "L'excellence en hépato-gastroentérologie libérale",
     date: "Jeudi 1 octobre 2026",
@@ -46,7 +46,7 @@ const slides: Slide[] = [
   {
     id: "lieu",
     kicker: "Lieu d'exception",
-    title: "CGEL Days — 3e édition",
+    title: "CGEL Scientific Days — 3e édition",
     subtitle: "Journées scientifiques du collège",
     accroche: "Un cadre prestigieux pour une rencontre scientifique",
     date: "Jeudi 1 octobre 2026",
@@ -54,12 +54,12 @@ const slides: Slide[] = [
     chiffre: "Constantine — Cité des ponts",
     bg: "photo",
     src: "/images/ahmed-bey-zenith.jpg",
-    alt: "Ahmed Bey Zenith, Constantine — lieu des CGEL Days",
+    alt: "Ahmed Bey Zenith, Constantine — lieu des CGEL Scientific Days",
   },
   {
     id: "programme",
     kicker: "Programme",
-    title: "CGEL Days — 3e édition",
+    title: "CGEL Scientific Days — 3e édition",
     subtitle: "Journées scientifiques du collège",
     accroche: "De l'innovation médicale au soin intelligent",
     date: "Jeudi 1 octobre 2026",
@@ -107,12 +107,12 @@ export default function Hero() {
         <div className="pt-6 lg:pt-8" />
 
         {/* Header institutionnel sobre */}
-        <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center">
           <div className="inline-flex items-center gap-3">
             <span className="h-px w-8 bg-[#F08444]" />
-            <div className="w-9 h-9 flex items-center justify-center">
+            <div className="w-14 h-14 flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/cgel.svg" alt="CGEL Logo" className="h-9 w-auto" />
+              <img src="/cgel.svg" alt="CGEL Logo" className="h-14 w-auto" />
             </div>
             <span className="h-px w-8 bg-[#F08444]" />
           </div>
@@ -127,7 +127,7 @@ export default function Hero() {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           aria-roledescription="carousel"
-          aria-label="CGEL Days — carrousel"
+          aria-label="CGEL Scientific Days — carrousel"
         >
           <div className="absolute -inset-3 bg-gradient-to-br from-[#EEF4FF]/50 via-white/0 to-[#FFF4ED]/30 blur-[1px] pointer-events-none" aria-hidden />
           {/* Wrapper avec padding latéral pour flèches extérieures sur mobile */}
@@ -153,7 +153,7 @@ export default function Hero() {
             </button>
 
             <div className="relative bg-white border border-[#E2E8F0] p-[6px] sm:p-[8px] shadow-[0_8px_30px_rgba(2,29,58,0.07)] mx-8 sm:mx-0">
-              <div className="relative overflow-hidden bg-[#023DA5] min-h-[400px] sm:min-h-[420px] lg:min-h-[400px]">
+              <div className="relative overflow-hidden bg-[#023DA5] min-h-[480px] sm:min-h-[500px] lg:min-h-[520px]">
                 {slides.map((slide, idx) => {
                   const isActive = idx === current;
                   const isExpertise = slide.id === "expertise";
@@ -202,7 +202,7 @@ export default function Hero() {
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Organisateur</p>
                 </div>
                 <div className="bg-[#F8FAFC] px-4 py-3 text-center flex flex-col items-center gap-1">
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Partenaire scientifique</p>
                 </div>
               </div>
@@ -252,15 +252,15 @@ export default function Hero() {
                             </div>
               <div className="grid grid-cols-2 gap-px border-t border-[#E2E8F0]">
                 <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-3 text-center">
-                  <span className="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
+                  <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/cgel.svg" alt="Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
+                    <img src="/cgel.svg" alt="Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
                   </span>
                   <p className="text-[10px] tracking-[0.08em] uppercase text-white">Organisateur</p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-1 px-4 py-3 text-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
                   <p className="text-[10px] tracking-[0.08em] uppercase text-white">Partenaire scientifique</p>
                 </div>
               </div>
@@ -294,75 +294,82 @@ export default function Hero() {
                           </div>
               <div className="grid grid-cols-2 gap-px border-t border-[#E2E8F0]">
                 <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-3 text-center">
-                  <span className="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
+                  <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/cgel.svg" alt="Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
+                    <img src="/cgel.svg" alt="Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
                   </span>
                   <p className="text-[10px] tracking-[0.08em] uppercase text-white">Organisateur</p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-1 px-4 py-3 text-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
                   <p className="text-[10px] tracking-[0.08em] uppercase text-white">Partenaire scientifique</p>
                 </div>
               </div>
                         </div>
                       )}
-                      {/* Slide PROGRAMME — poster officiel à gauche, texte à droite (ajout ciblé) */}
+                      {/* Slide PROGRAMME — redesigned for no clipping and clear hierarchy */}
                       {slide.id === "programme" && (
                         <div className="absolute inset-0 bg-gradient-to-br from-[#023DA5] via-[#0A2F7A] to-[#0F1D3A]">
                           <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(ellipse at 75% 30%, rgba(54,192,231,0.18) 0%, transparent 55%), radial-gradient(ellipse at 15% 85%, rgba(240,132,68,0.12) 0%, transparent 50%)" }} />
                         </div>
                       )}
                       {slide.id === "programme" && (
-                        <div className="relative z-10 flex flex-col lg:flex-row h-full min-w-0">
-                          {/* Poster à gauche — 35-40% desktop, au-dessus sur mobile */}
-                          <div className="w-full lg:w-[38%] flex items-center justify-center p-4 sm:p-5 lg:p-6 order-1 lg:order-1 shrink-0">
-                            <div className="relative bg-white p-2 sm:p-3 border border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.25)] w-full max-w-[260px] lg:max-w-none">
-                              {/* TODO: remplacer ce poster par une version à jour en français avec le logo université, en attente du client — visuel actuel contient texte anglais et anciens logos MISC/NTIC */}
+                        <div className="relative z-10 flex flex-col lg:flex-row h-full min-w-0 overflow-y-auto scrollbar-thin">
+                          {/* Poster — top on mobile, left on desktop */}
+                          <div className="w-full lg:w-[40%] flex items-center justify-center p-5 sm:p-6 lg:p-7 shrink-0">
+                            <div className="relative bg-white p-2.5 sm:p-3 border border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.25)] w-full max-w-[300px] lg:max-w-[320px]">
                               {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img src="/images/gcel-poster.png" alt="Affiche officielle CGEL Days — 3e édition (visuel provisoire en anglais)" className="w-full h-auto object-contain" />
-                              {/* Fallback si gcel-poster.png absent : public/images/orgniser1.png ou cgel-event-title.png */}
+                              <img src="/images/gcel-poster.png" alt="Affiche officielle CGEL Scientific Days — 3e édition" className="w-full h-auto object-contain" />
                             </div>
                           </div>
-                          {/* Texte à droite — reste tel quel */}
-                          <div className="flex-1 flex flex-col justify-center p-5 sm:p-7 lg:p-8 lg:pl-4 text-white min-w-0 order-2">
-                            <div className="inline-flex items-center gap-2 self-start">
+                          {/* Info panel — clear vertical rhythm */}
+                          <div className="flex-1 flex flex-col justify-center p-5 sm:p-6 lg:p-7 lg:pl-6 text-white min-w-0 gap-3.5">
+                            {/* Badge row — with top breathing room to avoid clipping */}
+                            <div className="flex flex-wrap items-center gap-2 pt-1">
                               <span className="text-[10px] tracking-[0.16em] uppercase font-bold px-2.5 py-1 bg-[#F08444] text-white">{slide.kicker}</span>
-                              <span className="hidden sm:inline text-[11px] font-medium text-white/80">· 3<sup>e</sup> édition</span>
+                              <span className="text-[11px] font-medium text-white/80">· 3<sup>e</sup> édition</span>
                             </div>
-                            <h2 className="mt-4 font-serif leading-[0.92] tracking-[-0.02em]">
-                              <span className="block text-[24px] sm:text-[28px] lg:text-[32px] font-[380]">{slide.title}</span>
-                              <span className="block mt-1 text-[11px] tracking-[0.18em] uppercase font-semibold text-white/85">{slide.subtitle}</span>
-                            </h2>
-                            <p className="mt-3 text-[13px] leading-6 font-medium text-white/90 max-w-[420px]">{slide.accroche}</p>
-                            <div className="mt-4 flex flex-col sm:flex-row gap-2">
+                            {/* Title block */}
+                            <div>
+                              <h2 className="font-serif leading-[0.92] tracking-[-0.02em]">
+                                <span className="block text-[24px] sm:text-[28px] lg:text-[30px] font-[380]">{slide.title}</span>
+                                <span className="block mt-2 text-[11px] tracking-[0.18em] uppercase font-semibold text-white/85">{slide.subtitle}</span>
+                              </h2>
+                              <p className="mt-3 text-[13px] leading-6 font-medium text-white/90 max-w-[440px]">{slide.accroche}</p>
+                            </div>
+                            {/* Meta pills — date & lieu */}
+                            <div className="flex flex-col sm:flex-row gap-2">
                               <span className="inline-flex items-center gap-2 px-3 py-2 bg-white/15 backdrop-blur border border-white/20 text-white text-[12px] font-semibold">
-                                <Calendar className="w-3.5 h-3.5" /> {slide.date}
+                                <Calendar className="w-3.5 h-3.5 shrink-0" /> {slide.date}
                               </span>
                               <span className="inline-flex items-center gap-2 px-3 py-2 bg-white/15 backdrop-blur border border-white/20 text-white text-[12px] font-semibold">
-                                <MapPin className="w-3.5 h-3.5" /> {slide.lieu}
+                                <MapPin className="w-3.5 h-3.5 shrink-0" /> {slide.lieu}
                               </span>
                             </div>
-                            <span className="mt-3 inline-flex self-start text-[11px] tracking-wide px-2.5 py-1 bg-white/20 backdrop-blur border border-white/40 text-white shadow-sm">{slide.chiffre}</span>
-                            <div className="mt-5 flex flex-wrap gap-3">
-                              <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333]">S&apos;inscrire</Link>
-                              <Link href="/a-propos" className="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-white hover:bg-white hover:text-[#023DA5]">Découvrir le collège</Link>
+                            {/* Tag */}
+                            <span className="inline-flex self-start text-[11px] tracking-wide px-2.5 py-1 bg-white/20 backdrop-blur border border-white/40 text-white shadow-sm">{slide.chiffre}</span>
+                            {/* CTAs */}
+                            <div className="flex flex-wrap gap-3 pt-1">
+                              <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors">S&apos;inscrire</Link>
+                              <Link href="/a-propos" className="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-white hover:bg-white hover:text-[#023DA5] transition-colors">Découvrir le collège</Link>
                             </div>
-              <div className="grid grid-cols-2 gap-px border-t border-[#E2E8F0]">
-                <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-3 text-center">
-                  <span className="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/cgel.svg" alt="Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
-                  </span>
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Organisateur</p>
-                </div>
-                <div className="flex flex-col items-center justify-center gap-1 px-4 py-3 text-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-6 w-auto object-contain" loading="lazy" />
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Partenaire scientifique</p>
-                </div>
-              </div>
+                            {/* Organizer / Sponsor — separated with divider and proper spacing */}
+                            <div className="mt-2 pt-4 border-t border-white/15 grid grid-cols-2 gap-4">
+                              <div className="flex flex-col items-center justify-center gap-2 text-center">
+                                <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)] shrink-0">
+                                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                                  <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
+                                </span>
+                                <p className="text-[11px] font-bold tracking-[0.06em] text-white">CGEL</p>
+                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/70 -mt-1">Organisateur</p>
+                              </div>
+                              <div className="flex flex-col items-center justify-center gap-2 text-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/logo/uc2.png" alt="Université Constantine 2 Abdelhamid Mehri — partenaire scientifique" className="h-8 w-auto object-contain" loading="lazy" />
+                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/70">Partenaire scientifique</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       )}
@@ -382,22 +389,22 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Bandeau logos défilant — marquee (point B) */}
-        <div className="relative z-10 mt-8 max-w-[980px] mx-auto">
-          <div className="text-center mb-3">
+        {/* Bandeau logos défilant — full-width edge-to-edge, larger logos */}
+        <div className="relative z-10 mt-10 -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="text-center mb-4">
             <p className="text-[11px] tracking-[0.14em] uppercase font-semibold text-[#64748B]">Ils soutiennent le collège</p>
             <div className="mx-auto mt-1.5 h-px w-12 bg-[#E2E8F0]" />
           </div>
-          <div className="relative overflow-hidden border border-[#E2E8F0] bg-white py-3 sm:py-4 marquee-container">
+          <div className="relative overflow-hidden border-y border-[#E2E8F0] bg-white py-5 sm:py-6 lg:py-7 marquee-container">
             {/* Masques dégradés bords (fondu) */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-r from-white to-transparent z-10" aria-hidden />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-l from-white to-transparent z-10" aria-hidden />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-r from-white to-transparent z-10" aria-hidden />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-20 bg-gradient-to-l from-white to-transparent z-10" aria-hidden />
             <div className="flex w-max marquee-track">
               {/* Deux copies pour boucle continue */}
               {[...partnerLogos, ...partnerLogos].map((logo, i) => (
-                <div key={`${logo.src}-${i}`} className="flex items-center justify-center shrink-0 mx-4 sm:mx-6 lg:mx-8">
+                <div key={`${logo.src}-${i}`} className="flex items-center justify-center shrink-0 mx-5 sm:mx-7 lg:mx-10">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={logo.src} alt={logo.alt} className="h-7 sm:h-8 lg:h-9 w-auto max-w-[110px] sm:max-w-[130px] object-contain opacity-80 hover:opacity-100 transition-opacity" loading="lazy" />
+                  <img src={logo.src} alt={logo.alt} className="h-10 sm:h-12 lg:h-14 w-auto max-w-[140px] sm:max-w-[160px] lg:max-w-[180px] object-contain opacity-90 hover:opacity-100 transition-opacity" loading="lazy" />
                 </div>
               ))}
             </div>

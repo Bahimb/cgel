@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Nom de l'intervenant — Spécialiste en Médecine numérique | Experts CGEL",
-  description: "Médecine numérique · Établissement à annoncer · International — CGEL Days 3e Édition.",
+  description: "Médecine numérique · Établissement à annoncer · International — CGEL Scientific Days 3e Édition.",
   openGraph: {
     title: "Nom de l'intervenant — Spécialiste en Médecine numérique | Experts CGEL",
-    description: "Médecine numérique · Établissement à annoncer · International — CGEL Days 3e Édition.",
+    description: "Médecine numérique · Établissement à annoncer · International — CGEL Scientific Days 3e Édition.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

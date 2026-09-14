@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calendar, FolderOpen, Mail, GraduationCap, Users, Network } from "lucide-react";
+import { Calendar, MapPin, GraduationCap, Users, Network } from "lucide-react";
 import { SectionWaveDivider } from "@/components/PosterGraphics";
 import Hero from "@/components/Hero";
 
@@ -117,69 +117,73 @@ export default function Home() {
 
       <SectionWaveDivider />
 
-      {/* SECTIONS — cards links */}
-      <section className="relative bg-[#F8FAFC] border-b border-[#E8EDF3] overflow-hidden">
-        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-[#F08444]" />
-                <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-[#023DA5]">Explorez</span>
-              </div>
-              <h2 className="mt-4 font-serif text-[28px] lg:text-[34px] leading-[0.95] tracking-[-0.02em] text-[#0F1D3A] luxe-serif">
-                Les sections du site
-              </h2>
-              <p className="mt-2 text-[13px] leading-5 text-[#475569] font-light">
-                Nos événements, projets et actualités — bientôt disponibles, en cours de préparation.
-              </p>
-            </div>
+      {/* Événements passés — 3 real events, taller posters */}
+      <section className="relative bg-white border-b border-[#E8EDF3] overflow-hidden">
+        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+          <div className="flex items-center gap-3">
+            <span className="h-px w-8 bg-[#F08444]" />
+            <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-[#023DA5]">Événements passés</span>
           </div>
+          <h2 className="mt-4 font-serif text-[26px] lg:text-[30px] leading-[1.1] tracking-[-0.02em] text-[#0F1D3A]">Retour en images — nos événements passés</h2>
+          <p className="mt-2 text-[13px] leading-5 text-[#475569] font-light max-w-[640px]">Trois moments forts du CGEL — affiches lisibles en grand format.</p>
 
-          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#E8EDF3] bg-white shadow-sm">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
-                href: "/evenements",
-                Icon: Calendar,
-                t: "Journées scientifiques",
-                d: "Congrès, journées d'étude et rencontres de la spécialité — calendrier et informations pratiques.",
+                src: "/images/events/eventposter1.jpeg",
+                alt: "Affiche 2ème Journée de Formation Médicale Continue CGEL",
+                title: "2ème Journée de Formation Médicale Continue CGEL",
+                date: "25–26 septembre 2025",
+                lieu: "Hôtel El Hocine, Constantine",
+                desc: "Deux jours de formation et d’échanges scientifiques autour de la gastroentérologie libérale, réunissant praticiens et partenaires à l’Hôtel El Hocine.",
               },
               {
-                href: "/projets",
-                Icon: FolderOpen,
-                t: "Les projets du collège",
-                d: "Les initiatives portées par le collège pour la profession et la pratique libérale.",
+                src: "/images/events/eventposter.jpeg",
+                alt: "Affiche Proctologie clinique pour le médecin généraliste — 1ère soirée FMC",
+                title: "Proctologie clinique pour le médecin généraliste",
+                subtitle: "1ère soirée FMC",
+                date: "25 décembre 2025, 17h00",
+                lieu: "Restaurant Délice, Nouvelle Ville–Ali Mendjeli",
+                desc: "Soirée pratique dédiée à la proctologie en médecine générale. Rencontre clinique au Restaurant Délice, en partenariat avec Repartidis.",
               },
               {
-                href: "/contact",
-                Icon: Mail,
-                t: "Nous écrire",
-                d: "Une question, une adhésion, un partenariat ? Contactez le collège directement.",
+                src: "/images/events/eventposter2.jpeg",
+                alt: "Affiche Trouble fonctionnel de l’intestin — 3ème soirée FMC",
+                title: "Trouble fonctionnel de l’intestin : une approche pratique",
+                subtitle: "3ème soirée FMC",
+                date: "07 mai 2026, 17h00",
+                lieu: "Restaurant Apex, Ali Mendjeli – Constantine",
+                desc: "Approche pratique des troubles fonctionnels intestinaux pour le médecin généraliste. Soirée au Restaurant Apex, en collaboration avec le Laboratoire Mayoly.",
               },
-            ].map(({ href, Icon, t, d }) => (
-              <Link
-                key={href}
-                href={href}
-                className="group relative border-r last:border-r-0 border-[#E8EDF3] px-6 py-8 lg:py-10 bg-white hover:bg-[#FCFDFE] transition-colors overflow-hidden border-b lg:border-b-0"
-              >
-                <div className="absolute top-0 inset-x-0 h-[2px] bg-[#F08444] opacity-60" />
-                <div className="w-10 h-10 bg-[#0F1D3A] text-white flex items-center justify-center group-hover:bg-[#023DA5] transition-colors">
-                  <Icon className="w-[18px] h-[18px]" strokeWidth={1.8} />
+            ].map((ev) => (
+              <div key={ev.src} className="group border border-[#E2E8F0] bg-white overflow-hidden hover:border-[#D6DEE8] hover:shadow-[0_8px_28px_rgba(2,29,58,0.08)] transition-all flex flex-col">
+                <div className="relative overflow-hidden bg-[#F1F5F9] aspect-[3/4] lg:aspect-[3/4.2]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={ev.src} alt={ev.alt} className="w-full h-full object-contain p-2 bg-white group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
                 </div>
-                <div className="mt-4 h-px w-8 bg-[#F08444]/50" />
-                <h3 className="mt-4 text-[13px] font-bold tracking-[-0.01em] text-[#023DA5]">{t}</h3>
-                <p className="mt-2 text-[12px] leading-5 text-[#475569] font-light">{d}</p>
-                <span className="mt-4 inline-flex text-[11px] tracking-[0.10em] uppercase font-semibold text-[#023DA5] border-b border-[#023DA5]/20 pb-0.5 group-hover:border-[#023DA5]">
-                  Découvrir →
-                </span>
-              </Link>
+                <div className="p-5 flex-1 flex flex-col">
+                  <div className="flex items-center gap-2 text-[10px] tracking-[0.10em] uppercase font-semibold text-[#023DA5]">
+                    <span className="h-px w-5 bg-[#F08444]" />
+                    {ev.subtitle ? ev.subtitle : "Formation CGEL"}
+                  </div>
+                  <h3 className="mt-2 text-[14px] font-bold leading-[1.3] text-[#0F1D3A]">{ev.title}</h3>
+                  <div className="mt-2 flex flex-col gap-1 text-[11px] text-[#475569]">
+                    <span className="inline-flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5 text-[#023DA5] shrink-0" /> {ev.date}</span>
+                    <span className="inline-flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#023DA5] shrink-0" /> {ev.lieu}</span>
+                  </div>
+                  <p className="mt-3 text-[12px] leading-5 text-[#64748B] font-light flex-1">{ev.desc}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA — collège call */}
+      <SectionWaveDivider />
+
+      {/* FINAL CTA — collège call — more compact */}
       <section className="relative bg-[#023DA5] text-white overflow-hidden">
-        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
           <div className="max-w-[760px]">
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-[#F08444]/60" />

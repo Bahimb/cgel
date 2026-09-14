@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Nom de l'intervenant — Spécialiste en Hépatologie | Experts CGEL",
-  description: "Hépatologie · Établissement à annoncer · Algérie — CGEL Days 3e Édition.",
+  description: "Hépatologie · Établissement à annoncer · Algérie — CGEL Scientific Days 3e Édition.",
   openGraph: {
     title: "Nom de l'intervenant — Spécialiste en Hépatologie | Experts CGEL",
-    description: "Hépatologie · Établissement à annoncer · Algérie — CGEL Days 3e Édition.",
+    description: "Hépatologie · Établissement à annoncer · Algérie — CGEL Scientific Days 3e Édition.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",

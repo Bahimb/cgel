@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Lieu — Ahmed Bey Zenith, Constantine | CGEL",
-  description: "Informations sur le lieu des CGEL Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
+  description: "Informations sur le lieu des CGEL Scientific Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
   openGraph: {
     title: "Lieu — Ahmed Bey Zenith, Constantine | CGEL",
-    description: "Informations sur le lieu des CGEL Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
+    description: "Informations sur le lieu des CGEL Scientific Days 3e Édition — Ahmed Bey Zenith, Constantine, Algérie. 1 octobre 2026.",
     type: "website",
     locale: "fr_FR",
     url: "https://cgel-gastro.com",
@@ -43,7 +43,7 @@ export default function Page() {
         </div>
       </div>
       <div className="venue-announcement">
-        <img src="/images/gcel-venue-announcement.png" alt="Annonce du lieu — Ahmed Bey Zenith, CGEL Days" />
+        <img src="/images/gcel-venue-announcement.png" alt="Annonce du lieu — Ahmed Bey Zenith, CGEL Scientific Days" />
       </div>
     </div>
   </div>
