@@ -70,38 +70,38 @@ export default function Page() {
           {/* Member 1 — photo from events */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Sami Haddad</h4><p className="role" data-i18n="apropos.presidentRole">Président</p><p className="bio" data-i18n="apropos.presidentBio">Gastroentérologue libéral à Constantine. DIU d'endoscopie interventionnelle. Pilote le projet CGEL Scientific Days et les relations institutionnelles.</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="body"><h4>Dr. Abderraouf BOURGHOUD</h4><p className="role" data-i18n="apropos.presidentRole">Président</p><p className="bio" data-i18n="apropos.presidentBio">Médecin spécialiste en hépato-gastro-entérologie et en endoscopie exerçant en libéral à Constantine.</p></div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
           {/* Member 2 */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
           {/* Member 3 */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
           {/* Member 4 */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
           {/* Member 5 */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
           {/* Member 6 */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre </p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur 2018</div>
+            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
           </div>
         </div>
       </div>
