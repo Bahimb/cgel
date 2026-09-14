@@ -66,8 +66,7 @@ export default function Page() {
                   </div>
                   <div className="carousel-orgs dark" style={{marginTop:"1rem"}}>
                     <div className="org">
-                      <span style={{width:"60px",height:"60px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.20)",border:"1px solid var(--line2)"}}><img src="/cgel.svg" alt="Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} /></span>
-                      <p style={{fontSize:"11px",fontWeight:"700",color:"#0F1D3A",margin:"0"}}>CGEL</p>
+                      <img src="/cgel.svg" alt="Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} />
                       <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.organizer">Organisateur</p>
                     </div>
                     <div className="org">
@@ -119,16 +118,15 @@ export default function Page() {
                   </div>
                   <div className="carousel-orgs" style={{marginTop:"0.75rem", paddingTop:"1rem", borderTop:"1px solid rgba(255,255,255,.15)", gap:"1.5rem"}}>
                     <div className="org">
-                      <span style={{width:"60px",height:"60px",borderRadius:"999px",background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 14px rgba(15,29,58,.35)"}}><img src="/cgel.svg" alt="CGEL — Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} /></span>
-                      <p data-i18n="carousel.org.organizer" style={{fontWeight:"700", color:"#fff", fontSize:"11px"}}>CGEL</p>
-                      <p data-i18n="carousel.org.organizer" style={{fontSize:"10px", color:"rgba(255,255,255,.7)"}}>Organisateur</p>
+                      <img src="/cgel.svg" alt="CGEL — Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} />
+                      <p data-i18n="carousel.org.organizer" style={{fontSize:"10px", color:"#64748B"}}>Organisateur</p>
                     </div>
                     <div className="org">
-                      <div className="partner-logos" style={{gap:"0.75rem"}}>
-                        <img src="/logo/uc2.png" alt="Universite Constantine 2" loading="lazy" style={{height:"32px"}} />
-                        <img src="/logo/ntic.png" alt="Faculte NTIC" loading="lazy" style={{height:"28px"}} />
+                      <div className="partner-logos">
+                        <img src="/logo/uc2.png" alt="Universite Constantine 2 Abdelhamid Mehri" loading="lazy" />
+                        <img src="/logo/ntic.png" alt="Faculte des Nouvelles Technologies de l'Information et de la Communication" loading="lazy" />
                       </div>
-                      <p data-i18n="carousel.org.partner" style={{fontSize:"10px", color:"rgba(255,255,255,.7)", marginTop:"0.25rem"}}>Partenaire scientifique</p>
+                      <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.partner">Partenaire scientifique</p>
                     </div>
                   </div>
                 </div>
@@ -328,12 +326,12 @@ export default function Page() {
         <img src="/images/events/showcasepic5.jpeg" alt="Galerie 6 — Clôture et photo de groupe" loading="lazy" />
         <figcaption className="cap"><p>Clôture &amp; perspectives</p><span>Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/eventposter.jpeg" data-caption="Affiche officielle — CGEL Scientific Days 3e édition · Visuel officiel">
-        <img src="/images/events/eventposter.jpeg" alt="Galerie 7 — Affiche officielle CGEL Scientific Days" loading="lazy" />
-        <figcaption className="cap"><p>Affiche officielle</p><span>CGEL Scientific Days 3e édition</span></figcaption>
+      <figure className="gallery-item" data-src="/images/events/cgel2.jpeg" data-caption="Journée scientifique ">
+        <img src="/images/events/cgel2.jpeg" alt="Journée scientifique" loading="lazy" />
+        <figcaption className="cap"><p>Journée scientifique</p><span>Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/eventposter1.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels">
-        <img src="/images/events/eventposter1.jpeg" alt="Galerie 8 — Soirée collégiale" loading="lazy" />
+      <figure className="gallery-item" data-src="/images/events/saber.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels">
+        <img src="/images/events/saber.jpeg" alt="Galerie 8 — Soirée collégiale" loading="lazy" />
         <figcaption className="cap"><p>Soirée collégiale</p><span>Convivialité</span></figcaption>
       </figure>
     </div>

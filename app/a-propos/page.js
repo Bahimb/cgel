@@ -70,41 +70,40 @@ export default function Page() {
           {/* Member 1 — photo from events */}
           <div className="member-card">
             <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Sami Haddad</h4><p className="role">Président</p><p className="bio">Gastroentérologue libéral à Constantine, 15 ans d'exercice. DIU d'endoscopie interventionnelle. Pilote le projet CGEL Scientific Days et les relations institutionnelles.</p></div>
+            <div className="body"><h4>Dr. Sami Haddad</h4><p className="role">Président</p><p className="bio">Gastroentérologue libéral à Constantine. DIU d'endoscopie interventionnelle. Pilote le projet CGEL Scientific Days et les relations institutionnelles.</p></div>
             <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
           {/* Member 2 */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic1.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Nadia Benali</h4><p className="role">Vice-Présidente</p><p className="bio">Hépato-gastroentérologue à Annaba. Enseignante associée, référente hépatites virales. Coordonne le programme scientifique et le conseil médical.</p></div>
-            <div className="foot">Annaba · CHU &amp; libéral · registre Est</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Nom Prenom</h4><p className="role">Profile du membre</p><p className="bio">Description du membre.<br/>va apparaitre ici</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
           {/* Member 3 */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic2.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Yacine Merabet</h4><p className="role">Secrétaire Général</p><p className="bio">Endoscopiste à Sétif, formé à l'écho-endoscopie. En charge de la vie du collège, des adhésions et de la communication.</p></div>
-            <div className="foot">Sétif · libéral · CGEL depuis 2019</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Nom Prenom</h4><p className="role">Profile du membre</p><p className="bio">Description du membre.<br/>va apparaitre ici</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
           {/* Member 4 */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic3.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Leila Toumi</h4><p className="role">Trésorière</p><p className="bio">Gastroentérologue à Batna, gestionnaire de cabinet de groupe. Supervise le budget, les partenariats et la logistique des journées.</p></div>
-            <div className="foot">Batna · libéral · trésorerie depuis 2022</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Nom Prenom</h4><p className="role">Profile du membre</p><p className="bio">Description du membre.<br/>va apparaitre ici</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
           {/* Member 5 */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic4.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Karim Bensalah</h4><p className="role">Chargé de la formation</p><p className="bio">Hépatologue à Biskra, DU de maladies métaboliques du foie. Conçoit les ateliers DPC et le compagnonnage jeunes médecins.</p></div>
-            <div className="foot">Biskra · libéral · DPC &amp; compagnonnage</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Nom Prenom</h4><p className="role">Profile du membre</p><p className="bio">Description du membre.<br/>va apparaitre ici</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
           {/* Member 6 */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic5.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Amira Zerrouki</h4><p className="role">Chargée des partenariats &amp; communication</p><p className="bio">Gastroentérologue à Guelma, alumni NTIC. Porte la campagne grand public et le lien avec l'Université Constantine 2.</p></div>
-            <div className="foot">Guelma · libéral · communication &amp; NTIC</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Nom Prenom</h4><p className="role">Profile du membre </p><p className="bio">Description du membre.<br/>va apparaitre ici</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur 2018</div>
           </div>
         </div>
-        <p style={{marginTop:"1rem",fontSize:"11px",color:"#94A3B8",textAlign:"center"}}>Photos d’illustration temporaires — issues des événements CGEL. Remplacer par les portraits officiels du bureau.</p>
       </div>
     </div>
   </section>

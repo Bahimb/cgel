@@ -77,11 +77,11 @@ export default function AboutAssociationPage() {
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
                 {name:"Dr. Sami Haddad", role:"Président", bio:"Gastroentérologue libéral à Constantine. Pilote le projet CGEL Scientific Days.", img:"/images/events/showcasepic.jpeg"},
-                {name:"Dr. Nadia Benali", role:"Vice-Présidente", bio:"Hépato-gastroentérologue à Annaba. Coordonne le programme scientifique.", img:"/images/events/showcasepic1.jpeg"},
-                {name:"Dr. Yacine Merabet", role:"Secrétaire Général", bio:"Endoscopiste à Sétif. En charge de la vie du collège.", img:"/images/events/showcasepic2.jpeg"},
-                {name:"Dr. Leila Toumi", role:"Trésorière", bio:"Gastroentérologue à Batna. Supervise le budget et la logistique.", img:"/images/events/showcasepic3.jpeg"},
-                {name:"Dr. Karim Bensalah", role:"Chargé de la formation", bio:"Hépatologue à Biskra. Conçoit les ateliers DPC.", img:"/images/events/showcasepic4.jpeg"},
-                {name:"Dr. Amira Zerrouki", role:"Chargée des partenariats", bio:"Gastroentérologue à Guelma. Lien avec l'Université Constantine 2.", img:"/images/events/showcasepic5.jpeg"},
+                {name:"Nom Prenom", role:"Profile du membre", bio:"Hépato-gastroentérologue à Annaba. Coordonne le programme scientifique.", img:"/images/avatar.png"},
+                {name:"Nom Prenom", role:"Profile du membre", bio:"Endoscopiste à Sétif. En charge de la vie du collège.", img:"/images/avatar.png"},
+                {name:"Nom Prenom", role:"Profile du membre", bio:"Gastroentérologue à Batna. Supervise le budget et la logistique.", img:"/images/avatar.png"},
+                {name:"Nom Prenom", role:"Profile du membre", bio:"Hépatologue à Biskra. Conçoit les ateliers DPC.", img:"/images/events/avatar.png"},
+                {name:"Nom Prenom", role:"Profile du membre", bio:"Gastroentérologue à Guelma. Lien avec l'Université Constantine 2.", img:"/images/avatar.png"},
               ].map(m=>(
                 <div key={m.name} className="border border-[#E2E8F0] bg-white overflow-hidden">
                   <div className="h-[160px] overflow-hidden border-b border-[#E2E8F0]">
@@ -96,7 +96,6 @@ export default function AboutAssociationPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-[11px] text-[#94A3B8] text-center">Photos d’illustration temporaires — issues des événements CGEL.</p>
           </div>
         </div>
       </div>
