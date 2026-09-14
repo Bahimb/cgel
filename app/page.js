@@ -326,8 +326,8 @@ export default function Page() {
         <img src="/images/events/showcasepic5.jpeg" alt="Galerie 6 — Clôture et photo de groupe" loading="lazy" />
         <figcaption className="cap"><p>Clôture &amp; perspectives</p><span>Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/cgel2.jpeg" data-caption="Journée scientifique ">
-        <img src="/images/events/cgel2.jpeg" alt="Journée scientifique" loading="lazy" />
+      <figure className="gallery-item" data-src="/images/events/CGEL2.jpeg" data-caption="Journée scientifique ">
+        <img src="/images/events/CGEL2.jpeg" alt="Journée scientifique" loading="lazy" />
         <figcaption className="cap"><p>Journée scientifique</p><span>Photo de groupe</span></figcaption>
       </figure>
       <figure className="gallery-item" data-src="/images/events/saber.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels">
