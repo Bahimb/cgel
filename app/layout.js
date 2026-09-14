@@ -39,11 +39,16 @@ export default function RootLayout({ children }) {
             <a href="/registration">S&apos;inscrire</a>
           </div>
         </div>
-        <button type="button" id="backToTop" aria-label="Retour en haut" data-i18n="backToTop">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
-        </button>
+        <button type="button" id="backToTop" aria-label="Retour en haut">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="m18 15-6-6-6 6"/>
+          </svg>
+          <span data-i18n="backToTop" class="sr-only"></span>
+          </button>
         <div className="lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-label="Galerie agrandie" style={{display: "none"}}>
-          <button type="button" className="close" aria-label="Fermer">✕</button>
+          <button type="button" className="close" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
           <img src="" alt="" />
           <p className="caption"></p>
         </div>

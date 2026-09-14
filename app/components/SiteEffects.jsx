@@ -150,7 +150,8 @@ export default function SiteEffects() {
     let observer;
     const onScrollBar = () => {
       if (!bar) return;
-      const shouldShow = window.scrollY > 560;
+      const isMobile = window.innerWidth <= 1023;
+      const shouldShow = isMobile && window.scrollY > 560;
       bar.classList.toggle("visible", shouldShow);
     };
     if (bar && !window.location.pathname.includes("registration")) {
