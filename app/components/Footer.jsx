@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="logo-box"><img src="/cgel.svg" alt="CGEL Logo" /></div>
               <div>
                 <p className="k">CGEL</p>
-                <p className="sub">Collège professionnel</p>
+                <p className="sub" data-i18n="footer.collegeSub">Collège professionnel</p>
               </div>
             </div>
             <p className="footer-desc" data-i18n="footer.desc">Collège des Hépato-Gastroentérologues et Endoscopistes Libéraux de l&apos;Est — au service de la gastroentérologie libérale.</p>
@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 data-i18n="footer.infoTitle">Information</h4>
             <ul>
               <li><Link href="/faq">FAQ</Link></li>
-              <li style={{ paddingTop: ".75rem", fontSize: "11px", lineHeight: "1.6", color: "rgba(255,255,255,.4)" }}><span style={{ color: "rgba(255,255,255,.8)" }}>CGEL</span><br />Collège professionnel de l&apos;Est</li>
+              <li style={{ paddingTop: ".75rem", fontSize: "11px", lineHeight: "1.6", color: "rgba(255,255,255,.4)" }}><span style={{ color: "rgba(255,255,255,.8)" }}>CGEL</span><br /><span data-i18n="footer.collegeEast">Collège professionnel de l&apos;Est</span></li>
             </ul>
           </div>
           <div className="footer-col">

@@ -15,12 +15,12 @@ export default function Page() {
     <>
       <div className="page-hero">
     <div className="page-hero-inner">
-      <div className="page-kicker"><span className="line"></span><span>Programme scientifique</span></div>
-      <h1>Programme scientifique</h1>
-      <p className="lead">Programme d'une journée · Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine. Contenu indicatif — sera mis à jour à mesure que les sessions et intervenants sont finalisés.</p>
+      <div className="page-kicker"><span className="line"></span><span data-i18n="program.kicker">Programme scientifique</span></div>
+      <h1 data-i18n="program.title">Programme scientifique</h1>
+      <p className="lead" data-i18n="program.lead">Programme d'une journée · Jeudi 1 octobre 2026 · Ahmed Bey Zenith, Constantine. Contenu indicatif — sera mis à jour à mesure que les sessions et intervenants sont finalisés.</p>
       <div style={{marginTop:"1rem",display:"flex",flexWrap:"wrap",gap:".5rem",fontSize:"11px"}}>
-        <span style={{border:"1px solid #E2E8F0",padding:".25rem .625rem",fontWeight:"500",color:"#475569"}}>Planning indicatif</span>
-        <span style={{border:"1px solid #E2E8F0",background:"#F8FAFC",padding:".25rem .625rem",color:"#94A3B8"}}>Lien PDF à ajouter ici</span>
+        <span data-i18n="program.planningBadge" style={{border:"1px solid #E2E8F0",padding:".25rem .625rem",fontWeight:"500",color:"#475569"}}>Planning indicatif</span>
+        <span data-i18n="program.pdfBadge" style={{border:"1px solid #E2E8F0",background:"#F8FAFC",padding:".25rem .625rem",color:"#94A3B8"}}>Lien PDF à ajouter ici</span>
       </div>
     </div>
   </div>
@@ -28,9 +28,9 @@ export default function Page() {
     <div className="container" style={{padding:"2rem 1rem"}}>
       <div className="coming-box">
         <div className="coming-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" width="24" height="24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
-        <div className="coming-label"><span className="line"></span><span>Bientôt disponible</span><span className="line"></span></div>
-        <h2>Cette section est en cours de préparation</h2>
-        <p>Le contenu sera publié prochainement. Merci de votre patience.</p>
+        <div className="coming-label"><span className="line"></span><span data-i18n="program.soonLabel">Bientôt disponible</span><span className="line"></span></div>
+        <h2 data-i18n="program.soonTitle">Cette section est en cours de préparation</h2>
+        <p data-i18n="program.soonDesc">Le contenu sera publié prochainement. Merci de votre patience.</p>
         <div style={{marginTop:"1.5rem",display:"flex",alignItems:"center",justifyContent:"center",gap:".5rem",fontSize:"11px"}}><span style={{height:"1px",width:"24px",background:"#E8EDF3"}}></span><span style={{color:"#64748B",letterSpacing:".02em"}}>CGEL · Collège professionnel</span><span style={{height:"1px",width:"24px",background:"#E8EDF3"}}></span></div>
       </div>
     </div>

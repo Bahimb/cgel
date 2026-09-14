@@ -74,7 +74,7 @@ export default function Header() {
             <button type="button" data-lang="ar" aria-label="العربية">AR</button>
             <button type="button" data-lang="en" aria-label="English">EN</button>
           </div>
-          <div className="mobile-meta"><span>CGEL · Collège professionnel</span><a href="mailto:college.hgel@gmail.com">college.hgel@gmail.com</a></div>
+          <div className="mobile-meta"><span data-i18n="header.mobileMeta">CGEL · Collège professionnel</span><a href="mailto:college.hgel@gmail.com">college.hgel@gmail.com</a></div>
         </nav>
       </div>
     </header>

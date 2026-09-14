@@ -144,16 +144,19 @@ export default function Page() {
       </div>
     </div>
 
-    {/* Marquee */}
-    <div className="marquee-section">
-      <div className="marquee-header">
-        <p data-i18n="marquee.title">Ils soutiennent le collège</p>
-        <div className="line" aria-hidden="true"></div>
-      </div>
-      <div className="marquee-box marquee-container">
-        <div className="marquee-fade-left" aria-hidden="true"></div>
-        <div className="marquee-fade-right" aria-hidden="true"></div>
-        <div className="marquee-track">
+    <div style={{height:"8px"}}></div>
+  </div>
+
+  {/* Marquee */}
+  <div className="marquee-section">
+    <div className="marquee-header">
+      <p data-i18n="marquee.title">Ils soutiennent le collège</p>
+      <div className="line" aria-hidden="true"></div>
+    </div>
+    <div className="marquee-box marquee-container">
+      <div className="marquee-fade-left" aria-hidden="true"></div>
+      <div className="marquee-fade-right" aria-hidden="true"></div>
+      <div className="marquee-track">
           {/* two copies for loop */}
           <div className="marquee-item"><img src="/logo/logosponsor/astrazeneca.png" alt="AstraZeneca" loading="lazy" /></div>
           <div className="marquee-item"><img src="/logo/logosponsor/biopharm.png" alt="Biopharm" loading="lazy" /></div>
@@ -178,9 +181,6 @@ export default function Page() {
         </div>
       </div>
     </div>
-
-    <div style={{height:"8px"}}></div>
-  </div>
 </section>
 
 <div className="wave-divider" aria-hidden="true">

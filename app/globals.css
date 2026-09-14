@@ -244,7 +244,7 @@ button{font:inherit;cursor:pointer;transition:color 180ms,background-color 180ms
 .carousel-dots .counter{margin-left:.75rem;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--muted)}
 
 /* Marquee partners — full-width edge-to-edge, larger logos */
-.marquee-section{position:relative;z-index:1;margin:1.5rem calc(-50vw + 50%) 0;max-width:100vw;width:100vw}
+.marquee-section{position:relative;z-index:1;margin-top:1.5rem;width:100%}
 .marquee-header{text-align:center;margin-bottom:.9rem}
 .marquee-header p{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
 .marquee-header .line{margin:.4rem auto 0;height:1px;width:48px;background:var(--line2)}
