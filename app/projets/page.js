@@ -12,77 +12,33 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
-      <div className="page-hero">
-    <div className="page-hero-inner">
-      <div className="page-kicker"><span className="line"></span><span>Projets</span></div>
-      <h1>Les projets du CGEL</h1>
-      <p className="lead">Quatre chantiers concrets au service de la pratique libérale : formation, données, prévention et transmission.</p>
-    </div>
-  </div>
-  <div style={{background:"#F8FAFC"}}>
-    <div className="container" style={{padding:"1.75rem 1rem 2.5rem"}}>
-      <div className="projets-grid">
-        {/* Project 1 */}
-        <article className="project-card">
-          <div className="top"></div>
-          <span className="badge badge-en-cours">En cours</span>
-          <div className="body">
-            <h3>Programme DPC &amp; CME Est — Formation continue</h3>
-            <p className="objective">Objectif : proposer un parcours DPC certifiant, adapté à la réalité du cabinet libéral (1 journée trimestrielle + 2 webinaires/an).</p>
-            <div className="meta">
-              <p><strong>Porteur(s) :</strong> Dr. Karim Bensalah (Biskra) · Bureau CGEL</p>
-              <p><strong>Partenaires :</strong> UC2 · Faculté NTIC · 5 laboratoires</p>
-            </div>
-            <div className="result"><strong>Résultat à date :</strong> 180 participants formés en 2024, 92% de satisfaction, 12 ateliers d'endoscopie hands-on.</div>
-          </div>
-        </article>
-        {/* Project 2 */}
-        <article className="project-card">
-          <div className="top"></div>
-          <span className="badge badge-lance">Lancé</span>
-          <div className="body">
-            <h3>Registre prospectif Est — MICI &amp; Hépatopathies</h3>
-            <p className="objective">Objectif : collecter des données standardisées sur MICI et hépatopathies chroniques pour mieux connaître le fardeau régional.</p>
-            <div className="meta">
-              <p><strong>Porteur(s) :</strong> Dr. Nadia Benali (Annaba) · Comité scientifique CGEL</p>
-              <p><strong>Partenaires :</strong> CHU Annaba/Batna · UC2 — plateforme sécurisée hébergée en Algérie</p>
-            </div>
-            <div className="result"><strong>Résultat à date :</strong> 240 dossiers inclus (12 centres), premier rapport intermédiaire prévu T2 2026.</div>
-          </div>
-        </article>
-        {/* Project 3 */}
-        <article className="project-card">
-          <div className="top"></div>
-          <span className="badge badge-en-cours">En cours</span>
-          <div className="body">
-            <h3>Campagne « Foie &amp; Prévention » — Sensibilisation grand public</h3>
-            <p className="objective">Objectif : informer sur les hépatites virales, stéatose et dépistage, avec des supports en darija/français pour salle d'attente.</p>
-            <div className="meta">
-              <p><strong>Porteur(s) :</strong> Dr. Amira Zerrouki (Guelma) · Cellule communication</p>
-              <p><strong>Partenaires :</strong> Laboratoires sponsors · Associations patients · médias locaux</p>
-            </div>
-            <div className="result"><strong>Résultat à date :</strong> 15 cabinets équipés, 8 000 dépliants diffusés, 3 vidéos courtes (&gt;12k vues).</div>
-          </div>
-        </article>
-        {/* Project 4 */}
-        <article className="project-card">
-          <div className="top"></div>
-          <span className="badge badge-termine">Terminé · Reconduit</span>
-          <div className="body">
-            <h3>Mentorat Jeunes Gastro — Transmission</h3>
-            <p className="objective">Objectif : compagnonnage de 6 mois entre seniors CGEL et internes/jeunes installés (cas cliniques, endoscopie, installation).</p>
-            <div className="meta">
-              <p><strong>Porteur(s) :</strong> Dr. Yacine Merabet (Sétif) · Dr. Sami Haddad</p>
-              <p><strong>Partenaires :</strong> Réseau des bureaux Est · 4 CHU formateurs</p>
-            </div>
-            <div className="result"><strong>Résultat à date :</strong> Cohorte pilote 2024 : 14 binômes, 100% recommandent, 4 installations accompagnées.</div>
-          </div>
-        </article>
+    <div className="coming-wrap" style={{background:"#F8FAFC", minHeight:"60vh"}}>
+      <div className="page-hero" style={{background:"#fff", borderBottom:"1px solid var(--line)"}}>
+        <div className="page-hero-inner">
+          <div className="page-kicker"><span className="line"></span><span>Projets</span></div>
+          <h1>Les projets du CGEL</h1>
+          <p className="lead">Les initiatives portées par le collège pour la profession seront présentées prochainement.</p>
+        </div>
       </div>
-      <p style={{marginTop:"1.25rem",fontSize:"11px",color:"#94A3B8",textAlign:"center"}}>Contenus de démonstration — remplacez textes, porteurs et chiffres par vos données réelles. Badges et métriques sont modifiables librement.</p>
+      <div className="container" style={{padding:"3rem 1rem", display:"flex", justifyContent:"center"}}>
+        <div className="coming-box" style={{maxWidth:"520px", width:"100%", border:"1px solid var(--line)", background:"#fff", padding:"3rem 2rem", textAlign:"center", boxShadow:"0 8px 30px rgba(2,29,58,.04)"}}>
+          <div className="coming-icon" style={{width:"56px",height:"56px", border:"1px solid var(--line)", background:"var(--paper)", display:"flex", alignItems:"center", justifyContent:"center", color:"var(--primary)", margin:"0 auto"}}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+          </div>
+          <div style={{marginTop:"1.25rem", display:"flex", alignItems:"center", justifyContent:"center", gap:".75rem"}}>
+            <span style={{height:"1px", width:"32px", background:"rgba(240,132,68,.4)"}}></span>
+            <span style={{fontSize:"11px", letterSpacing:".18em", textTransform:"uppercase", fontWeight:"600", color:"var(--primary)"}}>Bientôt disponible</span>
+            <span style={{height:"1px", width:"32px", background:"rgba(240,132,68,.4)"}}></span>
+          </div>
+          <h2 style={{marginTop:".75rem", fontFamily:"inherit", fontSize:"22px", lineHeight:"1.1", letterSpacing:"-.02em", color:"var(--fg)"}}>Cette section est en cours de préparation</h2>
+          <p style={{marginTop:".75rem", fontSize:"13px", lineHeight:"1.6", color:"var(--muted2)", fontWeight:"300"}}>Le contenu sera publié prochainement. Merci de votre patience.</p>
+          <div style={{marginTop:"1.5rem", display:"flex", alignItems:"center", justifyContent:"center", gap:".5rem", fontSize:"11px", color:"#94A3B8"}}>
+            <span style={{height:"1px", width:"24px", background:"var(--line)"}}></span>
+            <span>CGEL · Collège professionnel</span>
+            <span style={{height:"1px", width:"24px", background:"var(--line)"}}></span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    </>
   );
 }

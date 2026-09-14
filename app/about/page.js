@@ -63,10 +63,10 @@ export default function Page() {
             <div style={{padding:"1rem",borderTop:"1px solid #E2E8F0"}}><a href="/program" className="btn btn-navy" style={{width:"100%"}}>Voir le programme scientifique</a></div>
           </div>
           <div className="sidebar-image">
-            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800&auto=format&fit=crop" alt="Auditoire lors d'un congrès scientifique" loading="lazy" />
+            <img src="/images/events/showcasepic.jpeg" alt="Auditoire lors d'un congrès CGEL — salle plénière" loading="lazy" />
             <div className="foot">
-              <div><p style={{margin:"0",fontSize:"12px",fontWeight:"700",color:"#0F1D3A"}}>CGEL</p><p className="label">Organisateur</p></div>
-              <div><div className="partner-logos"><img src="/logo/uc2.png" alt="UC2" loading="lazy" /><img src="/logo/ntic.png" alt="NTIC" loading="lazy" /></div><p className="label">Partenaire scientifique</p></div>
+              <div style={{display:"flex", flexDirection:"column", alignItems:"center", gap:".25rem"}}><img src="/cgel.svg" alt="CGEL Logo" style={{height:"32px", width:"auto"}} /><p style={{margin:"0",fontSize:"11px",fontWeight:"700",color:"#0F1D3A"}}>CGEL</p><p className="label">Organisateur</p></div>
+              <div><div className="partner-logos"><img src="/logo/uc2.png" alt="Université Constantine 2" loading="lazy" style={{height:"28px"}} /><img src="/logo/ntic.png" alt="NTIC" loading="lazy" style={{height:"28px"}} /></div><p className="label">Partenaire scientifique</p></div>
             </div>
           </div>
         </div>

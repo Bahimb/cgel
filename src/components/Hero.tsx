@@ -196,13 +196,17 @@ export default function Hero() {
                               <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors">S&apos;inscrire</Link>
                               <Link href="/a-propos" className="inline-flex items-center justify-center bg-white border border-[#023DA5]/20 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-[#023DA5] hover:bg-[#EEF4FF]">Découvrir le collège</Link>
                             </div>
-                                          <div className="grid grid-cols-2 gap-px bg-[#E2E8F0] border-t border-[#E2E8F0]">
-                <div className="bg-white px-4 py-3 text-center">
-                  <p className="text-[12px] font-bold text-[#0F1D3A]">CGEL</p>
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Organisateur</p>
+                                          <div className="flex flex-row items-center justify-center gap-8 border-t border-[#E2E8F0] bg-white py-3">
+                <div className="flex flex-col items-center gap-1.5 text-center">
+                  <span className="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.15)] border border-[#E2E8F0]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-9 w-auto object-contain" loading="lazy" />
+                  </span>
+                  <p className="text-[11px] font-bold text-[#0F1D3A]">CGEL</p>
+                  <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B] -mt-1">Organisateur</p>
                 </div>
-                <div className="bg-[#F8FAFC] px-4 py-3 text-center flex flex-col items-center gap-1">
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
+                <div className="flex flex-col items-center gap-1.5 text-center">
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-7 w-auto object-contain" loading="lazy" />
                   <p className="text-[10px] tracking-[0.08em] uppercase text-[#64748B]">Partenaire scientifique</p>
                 </div>
               </div>
@@ -250,18 +254,19 @@ export default function Hero() {
                               <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333]">S&apos;inscrire</Link>
                               <Link href="/a-propos" className="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-white hover:bg-white hover:text-[#023DA5]">Découvrir le collège</Link>
                             </div>
-              <div className="grid grid-cols-2 gap-px border-t border-[#E2E8F0]">
-                <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-3 text-center">
-                  <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
+              <div className="flex flex-row items-center justify-center gap-8 border-t border-white/15 py-3">
+                <div className="flex flex-col items-center gap-1.5 text-center">
+                  <span className="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/cgel.svg" alt="Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
+                    <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
                   </span>
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Organisateur</p>
+                  <p className="text-[11px] font-bold text-white">CGEL</p>
+                  <p className="text-[10px] tracking-[0.08em] uppercase text-white/80 -mt-1">Organisateur</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1 px-4 py-3 text-center">
+                <div className="flex flex-col items-center gap-1.5 text-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Partenaire scientifique</p>
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-7 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.15)]" loading="lazy" />
+                  <p className="text-[10px] tracking-[0.08em] uppercase text-white/80">Partenaire scientifique</p>
                 </div>
               </div>
                           </div>
@@ -292,18 +297,19 @@ export default function Hero() {
                             <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333]">S&apos;inscrire</Link>
                             <Link href="/a-propos" className="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-white hover:bg-white hover:text-[#023DA5]">Découvrir le collège</Link>
                           </div>
-              <div className="grid grid-cols-2 gap-px border-t border-[#E2E8F0]">
-                <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-3 text-center">
-                  <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
+              <div className="flex flex-row items-center justify-center gap-8 border-t border-white/15 py-3">
+                <div className="flex flex-col items-center gap-1.5 text-center">
+                  <span className="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/cgel.svg" alt="Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
+                    <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
                   </span>
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Organisateur</p>
+                  <p className="text-[11px] font-bold text-white">CGEL</p>
+                  <p className="text-[10px] tracking-[0.08em] uppercase text-white/80 -mt-1">Organisateur</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1 px-4 py-3 text-center">
+                <div className="flex flex-col items-center gap-1.5 text-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-8 w-auto object-contain" loading="lazy" />
-                  <p className="text-[10px] tracking-[0.08em] uppercase text-white">Partenaire scientifique</p>
+                  <img src="/logo/uc2.png" alt="Partenariat universitaire — partenaire scientifique du CGEL" className="h-7 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.15)]" loading="lazy" />
+                  <p className="text-[10px] tracking-[0.08em] uppercase text-white/80">Partenaire scientifique</p>
                 </div>
               </div>
                         </div>
@@ -354,20 +360,20 @@ export default function Hero() {
                               <Link href="/registration" className="inline-flex items-center justify-center bg-[#F08444] px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-bold text-white hover:bg-[#e57333] transition-colors">S&apos;inscrire</Link>
                               <Link href="/a-propos" className="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 px-6 py-3 text-[11px] tracking-[0.08em] uppercase font-semibold text-white hover:bg-white hover:text-[#023DA5] transition-colors">Découvrir le collège</Link>
                             </div>
-                            {/* Organizer / Sponsor — separated with divider and proper spacing */}
-                            <div className="mt-2 pt-4 border-t border-white/15 grid grid-cols-2 gap-4">
-                              <div className="flex flex-col items-center justify-center gap-2 text-center">
-                                <span className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)] shrink-0">
+                            {/* Organizer / Sponsor — same line, consistent, visible white text on dark gradient */}
+                            <div className="mt-2 pt-4 border-t border-white/15 flex flex-row items-center justify-center gap-8">
+                              <div className="flex flex-col items-center gap-1.5 text-center">
+                                <span className="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_14px_rgba(15,29,58,0.35)] shrink-0">
                                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                                  <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-12 w-auto object-contain" loading="lazy" />
+                                  <img src="/cgel.svg" alt="CGEL — Organisateur" className="h-10 w-auto object-contain" loading="lazy" />
                                 </span>
                                 <p className="text-[11px] font-bold tracking-[0.06em] text-white">CGEL</p>
-                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/70 -mt-1">Organisateur</p>
+                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/80 -mt-1">Organisateur</p>
                               </div>
-                              <div className="flex flex-col items-center justify-center gap-2 text-center">
+                              <div className="flex flex-col items-center gap-1.5 text-center">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/logo/uc2.png" alt="Université Constantine 2 Abdelhamid Mehri — partenaire scientifique" className="h-8 w-auto object-contain" loading="lazy" />
-                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/70">Partenaire scientifique</p>
+                                <img src="/logo/uc2.png" alt="Université Constantine 2 Abdelhamid Mehri — partenaire scientifique" className="h-7 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.15)]" loading="lazy" />
+                                <p className="text-[10px] tracking-[0.08em] uppercase text-white/80">Partenaire scientifique</p>
                               </div>
                             </div>
                           </div>

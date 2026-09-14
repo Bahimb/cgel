@@ -268,8 +268,8 @@ export default function Page() {
         <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter1.jpeg" alt="Affiche 2ème Journée de Formation Médicale Continue CGEL" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
         <div className="cap" style={{padding:"1rem"}}>
           <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>2ème Journée de Formation Médicale Continue CGEL</h3>
-          <p style={{marginTop:".35rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 25–26 septembre 2025</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Hôtel El Hocine, Constantine</p>
+          <p style={{marginTop:".35rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)", display:"inline-flex"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 25–26 septembre 2025</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Hôtel El Hocine, Constantine</p>
           <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Deux jours de formation et d’échanges scientifiques autour de la gastroentérologie libérale, à l’Hôtel El Hocine.</p>
         </div>
       </div>
@@ -278,8 +278,8 @@ export default function Page() {
         <div className="cap" style={{padding:"1rem"}}>
           <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Proctologie clinique pour le médecin généraliste</h3>
           <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>1ère soirée FMC</p>
-          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 25 décembre 2025, 17h00</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Restaurant Délice, Nouvelle Ville–Ali Mendjeli</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 25 décembre 2025, 17h00</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Restaurant Délice, Nouvelle Ville–Ali Mendjeli</p>
           <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Soirée pratique dédiée à la proctologie en médecine générale, en partenariat avec Repartidis.</p>
         </div>
       </div>
@@ -288,8 +288,8 @@ export default function Page() {
         <div className="cap" style={{padding:"1rem"}}>
           <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Trouble fonctionnel de l’intestin : une approche pratique</h3>
           <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>3ème soirée FMC</p>
-          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📅</span> 07 mai 2026, 17h00</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}>📍</span> Restaurant Apex, Ali Mendjeli – Constantine</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 07 mai 2026, 17h00</p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Restaurant Apex, Ali Mendjeli – Constantine</p>
           <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Approche pratique des troubles fonctionnels intestinaux pour le médecin généraliste, en collaboration avec le Laboratoire Mayoly.</p>
         </div>
       </div>
