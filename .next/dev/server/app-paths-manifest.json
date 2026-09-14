@@ -1,7 +1,0 @@
-{
-  "/projets/page": "app/projets/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/venue/page": "app/venue/page.js",
-  "/evenements/page": "app/evenements/page.js",
-  "/about/page": "app/about/page.js"
-}
