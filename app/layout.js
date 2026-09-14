@@ -33,10 +33,10 @@ export default function RootLayout({ children }) {
         <div id="mobileBar" className="mobile-bar">
           <div className="mobile-bar-inner">
             <div className="mobile-bar-text">
-              <p className="k">CGEL — 01 oct. 2026</p>
-              <p className="loc">Ahmed Bey Zenith, Constantine</p>
+              <p className="k" data-i18n="mobileBar.title">CGEL — 01 oct. 2026</p>
+              <p className="loc" data-i18n="mobileBar.loc">Ahmed Bey Zenith, Constantine</p>
             </div>
-            <a href="/registration">S&apos;inscrire</a>
+            <a href="/registration" data-i18n="mobileBar.cta">S&apos;inscrire</a>
           </div>
         </div>
         <button type="button" id="backToTop" aria-label="Retour en haut">

@@ -21,7 +21,7 @@ export default function Page() {
     <div className="hero-intro">
       <div className="hero-logo-row">
         <span className="line" aria-hidden="true"></span>
-        <img src="/cgel.svg" alt="CGEL Logo" />
+        <img src="/cgel.svg" alt="CGEL Logo"/>
         <span className="line" aria-hidden="true"></span>
       </div>
       <p className="kicker" data-i18n="hero.kicker">Collège des Hépato-Gastroentérologues</p>
@@ -56,8 +56,8 @@ export default function Page() {
                   </h2>
                   <p className="carousel-desc carousel-desc--dark" data-i18n="carousel.expertise.desc">L'excellence en hépato-gastroentérologie libérale</p>
                   <div className="carousel-meta">
-                    <span className="meta-pill dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> Jeudi 1 octobre 2026</span>
-                    <span className="meta-pill dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Ahmed Bey Zenith, Constantine</span>
+                    <span className="meta-pill dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> <span data-i18n="carousel.meta.date">Jeudi 1 octobre 2026</span></span>
+                    <span className="meta-pill dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span data-i18n="carousel.meta.place">Ahmed Bey Zenith, Constantine</span></span>
                   </div>
                   <span className="carousel-chiffre dark" data-i18n="carousel.chiffre.expertise">Formation · Échange · Innovation</span>
                   <div className="carousel-ctas">
@@ -108,8 +108,8 @@ export default function Page() {
                     <p className="carousel-desc" data-i18n="carousel.program.desc" style={{marginTop:"0.75rem"}}>De l'innovation médicale au soin intelligent</p>
                   </div>
                   <div className="carousel-meta" style={{marginTop:"0", gap:"0.5rem"}}>
-                    <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> Jeudi 1 octobre 2026</span>
-                    <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Ahmed Bey Zenith, Constantine</span>
+                    <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> <span data-i18n="carousel.meta.date">Jeudi 1 octobre 2026</span></span>
+                    <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span data-i18n="carousel.meta.place">Ahmed Bey Zenith, Constantine</span></span>
                   </div>
                   <span className="carousel-chiffre" data-i18n="carousel.program.chiffre">Conférences · Ateliers · Échanges</span>
                   <div className="carousel-ctas" style={{marginTop:"0"}}>
@@ -258,37 +258,37 @@ export default function Page() {
 {/* Past Events — 3 real events, taller posters */}
 <section className="past-events" id="pastEvents">
   <div className="container">
-    <div className="past-events-header"><span className="line" aria-hidden="true"></span><span>Événements passés</span></div>
-    <h2>Retour en images — nos événements passés</h2>
-    <p className="sub">Trois moments forts du CGEL — affiches lisibles en grand format.</p>
+    <div className="past-events-header"><span className="line" aria-hidden="true"></span><span data-i18n="pastEvents.kicker">Événements passés</span></div>
+    <h2 data-i18n="pastEvents.title">Retour en images — nos événements passés</h2>
+    <p className="sub" data-i18n="pastEvents.sub">Trois moments forts du CGEL — affiches lisibles en grand format.</p>
     <div className="past-events-grid" style={{marginTop:"1.5rem", gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))", gap:"1.5rem"}}>
       <div className="event-card" style={{border:"1px solid var(--line2)"}}>
         <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter1.jpeg" alt="Affiche 2ème Journée de Formation Médicale Continue CGEL" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
         <div className="cap" style={{padding:"1rem"}}>
-          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>2ème Journée de Formation Médicale Continue CGEL</h3>
-          <p style={{marginTop:".35rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)", display:"inline-flex"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 25–26 septembre 2025</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Hôtel El Hocine, Constantine</p>
-          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Deux jours de formation et d’échanges scientifiques autour de la gastroentérologie libérale, à l’Hôtel El Hocine.</p>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="pastEvents.event1.title">2ème Journée de Formation Médicale Continue CGEL</h3>
+          <p style={{marginTop:".35rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)", display:"inline-flex"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> <span data-i18n="pastEvents.event1.date">25–26 septembre 2025</span></p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> <span data-i18n="pastEvents.event1.place">Hôtel El Hocine, Constantine</span></p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}} data-i18n="pastEvents.event1.desc">Deux jours de formation et d’échanges scientifiques autour de la gastroentérologie libérale, à l’Hôtel El Hocine.</p>
         </div>
       </div>
       <div className="event-card">
         <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter.jpeg" alt="Affiche Proctologie clinique pour le médecin généraliste — 1ère soirée FMC" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
         <div className="cap" style={{padding:"1rem"}}>
-          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Proctologie clinique pour le médecin généraliste</h3>
-          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>1ère soirée FMC</p>
-          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 25 décembre 2025, 17h00</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Restaurant Délice, Nouvelle Ville–Ali Mendjeli</p>
-          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Soirée pratique dédiée à la proctologie en médecine générale, en partenariat avec Repartidis.</p>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="pastEvents.event2.title">Proctologie clinique pour le médecin généraliste</h3>
+          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}} data-i18n="pastEvents.event2.badge">1ère soirée FMC</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> <span data-i18n="pastEvents.event2.date">25 décembre 2025, 17h00</span></p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> <span data-i18n="pastEvents.event2.place">Restaurant Délice, Nouvelle Ville–Ali Mendjeli</span></p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}} data-i18n="pastEvents.event2.desc">Soirée pratique dédiée à la proctologie en médecine générale, en partenariat avec Repartidis.</p>
         </div>
       </div>
       <div className="event-card">
         <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter2.jpeg" alt="Affiche Trouble fonctionnel de l’intestin — 3ème soirée FMC" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
         <div className="cap" style={{padding:"1rem"}}>
-          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Trouble fonctionnel de l’intestin : une approche pratique</h3>
-          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>3ème soirée FMC</p>
-          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> 07 mai 2026, 17h00</p>
-          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Restaurant Apex, Ali Mendjeli – Constantine</p>
-          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}}>Approche pratique des troubles fonctionnels intestinaux pour le médecin généraliste, en collaboration avec le Laboratoire Mayoly.</p>
+          <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="pastEvents.event3.title">Trouble fonctionnel de l’intestin : une approche pratique</h3>
+          <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}} data-i18n="pastEvents.event3.badge">3ème soirée FMC</p>
+          <p style={{marginTop:".25rem", display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> <span data-i18n="pastEvents.event3.date">07 mai 2026, 17h00</span></p>
+          <p style={{display:"flex", alignItems:"center", gap:".35rem", fontSize:"11px"}}><span style={{color:"var(--primary)"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> <span data-i18n="pastEvents.event3.place">Restaurant Apex, Ali Mendjeli – Constantine</span></p>
+          <p style={{marginTop:".6rem", fontSize:"11.5px", lineHeight:"1.6", whiteSpace:"normal", color:"var(--muted)"}} data-i18n="pastEvents.event3.desc">Approche pratique des troubles fonctionnels intestinaux pour le médecin généraliste, en collaboration avec le Laboratoire Mayoly.</p>
         </div>
       </div>
     </div>
@@ -298,41 +298,41 @@ export default function Page() {
 {/* Photo Gallery — grid + lightbox */}
 <section className="gallery-section" id="photoGallery">
   <div className="container">
-    <div className="gallery-header"><span className="line" aria-hidden="true"></span><span>Galerie photos</span></div>
-    <h2>Galerie — nos moments forts</h2>
-    <p className="sub">Nos moments forts en images — cliquez pour agrandir.</p>
+    <div className="gallery-header"><span className="line" aria-hidden="true"></span><span data-i18n="gallery.kicker">Galerie photos</span></div>
+    <h2 data-i18n="gallery.title">Galerie — nos moments forts</h2>
+    <p className="sub" data-i18n="gallery.sub">Nos moments forts en images — cliquez pour agrandir.</p>
     <div className="gallery-grid">
-      <figure className="gallery-item" data-src="/images/events/showcasepic.jpeg" data-caption="CGEL Scientific Days · Vue d'ensemble — salle plénière et échanges">
+      <figure className="gallery-item" data-src="/images/events/showcasepic.jpeg" data-caption="CGEL Scientific Days · Vue d'ensemble — salle plénière et échanges" data-i18n-caption="gallery.1.caption">
         <img src="/images/events/showcasepic.jpeg" alt="Galerie 1 — Vue d'ensemble salle plénière" loading="lazy" />
-        <figcaption className="cap"><p>CGEL Scientific Days — Plénière</p><span>Vue d'ensemble</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.1.p">CGEL Scientific Days — Plénière</p><span data-i18n="gallery.1.span">Vue d'ensemble</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/showcasepic1.jpeg" data-caption="Journée scientifique · Session questions-réponses avec les experts">
+      <figure className="gallery-item" data-src="/images/events/showcasepic1.jpeg" data-caption="Journée scientifique · Session questions-réponses avec les experts" data-i18n-caption="gallery.2.caption">
         <img src="/images/events/showcasepic1.jpeg" alt="Galerie 2 — Session questions-réponses" loading="lazy" />
-        <figcaption className="cap"><p>Journée scientifique</p><span>Échanges experts</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.2.p">Journée scientifique</p><span data-i18n="gallery.2.span">Échanges experts</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/showcasepic2.jpeg" data-caption="Atelier endoscopie · Démonstration pratique sur cas cliniques">
+      <figure className="gallery-item" data-src="/images/events/showcasepic2.jpeg" data-caption="Atelier endoscopie · Démonstration pratique sur cas cliniques" data-i18n-caption="gallery.3.caption">
         <img src="/images/events/showcasepic2.jpeg" alt="Galerie 3 — Atelier endoscopie" loading="lazy" />
-        <figcaption className="cap"><p>Atelier endoscopie</p><span>Démonstration pratique</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.3.p">Atelier endoscopie</p><span data-i18n="gallery.3.span">Démonstration pratique</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/showcasepic3.jpeg" data-caption="Conférence IA &amp; Santé · Table ronde — innovation et soin intelligent">
+      <figure className="gallery-item" data-src="/images/events/showcasepic3.jpeg" data-caption="Conférence IA &amp; Santé · Table ronde — innovation et soin intelligent" data-i18n-caption="gallery.4.caption">
         <img src="/images/events/showcasepic3.jpeg" alt="Galerie 4 — Table ronde IA & Santé" loading="lazy" />
-        <figcaption className="cap"><p>Conférence IA &amp; Santé</p><span>Table ronde</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.4.p">Conférence IA &amp; Santé</p><span data-i18n="gallery.4.span">Table ronde</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/showcasepic4.jpeg" data-caption="Rencontre partenaires · Échanges avec les laboratoires sponsors">
+      <figure className="gallery-item" data-src="/images/events/showcasepic4.jpeg" data-caption="Rencontre partenaires · Échanges avec les laboratoires sponsors" data-i18n-caption="gallery.5.caption">
         <img src="/images/events/showcasepic4.jpeg" alt="Galerie 5 — Rencontre partenaires" loading="lazy" />
-        <figcaption className="cap"><p>Rencontre partenaires</p><span>Échanges sponsors</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.5.p">Rencontre partenaires</p><span data-i18n="gallery.5.span">Échanges sponsors</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/showcasepic5.jpeg" data-caption="Clôture &amp; perspectives · Remise des attestations et photo de groupe">
+      <figure className="gallery-item" data-src="/images/events/showcasepic5.jpeg" data-caption="Clôture &amp; perspectives · Remise des attestations et photo de groupe" data-i18n-caption="gallery.6.caption">
         <img src="/images/events/showcasepic5.jpeg" alt="Galerie 6 — Clôture et photo de groupe" loading="lazy" />
-        <figcaption className="cap"><p>Clôture &amp; perspectives</p><span>Photo de groupe</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.6.p">Clôture &amp; perspectives</p><span data-i18n="gallery.6.span">Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/CGEL2.jpeg" data-caption="Journée scientifique ">
+      <figure className="gallery-item" data-src="/images/events/CGEL2.jpeg" data-caption="Journée scientifique " data-i18n-caption="gallery.7.caption">
         <img src="/images/events/CGEL2.jpeg" alt="Journée scientifique" loading="lazy" />
-        <figcaption className="cap"><p>Journée scientifique</p><span>Photo de groupe</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.7.p">Journée scientifique</p><span data-i18n="gallery.7.span">Photo de groupe</span></figcaption>
       </figure>
-      <figure className="gallery-item" data-src="/images/events/saber.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels">
+      <figure className="gallery-item" data-src="/images/events/saber.jpeg" data-caption="Soirée collégiale · Convivialité et réseau Est — moments informels" data-i18n-caption="gallery.8.caption">
         <img src="/images/events/saber.jpeg" alt="Galerie 8 — Soirée collégiale" loading="lazy" />
-        <figcaption className="cap"><p>Soirée collégiale</p><span>Convivialité</span></figcaption>
+        <figcaption className="cap"><p data-i18n="gallery.8.p">Soirée collégiale</p><span data-i18n="gallery.8.span">Convivialité</span></figcaption>
       </figure>
     </div>
   </div>

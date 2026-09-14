@@ -28,11 +28,11 @@ export default function Page() {
         <div className="featured-grid">
           <div className="featured-main">
             <div className="featured-badge-row"><span className="badge" data-i18n="events.featured.badge">À la une</span><span className="muted" data-i18n="events.featured.muted">Journées scientifiques</span></div>
-            <h2 className="featured-title">CGEL Scientific Days — 3<sup style={{fontSize:"16px"}}>e</sup> Édition</h2>
-            <p className="featured-desc">Gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée — le rendez-vous scientifique du collège, aux côtés d'un partenariat universitaire.</p>
+            <h2 className="featured-title" data-i18n="events.featured.title">CGEL Scientific Days — 3<sup style={{fontSize:"16px"}}>e</sup> Édition</h2>
+            <p className="featured-desc" data-i18n="events.featured.desc">Gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée — le rendez-vous scientifique du collège, aux côtés d'un partenariat universitaire.</p>
             <div className="featured-meta">
-              <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> Jeudi 1 octobre 2026</div>
-              <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Ahmed Bey Zenith, Constantine, Algérie</div>
+              <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> <span data-i18n="events.featured.date">Jeudi 1 octobre 2026</span></div>
+              <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> <span data-i18n="events.featured.place">Ahmed Bey Zenith, Constantine, Algérie</span></div>
             </div>
             <div style={{marginTop:"1.75rem",display:"flex",flexWrap:"wrap",gap:".75rem"}}>
               <a href="/about" className="btn btn-navy" data-i18n="events.featured.btnMore">En savoir plus</a>
@@ -42,8 +42,8 @@ export default function Page() {
           <div className="featured-side">
             <div style={{textAlign:"center",maxWidth:"280px"}}>
               <div className="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="20" height="20"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.937A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063A2 2 0 0 0 14.063 15.5l-1.582 6.135a.5.5 0 0 1-.963 0Z"/><path d="M20 2v4"/><path d="M22 4h-4"/><path d="M3 10a2 2 0 0 0 2 2"/><path d="M3 14a2 2 0 0 1 2-2"/></svg></div>
-              <p style={{marginTop:"1rem",fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}}>À venir</p>
-              <p style={{marginTop:".5rem",fontSize:"12px",lineHeight:"1.6",color:"#64748B",fontWeight:"300"}}>Plus de détails sur le programme, les intervenants et l'inscription seront publiés ici.</p>
+              <p style={{marginTop:"1rem",fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}} data-i18n="events.coming">À venir</p>
+              <p style={{marginTop:".5rem",fontSize:"12px",lineHeight:"1.6",color:"#64748B",fontWeight:"300"}} data-i18n="events.comingDesc">Plus de détails sur le programme, les intervenants et l'inscription seront publiés ici.</p>
             </div>
           </div>
         </div>
@@ -55,12 +55,11 @@ export default function Page() {
         <div className="inner">
           <div style={{display:"flex",flexDirection:"column",gap:"1rem"}}>
             <div style={{display:"flex",flexDirection:"column",gap:".5rem"}}>
-              <div style={{display:"flex",alignItems:"center",gap:".75rem"}}><span style={{height:"1px",width:"32px",background:"#F08444"}}></span><span style={{fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}}>Ils nous soutiennent</span></div>
-              <h3 style={{margin:"0",fontFamily:"inherit",fontSize:"22px",lineHeight:"1.1",letterSpacing:"-.02em",color:"#0F1D3A"}}>Sponsors</h3>
-              <p style={{marginTop:".25rem",fontSize:"12px",lineHeight:"1.6",color:"#475569"}}>Les 10 laboratoires qui accompagnent le CGEL Scientific Days.</p>
-              <p style={{fontSize:"11px",lineHeight:"1.6",color:"#64748B"}}>CGEL Scientific Days — 3e Édition — ces sponsors sont spécifiques à cet événement uniquement.</p>
+              <div style={{display:"flex",alignItems:"center",gap:".75rem"}}><span style={{height:"1px",width:"32px",background:"#F08444"}}></span><span style={{fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}} data-i18n="partners.ilsNousSoutiennent">Ils nous soutiennent</span></div>
+              <h3 style={{margin:"0",fontFamily:"inherit",fontSize:"22px",lineHeight:"1.1",letterSpacing:"-.02em",color:"#0F1D3A"}} data-i18n="partners.nosSponsors">Nos Sponsors</h3>
+              <p style={{fontSize:"11px",lineHeight:"1.6",color:"#64748B"}} data-i18n="partners.sponsorDescription">CGEL Scientific Days — 3e Édition — </p>
 </div>
-            <span className="hidden sm:inline-flex"><span style={{fontSize:"11px",letterSpacing:".08em",textTransform:"uppercase",fontWeight:"600",color:"#94A3B8",border:"1px solid #E8EDF3",padding:".4rem .75rem",background:"#F8FAFC"}}>10 sponsors confirmés</span></span>
+            <span className="hidden sm:inline-flex"><span style={{fontSize:"11px",letterSpacing:".08em",textTransform:"uppercase",fontWeight:"600",color:"#94A3B8",border:"1px solid #E8EDF3",padding:".4rem .75rem",background:"#F8FAFC"}} data-i18n="events.sponsors.count">10 sponsors confirmés</span></span>
           </div>
           <div className="partner-logos-grid">
             <div className="logo-cell" style={{height:"124px"}}><img src="/logo/logosponsor/astrazeneca.png" alt="AstraZeneca — Sponsor CGEL Scientific Days" loading="lazy" style={{maxHeight:"72px"}} /></div>
@@ -77,34 +76,34 @@ export default function Page() {
         </div>
       {/* Événements précédents — 3 événements réels, affiches lisibles */}
       <div className="past-events" style={{marginTop:"2.5rem",border:"1px solid var(--line)",background:"#fff",padding:"2rem"}}>
-        <div style={{display:"flex",alignItems:"center",gap:".75rem",marginBottom:"1rem"}}><span style={{height:"1px",width:"32px",background:"#F08444"}}></span><span style={{fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}}>Événements passés</span></div>
-        <h3 style={{margin:"0",fontSize:"20px",lineHeight:"1.1",letterSpacing:"-.02em",color:"#0F1D3A"}}>Événements précédents</h3>
-        <p style={{marginTop:".5rem",fontSize:"12px",lineHeight:"1.6",color:"#475569",maxWidth:"600px"}}>Retour sur nos rencontres précédentes.</p>
+        <div style={{display:"flex",alignItems:"center",gap:".75rem",marginBottom:"1rem"}}><span style={{height:"1px",width:"32px",background:"#F08444"}}></span><span style={{fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}} data-i18n="pastEvents.kicker">Événements passés</span></div>
+        <h3 style={{margin:"0",fontSize:"20px",lineHeight:"1.1",letterSpacing:"-.02em",color:"#0F1D3A"}} data-i18n="events.previousTitle">Événements précédents</h3>
+        <p style={{marginTop:".5rem",fontSize:"12px",lineHeight:"1.6",color:"#475569",maxWidth:"600px"}} data-i18n="events.previousDesc">Retour sur nos rencontres précédentes.</p>
         <div className="past-events-grid" style={{marginTop:"1.5rem"}}>
           <div className="event-card">
             <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter1.jpeg" alt="2ème Journée de Formation Médicale Continue CGEL" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
             <div className="cap" style={{padding:"1rem"}}>
-              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>2ème Journée de Formation Médicale Continue CGEL</h3>
-              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".25rem"}}>25–26 septembre 2025 · Hôtel El Hocine, Constantine</p>
-              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}}>Deux jours de formation et d’échanges scientifiques à l’Hôtel El Hocine.</p>
+              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="events.past1.title">2ème Journée de Formation Médicale Continue CGEL</h3>
+              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".25rem"}} data-i18n="events.past1.meta">25–26 septembre 2025 · Hôtel El Hocine, Constantine</p>
+              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}} data-i18n="events.past1.desc">Deux jours de formation et d’échanges scientifiques à l’Hôtel El Hocine.</p>
             </div>
           </div>
           <div className="event-card">
             <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter.jpeg" alt="Proctologie clinique pour le médecin généraliste" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
             <div className="cap" style={{padding:"1rem"}}>
-              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Proctologie clinique pour le médecin généraliste</h3>
-              <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>1ère soirée FMC</p>
-              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".15rem"}}>25 décembre 2025, 17h00 · Restaurant Délice, Ali Mendjeli</p>
-              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}}>Soirée pratique en partenariat avec Repartidis.</p>
+              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="events.past2.title">Proctologie clinique pour le médecin généraliste</h3>
+              <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}} data-i18n="events.past2.badge">1ère soirée FMC</p>
+              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".15rem"}} data-i18n="events.past2.meta">25 décembre 2025, 17h00 · Restaurant Délice, Ali Mendjeli</p>
+              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}} data-i18n="events.past2.desc">Soirée pratique en partenariat avec Repartidis.</p>
             </div>
           </div>
           <div className="event-card">
             <div className="img" style={{aspectRatio:"3/4.2", background:"#fff", padding:"8px"}}><img src="/images/events/eventposter2.jpeg" alt="Trouble fonctionnel de l’intestin" loading="lazy" style={{objectFit:"contain", background:"#fff"}} /></div>
             <div className="cap" style={{padding:"1rem"}}>
-              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}}>Trouble fonctionnel de l’intestin : approche pratique</h3>
-              <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}}>3ème soirée FMC</p>
-              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".15rem"}}>07 mai 2026, 17h00 · Restaurant Apex, Constantine</p>
-              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}}>En collaboration avec le Laboratoire Mayoly.</p>
+              <h3 style={{fontSize:"13px", fontWeight:"700", whiteSpace:"normal"}} data-i18n="events.past3.title">Trouble fonctionnel de l’intestin : approche pratique</h3>
+              <p style={{fontSize:"11px", color:"var(--primary)", fontWeight:"600"}} data-i18n="events.past3.badge">3ème soirée FMC</p>
+              <p style={{fontSize:"11px", color:"var(--muted)", marginTop:".15rem"}} data-i18n="events.past3.meta">07 mai 2026, 17h00 · Restaurant Apex, Constantine</p>
+              <p style={{fontSize:"11.5px", lineHeight:"1.6", color:"var(--muted2)", marginTop:".5rem", whiteSpace:"normal"}} data-i18n="events.past3.desc">En collaboration avec le Laboratoire Mayoly.</p>
             </div>
           </div>
         </div>

@@ -672,13 +672,21 @@ button{font:inherit;cursor:pointer;transition:color 180ms,background-color 180ms
 }
 /* RTL support */
 html[dir="rtl"] body{direction:rtl}
-html[dir="rtl"] .header-inner{flex-direction:row-reverse}
-html[dir="rtl"] .nav-primary{flex-direction:row-reverse}
+html[dir="rtl"] .header-inner{flex-direction:row}
+html[dir="rtl"] .nav-primary{flex-direction:row}
+html[dir="rtl"] .header-actions{flex-direction:row}
+html[dir="rtl"] .nav-primary a{letter-spacing:0;text-align:right}
+html[dir="rtl"] .nav-mobile a{letter-spacing:0;text-align:right}
+html[dir="rtl"] .btn-contact,
+html[dir="rtl"] .mobile-cta,
+html[dir="rtl"] .mobile-bar a,
+html[dir="rtl"] .lang-switcher button{letter-spacing:0}
+html[dir="rtl"] .lang-switcher{direction:ltr}
 html[dir="rtl"] .apropos-grid{direction:rtl}
 html[dir="rtl"] .explore-grid{direction:rtl}
 html[dir="rtl"] .footer-grid{direction:rtl}
 html[dir="rtl"] .carousel-content{text-align:right}
-html[dir="rtl"] .carousel-meta{flex-direction:row-reverse}
+html[dir="rtl"] .carousel-meta{flex-direction:row}
 html[dir="rtl"] .marquee-track{animation-direction:reverse}
 
 /* Back to top */
