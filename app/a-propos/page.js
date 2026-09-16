@@ -69,7 +69,7 @@ export default function Page() {
         <div className="bureau-grid" style={{marginTop:"1.25rem"}}>
           {/* Member 1 — Président */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Abderraouf BOURGHOUD — Président" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic.jpeg" alt="Dr Abderraouf BOURGHOUD — Président" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
             <div className="body"><h4>Dr Abderraouf BOURGHOUD</h4><p className="role">Président</p><p className="bio">Médecin Spécialiste<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
             <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
