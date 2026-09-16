@@ -67,41 +67,41 @@ export default function Page() {
         <h3 style={{margin:"0",fontSize:"20px",letterSpacing:"-.02em",color:"var(--fg)"}} data-i18n="apropos.bureau">Le bureau — mandat 2024-2026</h3>
         <p style={{marginTop:".4rem",fontSize:"11.5px",color:"var(--muted2)",maxWidth:"640px"}} data-i18n="apropos.bureauDesc">Élu en assemblée générale, le bureau assure le pilotage scientifique, administratif et partenarial du collège. Mandat de 2 ans, renouvelable.</p>
         <div className="bureau-grid" style={{marginTop:"1.25rem"}}>
-          {/* Member 1 — photo from events */}
+          {/* Member 1 — Président */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/events/showcasepic.jpeg" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4>Dr. Abderraouf BOURGHOUD</h4><p className="role" data-i18n="apropos.presidentRole">Président</p><p className="bio" data-i18n="apropos.presidentBio">Médecin spécialiste en hépato-gastro-entérologie et en endoscopie exerçant en libéral à Constantine.</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Abderraouf BOURGHOUD — Président" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Abderraouf BOURGHOUD</h4><p className="role">Président</p><p className="bio">Médecin Spécialiste<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
-          {/* Member 2 */}
+          {/* Member 2 — Vice-président */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Rachid BELMEKNEI — Vice-président" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Rachid BELMEKNEI</h4><p className="role">Vice-président</p><p className="bio">Médecin Spécialiste<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
-          {/* Member 3 */}
+          {/* Member 3 — Secrétaire général */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Saber ABED — Secrétaire général" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Saber ABED</h4><p className="role">Secrétaire général</p><p className="bio">Maître-assistant<br/>Hépato-gastro-entérologie et endoscopie digestive diagnostique et interventionnelle</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
-          {/* Member 4 */}
+          {/* Member 4 — Secrétaire général adjoint */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Walid AISSOUS — Secrétaire général adjoint" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Walid AISSOUS</h4><p className="role">Secrétaire général adjoint</p><p className="bio">Médecin Spécialiste<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
-          {/* Member 5 */}
+          {/* Member 5 — Trésorier */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre</p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Monder BAHLOUL — Trésorier" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Monder BAHLOUL</h4><p className="role">Trésorier</p><p className="bio">Médecin Spécialiste<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
-          {/* Member 6 */}
+          {/* Member 6 — Trésorière adjointe */}
           <div className="member-card">
-            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Bureau CGEL — membre" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
-            <div className="body"><h4 data-i18n="apropos.placeholderName">Nom Prenom</h4><p className="role" data-i18n="apropos.placeholderRole">Profile du membre </p><p className="bio" data-i18n="apropos.placeholderBio">Description du membre.<br/>va apparaitre ici</p></div>
-            <div className="foot" data-i18n="apropos.memberFoot">Constantine · libéral · membre fondateur</div>
+            <div className="head" style={{height:"160px", overflow:"hidden", padding:"0", borderBottom:"1px solid var(--line2)"}}><img src="/images/avatar.png" alt="Dr Latifa BELGHAZI — Trésorière adjointe" style={{width:"100%", height:"100%", objectFit:"cover"}} /></div>
+            <div className="body"><h4>Dr Latifa BELGHAZI</h4><p className="role">Trésorière adjointe</p><p className="bio">Ancienne maître-assistante<br/>Hépato-gastro-entérologie et endoscopie digestive</p></div>
+            <div className="foot">Constantine · libéral · membre fondateur</div>
           </div>
         </div>
       </div>
