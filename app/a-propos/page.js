@@ -17,7 +17,7 @@ export default function Page() {
     <div className="page-hero-inner">
       <div className="page-kicker"><span className="line"></span><span data-i18n="about.kicker">À propos</span></div>
       <h1 data-i18n="apropos.title">Collège des Hépato-Gastroentérologues et Endoscopistes Libéraux de l'Est</h1>
-      <p className="lead" data-i18n="apropos.lead">Un collège professionnel qui fédère, forme et représente la gastroentérologie libérale de l'Est algérien depuis 2018.</p>
+      <p className="lead" data-i18n="apropos.lead">Un collège professionnel qui fédère, forme et représente la gastroentérologie libérale de l'Est algérien depuis 2022.</p>
     </div>
   </div>
 
