@@ -27,7 +27,7 @@ export default function Page() {
           <div className="head">
             <p className="kicker" data-i18n="contact.organizer">Organisateur</p>
             <p className="title">CGEL</p>
-            <p style={{fontSize:"11px",color:"#64748B",margin:".1rem 0 0"}} data-i18n="contact.edition">3<sup>e</sup> Édition — CGEL Scientific Days</p>
+            <p style={{fontSize:"11px",color:"#64748B",margin:".1rem 0 0"}} data-i18n="contact.edition">CGEL Scientific Days — 3<sup>e</sup> édition</p>
           </div>
           <div className="contact-rows">
             <a href="tel:+213540699513" className="contact-row">

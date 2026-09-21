@@ -64,7 +64,7 @@ export default function Page() {
                     <a href="/registration" className="btn btn-orange" data-i18n="carousel.cta.register">S'inscrire</a>
                     <a href="/a-propos" className="btn btn-outline" data-i18n="carousel.cta.discover">Découvrir le collège</a>
                   </div>
-                  <div className="carousel-orgs dark" style={{marginTop:"1rem"}}>
+                    <div className="carousel-orgs dark" style={{marginTop:"1rem"}}>
                     <div className="org">
                       <img src="/cgel.svg" alt="Organisateur" style={{height:"48px",width:"auto",objectFit:"contain"}} />
                       <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.organizer">Organisateur</p>
@@ -74,7 +74,7 @@ export default function Page() {
                         <img src="/logo/uc2.png" alt="Universite Constantine 2 Abdelhamid Mehri" loading="lazy" />
                         <img src="/logo/ntic.png" alt="Faculte des Nouvelles Technologies de l'Information et de la Communication" loading="lazy" />
                       </div>
-                      <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.partner">Partenaire scientifique</p>
+                      <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.partner">Partenaire scientifique — CGEL Scientific Days 3e édition uniquement</p>
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Page() {
                       <span className="line1 small" data-i18n="carousel.expertise.title1">CGEL Scientific Days — 3e édition</span>
                       <span className="line2" data-i18n="carousel.expertise.title2">Journées scientifiques du collège</span>
                     </h2>
-                    <p className="carousel-desc" data-i18n="carousel.program.desc" style={{marginTop:"0.75rem"}}>De l'innovation médicale au soin intelligent</p>
+                    <p className="carousel-desc" data-i18n="carousel.program.desc" style={{marginTop:"0.75rem"}}>De l'innovation médicale aux soins intelligents</p>
                   </div>
                   <div className="carousel-meta" style={{marginTop:"0", gap:"0.5rem"}}>
                     <span className="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> <span data-i18n="carousel.meta.date">Jeudi 1 octobre 2026</span></span>
@@ -126,7 +126,7 @@ export default function Page() {
                         <img src="/logo/uc2.png" alt="Universite Constantine 2 Abdelhamid Mehri" loading="lazy" />
                         <img src="/logo/ntic.png" alt="Faculte des Nouvelles Technologies de l'Information et de la Communication" loading="lazy" />
                       </div>
-                      <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.partner">Partenaire scientifique</p>
+                      <p style={{fontSize:"10px",color:"#64748B"}} data-i18n="carousel.org.partner">Partenaire scientifique — CGEL Scientific Days 3e édition uniquement</p>
                     </div>
                   </div>
                 </div>

@@ -28,8 +28,8 @@ export default function Page() {
         <div className="featured-grid">
           <div className="featured-main">
             <div className="featured-badge-row"><span className="badge" data-i18n="events.featured.badge">À la une</span><span className="muted" data-i18n="events.featured.muted">Journées scientifiques</span></div>
-            <h2 className="featured-title" data-i18n="events.featured.title">CGEL Scientific Days — 3<sup style={{fontSize:"16px"}}>e</sup> Édition</h2>
-            <p className="featured-desc" data-i18n="events.featured.desc">Gastroentérologie à l'ère de l'intelligence artificielle et de la santé connectée — le rendez-vous scientifique du collège, aux côtés d'un partenariat universitaire.</p>
+            <h2 className="featured-title" data-i18n="events.featured.title">CGEL Scientific Days — 3<sup style={{fontSize:"16px"}}>e</sup> édition</h2>
+            <p className="featured-desc" data-i18n="events.featured.desc">Gastroentérologie à l&apos;ère de l&apos;intelligence artificielle et de la santé connectée — le rendez-vous scientifique du collège, organisé en partenariat scientifique avec l&apos;Université Constantine 2 Abdelhamid Mehri, Faculté NTIC (partenariat propre à cette journée).</p>
             <div className="featured-meta">
               <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span> <span data-i18n="events.featured.date">Jeudi 1 octobre 2026</span></div>
               <div className="row"><span className="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="16" height="16"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> <span data-i18n="events.featured.place">Ahmed Bey Zenith, Constantine, Algérie</span></div>
@@ -57,7 +57,7 @@ export default function Page() {
             <div style={{display:"flex",flexDirection:"column",gap:".5rem"}}>
               <div style={{display:"flex",alignItems:"center",gap:".75rem"}}><span style={{height:"1px",width:"32px",background:"#F08444"}}></span><span style={{fontSize:"11px",letterSpacing:".18em",textTransform:"uppercase",fontWeight:"600",color:"#023DA5"}} data-i18n="partners.ilsNousSoutiennent">Ils nous soutiennent</span></div>
               <h3 style={{margin:"0",fontFamily:"inherit",fontSize:"22px",lineHeight:"1.1",letterSpacing:"-.02em",color:"#0F1D3A"}} data-i18n="partners.nosSponsors">Nos Sponsors</h3>
-              <p style={{fontSize:"11px",lineHeight:"1.6",color:"#64748B"}} data-i18n="partners.sponsorDescription">CGEL Scientific Days — 3e Édition — </p>
+              <p style={{fontSize:"11px",lineHeight:"1.6",color:"#64748B"}} data-i18n="partners.sponsorDescription">CGEL Scientific Days — 3e édition — partenariat et sponsors propres à cet événement</p>
 </div>
             <span className="hidden sm:inline-flex"><span style={{fontSize:"11px",letterSpacing:".08em",textTransform:"uppercase",fontWeight:"600",color:"#94A3B8",border:"1px solid #E8EDF3",padding:".4rem .75rem",background:"#F8FAFC"}} data-i18n="events.sponsors.count">10 sponsors confirmés</span></span>
           </div>
