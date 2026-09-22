@@ -304,7 +304,7 @@ export default function ProgramClient() {
                       <div className="program-time"><span>{it.time.split(" — ")[0]}</span>{it.time.includes("—") && <span className="dash">— {it.time.split(" — ")[1]}</span>}</div>
                       <div>
                         <p className="program-title">
-                          {it.title} {it.badge && <span style={{ marginLeft: ".35rem", fontSize: "9px", letterSpacing: ".05em", textTransform: "uppercase", fontWeight: "700", color: it.badge === "Visioconférence" ? "#065F46" : "#fff", background: it.badge === "Visioconférence" ? "#ECFDF5" : it.badge === "Table ronde" ? "#EEF4FF" : "#023DA5", border: it.badge === "Visioconférence" ? "1px solid #A7F3D0" : it.badge === "Table ronde" ? "1px solid #D6E2F5" : "none", padding: "1px 5px", verticalAlign: "middle" }}>{it.badge}</span>}
+                          {it.title} {it.badge && <span style={{ marginLeft: ".35rem", fontSize: "9px", letterSpacing: ".05em", textTransform: "uppercase", fontWeight: "700", color: it.badge === "Visioconférence" ? "#065F46" : it.badge === "Table ronde" ? "#023DA5" : "#fff", background: it.badge === "Visioconférence" ? "#ECFDF5" : it.badge === "Table ronde" ? "#EEF4FF" : "#023DA5", border: it.badge === "Visioconférence" ? "1px solid #A7F3D0" : it.badge === "Table ronde" ? "1px solid #D6E2F5" : "none", padding: "1px 5px", verticalAlign: "middle" }}>{it.badge}</span>}
                         </p>
                         <p className="program-desc">{it.desc}</p>
                       </div>
@@ -320,7 +320,7 @@ export default function ProgramClient() {
           {/* Break Lunch */}
           {breakLunchVisible && (
             <div className="program-item--break" data-session="Ouverture" style={{ background: "#FFF7ED" }}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" width="14" height="14" aria-hidden="true"><path d="M3 7h18" /><path d="M10 7v10a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V7" /><path d="M6 7v10a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V7" /><path d="M18 7a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-2V7h2Z" /></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" width="14" height="14" aria-hidden="true"><circle cx="12" cy="13" r="6.5" /><path d="M9 8.5V7" /><path d="M9.5 8.5v3a1 1 0 0 0 1 1v0a1 1 0 0 0 1-1V8.5" /><path d="M14.5 8H15.5a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 1-2.5 2.5V8Z" /><path d="M12 19.5v2" /><path d="M8.5 9.5h1" /></svg>
               <span className="program-time">12:30 — 14:00</span>
               <span className="break-label">Déjeuner</span>
               <span style={{ fontSize: "10px", background: "#fff", border: "1px solid #FFDCC6", padding: "1px 5px", color: "#9A4A1E" }}>Pause</span>

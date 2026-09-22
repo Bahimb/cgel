@@ -243,6 +243,49 @@ button{font:inherit;cursor:pointer;transition:color 180ms,background-color 180ms
 .carousel-dots button:not(.active):hover{background:#B0BECF}
 .carousel-dots .counter{margin-left:.75rem;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--muted)}
 
+/* Programme preview — homepage compact card (secondary to hero) — balanced & timeline */
+.programme-preview-wrap{max-width:980px;margin:1rem auto 0;padding:0 32px}
+@media(min-width:640px){.programme-preview-wrap{padding:0}}
+.programme-preview-card{background:#fff;border:1px solid var(--line2);padding:6px;box-shadow:0 8px 30px rgba(2,29,58,.07)}
+.programme-preview-inner{background:linear-gradient(to bottom,#F8FAFC 0%,#fff 55%);border:1px solid var(--line2);padding:1rem 1.1rem}
+@media(min-width:640px){.programme-preview-inner{padding:1.1rem 1.25rem}}
+.preview-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.2rem}
+.preview-title{margin:0;font-size:14px;font-weight:700;color:var(--primary);letter-spacing:-.02em;line-height:1.2}
+@media(min-width:640px){.preview-title{font-size:15px}}
+.preview-subtitle{margin:.25rem 0 .9rem;font-size:11px;line-height:1.5;color:var(--muted);font-weight:400}
+.preview-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:860px){.preview-grid{grid-template-columns:1.15fr 0.85fr;gap:1.25rem;align-items:start}}
+.preview-col{background:#fff;border:1px solid var(--line2);padding:.85rem .9rem;position:relative}
+.preview-col--conf{border-top:2px solid var(--primary)}
+.preview-right-stack{display:flex;flex-direction:column;gap:1.1rem}
+.preview-col-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem}
+.preview-icon{flex-shrink:0;width:20px;height:20px;display:flex;align-items:center;justify-content:center;color:#fff}
+.preview-icon svg{width:11px;height:11px}
+.preview-icon--conf{background:var(--primary)}
+.preview-icon--atelier{background:var(--fg)}
+.preview-icon--video{background:var(--orange)}
+.preview-col h4{margin:0;font-size:10px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:var(--fg)}
+.preview-accent{height:2px;background:var(--primary);margin-bottom:.6rem}
+.preview-accent--orange{background:var(--orange)}
+.preview-accent--cyan{background:var(--cyan)}
+.preview-accent--primary{background:var(--primary)}
+.preview-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.48rem;position:relative;padding-left:.1rem}
+.preview-list::before{content:"";position:absolute;left:2px;top:4px;bottom:4px;width:1px;background:var(--line2);opacity:.9}
+.preview-list li{font-size:11.3px;line-height:1.55;color:var(--fg);display:flex;gap:.5rem;align-items:baseline;position:relative;padding-left:.75rem}
+.preview-list li::before{content:"";position:absolute;left:-1px;top:7px;width:5px;height:5px;border-radius:999px;background:var(--primary);flex-shrink:0}
+.preview-list--conf li::before{background:var(--primary)}
+.preview-list--atelier li::before{background:var(--orange)}
+.preview-list--video li::before{background:var(--cyan)}
+.preview-list li .preview-time{font-weight:500;color:var(--muted);white-space:nowrap;flex-shrink:0;font-size:10.5px;letter-spacing:.01em}
+.preview-list li .preview-text{font-weight:500;color:var(--fg);flex:1;min-width:0}
+.preview-list li.preview-muted{background:#FFF7ED;border:1px solid #FFDCC6;padding:.22rem .4rem .22rem .65rem;font-size:11px;color:#9A4A1E;font-weight:500;align-items:center;margin-left:.75rem}
+.preview-list li.preview-muted::before{display:none}
+.preview-list li.preview-muted::after{display:none}
+.preview-list li.preview-muted .preview-time{color:#9A4A1E;font-weight:500}
+.preview-cta{margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line2);text-align:center}
+@media(max-width:860px){.preview-right-stack{gap:1.1rem}}
+@media(max-width:640px){.programme-preview-wrap{padding:0 0;margin-top:.85rem}.programme-preview-inner{padding:.9rem}.preview-list{gap:.42rem}.preview-list li{font-size:11px}}
+
 /* Marquee partners — full-width edge-to-edge, larger logos */
 .marquee-section{position:relative;z-index:1;margin-top:1.5rem;width:100%}
 .marquee-header{text-align:center;margin-bottom:.9rem}

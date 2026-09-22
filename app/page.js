@@ -144,6 +144,64 @@ export default function Page() {
       </div>
     </div>
 
+      {/* Programme en un coup d'œil — aperçu compact équilibré */}
+      <div className="programme-preview-wrap">
+        <div className="programme-preview-card">
+          <div className="programme-preview-inner">
+            <div className="preview-header">
+              <span className="badge-navy">PROGRAMME</span>
+              <h3 className="preview-title">Programme en un coup d'œil</h3>
+            </div>
+            <p className="preview-subtitle">Une journée complète entre conférences, ateliers et échanges scientifiques</p>
+            <div className="preview-grid">
+              <div className="preview-col preview-col--conf">
+                <div className="preview-col-header">
+                  <span className="preview-icon preview-icon--conf" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span>
+                  <h4>Conférences</h4>
+                </div>
+                <div className="preview-accent preview-accent--primary" aria-hidden="true"></div>
+                <ul className="preview-list preview-list--conf">
+                  <li><span className="preview-time">08h30–09h00</span><span className="preview-text">Accueil et enregistrement des participants</span></li>
+                  <li><span className="preview-time">09h00–09h15</span><span className="preview-text">Ouverture officielle</span></li>
+                  <li><span className="preview-time">09h15–10h40</span><span className="preview-text">Session 1 — Médecine & gastro-entérologie</span></li>
+                  <li className="preview-muted"><span className="preview-time">10h40–11h00</span><span className="preview-text">Pause-café</span></li>
+                  <li><span className="preview-time">11h00–12h30</span><span className="preview-text">Session 2 — Intelligence artificielle & gastro-entérologie</span></li>
+                  <li className="preview-muted"><span className="preview-time">12h30–14h00</span><span className="preview-text">Déjeuner</span></li>
+                  <li><span className="preview-time">16h00</span><span className="preview-text">Clôture des journées scientifiques</span></li>
+                </ul>
+              </div>
+              <div className="preview-right-stack">
+                <div className="preview-col">
+                  <div className="preview-col-header">
+                    <span className="preview-icon preview-icon--atelier" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg></span>
+                    <h4>Ateliers pratiques</h4>
+                  </div>
+                  <div className="preview-accent preview-accent--orange" aria-hidden="true"></div>
+                  <ul className="preview-list preview-list--atelier">
+                    <li><span className="preview-time">09h15–12h00</span><span className="preview-text">Atelier 1 — Échographie · Atelier 3 — Maintenance</span></li>
+                    <li><span className="preview-time">14h00–16h00</span><span className="preview-text">Atelier 2 — Endoscopie · Atelier 4 — IA & Médecine</span></li>
+                  </ul>
+                </div>
+                <div className="preview-col">
+                  <div className="preview-col-header">
+                    <span className="preview-icon preview-icon--video" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10l5-2.5v7l-5-2.5z"/></svg></span>
+                    <h4>Sessions vidéo & Posters</h4>
+                  </div>
+                  <div className="preview-accent preview-accent--cyan" aria-hidden="true"></div>
+                  <ul className="preview-list preview-list--video">
+                    <li><span className="preview-time">14h00–16h00</span><span className="preview-text">Sessions vidéo — vidéos commentées et discussion</span></li>
+                    <li><span className="preview-time">14h00–16h00</span><span className="preview-text">Session posters — communications par affichage</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="preview-cta">
+              <a href="/program" className="btn btn-outline">Voir le programme complet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div style={{height:"8px"}}></div>
   </div>
 
