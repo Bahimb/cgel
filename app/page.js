@@ -62,7 +62,7 @@ export default function Page() {
                   <span className="carousel-chiffre dark" data-i18n="carousel.chiffre.expertise">Formation · Échange · Innovation</span>
                   <div className="carousel-ctas">
                     <a href="/registration" className="btn btn-orange" data-i18n="carousel.cta.register">S'inscrire</a>
-                    <a href="/a-propos" className="btn btn-outline" data-i18n="carousel.cta.discover">Découvrir le collège</a>
+                    <a href="/program" className="btn btn-outline" data-i18n="carousel.cta.discover">Voir le programme</a>
                   </div>
                     <div className="carousel-orgs dark" style={{marginTop:"1rem"}}>
                     <div className="org">
@@ -114,7 +114,7 @@ export default function Page() {
                   <span className="carousel-chiffre" data-i18n="carousel.program.chiffre">Conférences · Ateliers · Échanges</span>
                   <div className="carousel-ctas" style={{marginTop:"0"}}>
                     <a href="/registration" className="btn btn-orange" data-i18n="carousel.cta.register">S'inscrire</a>
-                    <a href="/a-propos" className="btn btn-white-trans" data-i18n="carousel.cta.discover">Découvrir le collège</a>
+                    <a href="/program" className="btn btn-white-trans" data-i18n="carousel.cta.discover">Voir le programme</a>
                   </div>
                   <div className="carousel-orgs" style={{marginTop:"0.75rem", paddingTop:"1rem", borderTop:"1px solid rgba(255,255,255,.15)", gap:"1.5rem"}}>
                     <div className="org">
